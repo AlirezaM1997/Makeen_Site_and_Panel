@@ -24,7 +24,7 @@ const HomeSlider = () => {
   };
   return (
     <>
-      <div className="px-[30px] -mt-[25px]">
+      <div className="px-[30px] mt-[3px]">
         <Slider {...settings} className="">
           {/* <img
               className="rounded-3xl border-[0.5px] border-[#CACBCB] w-full h-[500px] "
