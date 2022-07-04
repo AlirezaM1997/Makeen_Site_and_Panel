@@ -20,22 +20,21 @@ const HomeSlider = () => {
     touchThreshold: 10,
     touchMove:false,
     fade:true,
-
+    autoplay:true,
+    autoplaySpeed:6000,
   };
+  
   return (
     <>
-      <div className="px-[30px] mt-[3px]">
+      <div className="px-[30px] mt-[68px]">
         <Slider {...settings} className="">
-          {/* <img
-              className="rounded-3xl border-[0.5px] border-[#CACBCB] w-full h-[500px] "
-              src="/assets/images/slide1.jpg"
-            /> */}
           <Image
             className="rounded-3xl border-[0.5px] border-[#CACBCB]"
             src="/assets/images/slide1.jpg"
             width={1366}
             height={500}
             objectFit="cover"
+            alt="slider-img"
           ></Image>
           <Image
             className="rounded-3xl border-[0.5px] border-[#CACBCB]"
@@ -43,6 +42,7 @@ const HomeSlider = () => {
             width={1366}
             height={500}
             objectFit="cover"
+            alt="slider-img"
           ></Image>
           <Image
             className="rounded-3xl border-[0.5px] border-[#CACBCB]"
@@ -50,6 +50,7 @@ const HomeSlider = () => {
             width={1366}
             height={500}
             objectFit="cover"
+            alt="slider-img"
           ></Image>
         </Slider>
       </div>

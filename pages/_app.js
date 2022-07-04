@@ -8,6 +8,10 @@ import "../styles/globals.css";
 //next
 import Head from "next/head";
 
+export function reportWebVitals(metric) {
+  console.log(metric)
+}
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -18,6 +22,8 @@ function MyApp({ Component, pageProps }) {
     />
     </Head>
       <Header />
+      <HomeSlider/>
+      <HomeSlider/>
       <HomeSlider/>
       <Component {...pageProps} />
     </>

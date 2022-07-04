@@ -1,19 +1,18 @@
 //next
 import Image from "next/image";
 
+//bg-white backdrop-blur-[40px] backdrop-brightness-[50] backdrop-opacity-70
+
 const Header = () => {
   return (
     <>
-      <div className="relative h-[70px] w-full flex justify-center px-[48px] pt-[29px]  bg-white backdrop-blur-[40px] backdrop-brightness-[50] backdrop-opacity-70">
-        <div className="w-full absolute top-0 left-0 z-10 h-[30px] bg-gradient-[271deg] from-[#37BBEC] to-[#FF792C] bg-origin-padding blur-[30px] bg-no-repeat opacity-30"></div>
-
-        {/* <div className="w-full flex justify-center px-[48px] pt-[29px]  bg-white backdrop-blur-[40px] backdrop-brightness-[50] backdrop-opacity-70 "> */}
+      <div className="fixed top-0 min-h-[100px] w-full flex justify-center px-[48px] pt-[29px]  ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1366"
           height="100"
           viewBox="0 0 1366 100"
-          className="absolute top-0 h-[100px] w-full"
+          className="absolute -top-[1px] h-[100px] w-full text-white bg-transparent"
         >
           <path
             id="header"
@@ -22,47 +21,49 @@ const Header = () => {
             fill="#fff"
           />
         </svg>
+        <div className="w-full absolute top-0 left-0 z-10 h-[30px] bg-gradient-[271deg] from-[#37BBEC] to-[#FF792C] bg-origin-padding blur-[30px] bg-no-repeat opacity-30"></div>
 
         <div className="w-1/2 mr-8">
           <ul className="list-none flex justify-between font-iranYekan xl:text-[14px] lg:text-[11px] text-[9px]">
-            <li className="xl:mr-[70px] lg:mr-12 mr-10 pb-[17px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
+            <li className="xl:mr-[66px] lg:mr-12 mr-10 mb-1 pb-[14px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
               درخواست مشاوره
             </li>
-            <li className="xl:mr-[70px] lg:mr-12 mr-10 pb-[17px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
+            <li className="xl:mr-[66px] lg:mr-12 mr-10 mb-1 pb-[14px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
               بلاگ
             </li>
-            <li className="xl:mr-[70px] lg:mr-12 mr-10 pb-[17px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
+            <li className="xl:mr-[66px] lg:mr-12 mr-10 mb-1 pb-[14px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
               درباره مکین
             </li>
-            <li className="xl:mr-[70px] lg:mr-12 mr-10 pb-[17px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
+            <li className="xl:mr-[66px] lg:mr-12 mr-10 mb-1 pb-[14px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
               بوت کمپ
             </li>
           </ul>
         </div>
         <div className="z-10">
-          <img
+          <Image
             src="/assets/images/logo.png"
-            className="w-[64px] h-[60px] z-10"
-            alt=""
-          />
+            width={62}
+            height={63}
+            className="z-10"
+            alt="logo"
+          ></Image>
         </div>
         <div className="w-1/2 ml-8">
           <ul className="list-none flex justify-between font-iranYekan xl:text-[14px] lg:text-[11px] text-[9px]">
-            <li className="xl:ml-[70px] lg:ml-12 ml-10 pb-[17px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
+            <li className="xl:ml-[66px] lg:ml-12 ml-10 mb-1 pb-[14px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
               درخواست همکاری
             </li>
-            <li className="xl:ml-[70px] lg:ml-12 ml-10 pb-[17px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
+            <li className="xl:ml-[66px] lg:ml-12 ml-10 mb-1 pb-[14px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
               ثبت نام دوره
             </li>
-            <li className="xl:ml-[70px] lg:ml-12 ml-10 pb-[17px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
+            <li className="xl:ml-[66px] lg:ml-12 ml-10 mb-1 pb-[14px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
               دوره ها
             </li>
-            <li className="xl:ml-[70px] lg:ml-12 ml-10 pb-[17px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
+            <li className="xl:ml-[66px] lg:ml-12 ml-10 mb-1 pb-[14px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-full before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
               صفحه اصلی
             </li>
           </ul>
         </div>
-        {/* </div> */}
       </div>
     </>
   );
