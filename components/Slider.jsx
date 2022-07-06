@@ -24,11 +24,12 @@ const HomeSlider = () => {
   };
 
 useEffect(()=>{
-  let theStyle = window.getComputedStyle(document.querySelector('.slick-dots li.slick-active button'), ':before')
-// const pie = document.querySelector('.slick-dots li.slick-active button::before')
+
+const pie = document.querySelector('.slick-dots li.slick-active button')
+pie.className
 // pie.style.color = 'red'
 // theStyle.background='red'
-console.log(theStyle.background);
+
 },[])
 
   return (

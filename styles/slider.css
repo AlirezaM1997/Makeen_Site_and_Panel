@@ -10,6 +10,12 @@
   box-shadow: -3px 10px 20px #00000029;
   position: absolute;
 }
+.slick-next:active,
+.slick-next:focus,
+.slick-next:hover,
+.slick-next {
+  background: white;
+}
 .skick-prev {
   left: -20px;
 }
@@ -47,9 +53,8 @@
 .slick-dots li button:before {
   font-size: 13px !important;
 }
-.slick-dots li button{
+.slick-dots li button {
 }
 
-.slick-dots li.slick-active button:before{
-
+.slick-dots li.slick-active button:before {
 }
