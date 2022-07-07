@@ -1,12 +1,14 @@
+//next
+import Head from "next/head";
+
 //components
 import Header from "../components/Header";
-import HomeSlider from "../components/Slider";
+import Slider from '../components/slider/Slider'
+import Statistics from "../components/Statistics";
 
 //style
 import "../styles/globals.css";
 import '../styles/slider.css'
-//next
-import Head from "next/head";
 
 
 function MyApp({ Component, pageProps }) {
@@ -29,9 +31,11 @@ function MyApp({ Component, pageProps }) {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
+        <script src="../path/to/flowbite/dist/flowbite.js"></script>
       </Head>
       <Header />
-      <HomeSlider />
+      <Slider />
+      <Statistics/>
       <Component {...pageProps} />
     </>
   );

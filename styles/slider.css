@@ -1,60 +1,91 @@
-.slick-list {
-  z-index: -1;
+.active {
+  display: inline-block;
 }
-.slick-prev,
-.slick-next {
-  background: white;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  box-shadow: -3px 10px 20px #00000029;
+.inactive {
+  display: none;
+}
+.slides {
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+.slide-image {
+  width: 100%;
+  height: 100%;
   position: absolute;
+  object-fit: cover;
 }
-.slick-next:active,
-.slick-next:focus,
-.slick-next:hover,
-.slick-next {
-  background: white;
-}
-.skick-prev {
-  left: -20px;
-}
-.skick-next {
-  right: -20px;
-}
-.skick-next:focus,
-.skick-next:active {
-  position: absolute;
-}
-.slick-prev:before,
-.slick-next:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: black;
-  text-align: center;
-  font-size: 1.3rem;
-}
-.slick-next:before {
-  content: "\f061";
-}
-.slick-prev:before {
-  content: "\f060";
-}
-.slick-prev:hover,
-.slick-next:hover {
-  background: #00294d;
-}
-.slick-prev:hover:before,
-.slick-next:hover:before {
+.slide-title,
+.slide-text {
+  width: 100%;
+  height: 100%;
   color: white;
+  font-size: 50px;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  z-index: 10;
 }
-.slick-dots {
+.slide-text {
+  top: 65%;
+  font-size: 2rem;
 }
-.slick-dots li button:before {
-  font-size: 13px !important;
+/* .prev,
+.next {
+  color: transparent;
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -3rem;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 0px 5px 5px 0px;
 }
-.slick-dots li button {
+.slider-container .prev,
+.slider-container .next {
+  color: black;
 }
-
-.slick-dots li.slick-active button:before {
+.slider-container:hover .prev:hover,
+.slider-container:hover .next:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease-in;
+}
+.next {
+  right: 0;
+  border-radius: 5px 0px 0px 5px;
+} */
+/* .all-dots {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  top: 85%;
+  justify-content: center;
+  z-index: 200;
+} */
+.dot,
+.active-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0px 5px;
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+}
+.slider-container .dot {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.slider-container .dot {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* .slider-container .active-dot{
+  background-color: rgba(255, 255, 255, 0.5);
+} */
+.play-pause {
+  color: black;
 }
