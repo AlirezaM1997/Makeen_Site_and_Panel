@@ -1,16 +1,17 @@
+//next
+import Head from "next/head";
+
 //components
 import Header from "../components/Header";
-import HomeSlider from "../components/Slider";
+import Slider from "../components/slider/Slider";
+import Statistics from "../components/Statistics";
+import Footer from "../components/Footer";
 
 //style
 import "../styles/globals.css";
-import '../styles/slider.css'
-//next
-import Head from "next/head";
-import Footer from "../components/Footer";
+import "../styles/slider.css";
 
-
-function MyApp({ Component, pageProps }) {
+ const MyApp=({ Component, pageProps })=> {
   return (
     <>
       <Head>
@@ -30,14 +31,17 @@ function MyApp({ Component, pageProps }) {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
+        {/* <script src="../path/to/flowbite/dist/flowbite.js"></script> */}
       </Head>
       <Header />
-      <HomeSlider />
+      <Slider />
+      <Statistics />
       <Component {...pageProps} />
 
       <Footer />
+      {/* there is some bugs in footer */}
+      {/* its the best :) */}
     </>
   );
 }
-
-export default MyApp;
+export default MyApp
