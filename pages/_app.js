@@ -38,7 +38,8 @@ import "../styles/slider.css";
       <Statistics />
       <Component {...pageProps} />
 
-      <Footer />
+      {/* <Footer /> */}
+      {/* there is some bugs in footer */}
     </>
   );
 }
