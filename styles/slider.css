@@ -1,0 +1,60 @@
+.slick-list {
+  z-index: -1;
+}
+.slick-prev,
+.slick-next {
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: -3px 10px 20px #00000029;
+  position: absolute;
+}
+.slick-next:active,
+.slick-next:focus,
+.slick-next:hover,
+.slick-next {
+  background: white;
+}
+.skick-prev {
+  left: -20px;
+}
+.skick-next {
+  right: -20px;
+}
+.skick-next:focus,
+.skick-next:active {
+  position: absolute;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: black;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.slick-next:before {
+  content: "\f061";
+}
+.slick-prev:before {
+  content: "\f060";
+}
+.slick-prev:hover,
+.slick-next:hover {
+  background: #00294d;
+}
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: white;
+}
+.slick-dots {
+}
+.slick-dots li button:before {
+  font-size: 13px !important;
+}
+.slick-dots li button {
+}
+
+.slick-dots li.slick-active button:before {
+}

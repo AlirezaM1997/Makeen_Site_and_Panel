@@ -5,6 +5,8 @@ import Slider from "react-slick";
 
 //next
 import Image from "next/image";
+import Head from "next/head";
+import { useEffect } from "react";
 
 //other
 
@@ -12,45 +14,58 @@ import Image from "next/image";
 const HomeSlider = () => {
   const settings = {
     dots: true,
-    // arrows: true,
     infinite: true,
-    speed: 250,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    touchThreshold: 10,
-    touchMove:false,
     fade:true,
-
+    autoplay: true,
+    autoplaySpeed: 5000,
   };
+
+useEffect(()=>{
+
+const pie = document.querySelector('.slick-dots li.slick-active button')
+pie.className
+// pie.style.color = 'red'
+// theStyle.background='red'
+
+},[])
+
   return (
     <>
-      <div className="px-[30px] mt-[3px]">
-        <Slider {...settings} className="">
-          {/* <img
-              className="rounded-3xl border-[0.5px] border-[#CACBCB] w-full h-[500px] "
+      <div className="px-[30px] mt-[68px] ">
+        <Slider {...settings} className=''>
+          <div>
+            <Image
+              className="rounded-3xl border-[0.5px] border-[#CACBCB] "
               src="/assets/images/slide1.jpg"
-            /> */}
-          <Image
-            className="rounded-3xl border-[0.5px] border-[#CACBCB]"
-            src="/assets/images/slide1.jpg"
-            width={1366}
-            height={500}
-            objectFit="cover"
-          ></Image>
-          <Image
-            className="rounded-3xl border-[0.5px] border-[#CACBCB]"
-            src="/assets/images/slide2.jpg"
-            width={1366}
-            height={500}
-            objectFit="cover"
-          ></Image>
-          <Image
-            className="rounded-3xl border-[0.5px] border-[#CACBCB]"
-            src="/assets/images/slide3.jpg"
-            width={1366}
-            height={500}
-            objectFit="cover"
-          ></Image>
+              width={1366}
+              height={500}
+              objectFit="cover"
+              alt="slider-img"
+            ></Image>
+          </div>
+          <div>
+            <Image
+              className="rounded-3xl border-[0.5px] border-[#CACBCB]"
+              src="/assets/images/slide2.jpg"
+              width={1366}
+              height={500}
+              objectFit="cover"
+              alt="slider-img"
+            ></Image>
+          </div>
+          <div>
+            <Image
+              className="rounded-3xl border-[0.5px] border-[#CACBCB]"
+              src="/assets/images/slide3.jpg"
+              width={1366}
+              height={500}
+              objectFit="cover"
+              alt="slider-img"
+            ></Image>
+          </div>
         </Slider>
       </div>
     </>

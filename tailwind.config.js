@@ -19,7 +19,7 @@ module.exports = {
         iranYekan: ["IRANYEKAN"],
       },
       transitionProperty: {
-        'menu_item_transition': 'background-size 1.5s, color 1s',
+        'menu_item_transition': 'background-size 0.5s, color 0.5s',
       }
     },
   },
