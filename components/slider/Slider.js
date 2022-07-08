@@ -18,6 +18,7 @@ const Slider = () => {
 
     const interval = setInterval(() => {
       if (i === 100) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         i = 0;
       } else {
         i++;

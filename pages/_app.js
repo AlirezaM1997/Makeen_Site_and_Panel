@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 //style
 import "../styles/globals.css";
 import "../styles/slider.css";
+import EstelamVaHamrahsho from "../components/estelamVaHamrahSho";
 
  const MyApp=({ Component, pageProps })=> {
   return (
@@ -37,7 +38,7 @@ import "../styles/slider.css";
       <Slider />
       <Statistics />
       <Component {...pageProps} />
-
+      <EstelamVaHamrahsho />
       <Footer />
       {/* there is some bugs in footer */}
       {/* its the best :) */}

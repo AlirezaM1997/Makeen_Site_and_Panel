@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 //next
 import Image from "next/image";
 
