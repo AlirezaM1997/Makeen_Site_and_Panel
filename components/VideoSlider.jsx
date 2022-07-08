@@ -3,30 +3,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-//other
-import React, { useState, useEffect } from "react";
-
-
 const VideoSlider = () => {
-  const [nav1, setNav1] = useState(null);
-  const [nav2, setNav2] = useState(null);
-  const [slider1, setSlider1] = useState(null);
-  const [slider2, setSlider2] = useState(null);
-
-  useEffect(() => {
-    setNav1(slider1);
-    setNav2(slider2);
-  });
-
-
   const settingsThumbs = {
+    dots: true,
+    infinite: true,
+    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    asNavFor: ".slider-for",
-    centerMode: true,
-    swipeToSlide: true,
-    focusOnSelect: true,
-    centerPadding: "10px",
   };
 
   const slidesData = [
@@ -59,12 +42,11 @@ const VideoSlider = () => {
     <>
       <div>
         <div className="slider-wrapper  ">
-
           <div className="-top-[80px] relative">
             <div className="relative rounded-[10px] overflow-hidden h-full">
               <video
                 src="https://aspb27.asset.aparat.com/aparat-video/31abeef97199b372cb6e631fe79301c228143389-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjQ3NTQwMmZiZDFkN2ZiMjUzMjNjYTA3MWY1MDM5NTk1IiwiZXhwIjoxNjU3MjkzNDcyLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.Q8WZE2h_--r_ThxprcPu6v4L4MpV2Fv5R0UD34ZY8Tk"
-                className="mySlider h-full relative top-0 left-0"
+                className="mySlider relative top-0 left-0"
                 loop
                 muted
                 controls
@@ -74,19 +56,14 @@ const VideoSlider = () => {
             </div>
           </div>
           <div className="-mt-[20px] thumbnail">
-            <Slider
-              {...settingsThumbs}
-              asNavFor={nav1}
-              ref={(slider) => setSlider2(slider)}
-            >
+            <Slider {...settingsThumbs}>
               {slidesData.map((slide, index) => (
-                <div className="relative rounded-[10px] overflow-hidden">
+                <div className="rounded-[4px] overflow-hidden transition-all duration-300">
                   <video
-                    className=" h-full relative top-0 left-0"
+                    className="w-full h-[100px] object-cover"
                     key={index}
                     preload="metadata"
                     onClick={() => videoslider(slide.id)}
-                    height={100}
                   >
                     <source src={slide.id} type="video/mp4"></source>
                   </video>
@@ -101,4 +78,3 @@ const VideoSlider = () => {
 };
 
 export default VideoSlider;
-

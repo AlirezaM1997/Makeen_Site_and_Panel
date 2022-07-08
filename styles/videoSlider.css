@@ -30,8 +30,15 @@
 .slick-track {
   width: max-content !important;
 }
-.thumbnail .slick-initialized .slick-slide {
-  //margin-right: 1rem !important;
-  padding-left: 0.5rem !important;
-  //width: 154px !important;
+.slick-dots {
+  display: none !important;
+}
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+.slick-slide *:focus {
+  outline: none;
 }

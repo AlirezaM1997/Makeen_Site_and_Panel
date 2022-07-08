@@ -17,6 +17,8 @@ import Footer from "../components/Footer";
 //style
 import "../styles/globals.css";
 
+
+
  const MyApp=({ Component, pageProps })=> {
   return (
     <>
