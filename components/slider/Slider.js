@@ -34,7 +34,7 @@ const Slider = () => {
   return (
     <>
 
-        <div className="w-full mt-[68px] pr-[30px] pl-[30px]">
+        <div className="w-full mt-[71px] pr-[30px] pl-[30px]">
           <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
           <Arrows
             prevSlide={() =>

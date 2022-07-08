@@ -1,15 +1,18 @@
 //next
 import Head from "next/head";
 
+//style
+import "../styles/globals.css";
+import '../styles/videoSlider.css'
+
 //components
 import Header from "../components/Header";
 import Slider from "../components/slider/Slider";
 import Statistics from "../components/Statistics";
+import Bootcamp from "../components/Bootcamp";
+import Features from "../components/Features";
 import Footer from "../components/Footer";
 
-//style
-import "../styles/globals.css";
-import "../styles/slider.css";
 
  const MyApp=({ Component, pageProps })=> {
   return (
@@ -36,6 +39,8 @@ import "../styles/slider.css";
       <Header />
       <Slider />
       <Statistics />
+      <Bootcamp/>
+      <Features/>
       <Component {...pageProps} />
 
       {/* <Footer /> */}

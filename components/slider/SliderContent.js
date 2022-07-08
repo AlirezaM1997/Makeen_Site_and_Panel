@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 function SliderContent({ activeIndex, sliderImage }) {
   return (
@@ -6,10 +6,19 @@ function SliderContent({ activeIndex, sliderImage }) {
       {sliderImage.map((slide, index) => (
         <div
           key={index}
-          className={index === activeIndex ? "slides active" : "inactive"}
+          className={
+            index === activeIndex
+              ? "h-[500px] w-full relative inline-block"
+              : "hidden"
+          }
         >
-          <img className="slide-image rounded-[20px]" src={slide.urls} alt="" />
-
+          {/* <img className="w-full h-full absolute object-cover rounded-[20px]" src={slide.urls} alt="" /> */}
+          <Image
+            src={slide.urls}
+            alt="slide"
+            layout="fill"
+            className="w-full h-full absolute object-cover rounded-[20px]"
+          />
         </div>
       ))}
     </section>
