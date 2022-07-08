@@ -1,0 +1,25 @@
+.helaleImage {
+    filter: opacity(0.1) drop-shadow(0 0 0 #ceeffc); 
+}
+/* .btnSpan:hover {
+    display: none;
+}
+
+
+
+.btnTaeid {
+    padding: 10px;
+    color: #ECF9FD;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: #FF8641;
+    border-radius: 10px;
+} */
+
+/* .btnTaeid:hover:before {
+    content: "Reply!"
+  } */
+
+.btn:hover {
+    display: none;
+}

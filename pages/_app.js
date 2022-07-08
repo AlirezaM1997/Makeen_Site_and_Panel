@@ -11,8 +11,11 @@ import Slider from "../components/slider/Slider";
 import Statistics from "../components/Statistics";
 import Bootcamp from "../components/Bootcamp";
 import Features from "../components/Features";
+import EstelamVaHamrahsho from "../components/estelamVaHamrahSho";
 import Footer from "../components/Footer";
 
+//style
+import "../styles/globals.css";
 
  const MyApp=({ Component, pageProps })=> {
   return (
@@ -34,7 +37,6 @@ import Footer from "../components/Footer";
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
-        <script src="../path/to/flowbite/dist/flowbite.js"></script>
       </Head>
       <Header />
       <Slider />
@@ -42,9 +44,11 @@ import Footer from "../components/Footer";
       <Bootcamp/>
       <Features/>
       <Component {...pageProps} />
-
+      <EstelamVaHamrahsho />
       {/* <Footer /> */}
       {/* there is some bugs in footer */}
+      {/* عرض صفحه اسکرول میخوره
+      !!!  اینجوری ننویس w-[1366px]  */}
     </>
   );
 }
