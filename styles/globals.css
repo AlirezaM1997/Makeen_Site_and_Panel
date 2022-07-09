@@ -14,3 +14,13 @@ a {
   src: url("../public/assets/fonts/iran-yekan/Qs_Iranyekan.ttf");
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

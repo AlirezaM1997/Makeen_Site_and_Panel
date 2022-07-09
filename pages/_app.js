@@ -11,11 +11,14 @@ import Slider from "../components/slider/Slider";
 import Statistics from "../components/Statistics";
 import Bootcamp from "../components/Bootcamp";
 import Features from "../components/Features";
-import EstelamVaHamrahsho from "../components/estelamVaHamrahSho";
 import Footer from "../components/Footer";
+import EstelamVaHamrahsho from "../components/EstelamVaHamrahSho";
+import MaghalatVaMataleb from "../components/MaghalatVaMataleb";
+import AskedQuestion from "../components/AskedQuestion";
 
 //style
 import "../styles/globals.css";
+
 
  const MyApp=({ Component, pageProps })=> {
   return (
@@ -43,9 +46,13 @@ import "../styles/globals.css";
       <Statistics />
       <Bootcamp/>
       <Features/>
+     
       <Component {...pageProps} />
+      <AskedQuestion />
+      <MaghalatVaMataleb />
       <EstelamVaHamrahsho />
-      {/* <Footer /> */}
+      <Footer />
+      
       {/* there is some bugs in footer */}
       {/* عرض صفحه اسکرول میخوره
       !!!  اینجوری ننویس w-[1366px]  */}
