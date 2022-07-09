@@ -19,7 +19,6 @@ import AskedQuestion from "../components/AskedQuestion";
 //style
 import "../styles/globals.css";
 
-
  const MyApp=({ Component, pageProps })=> {
   return (
     <>
@@ -51,11 +50,7 @@ import "../styles/globals.css";
       <AskedQuestion />
       <MaghalatVaMataleb />
       <EstelamVaHamrahsho />
-      <Footer />
-      
-      {/* there is some bugs in footer */}
-      {/* عرض صفحه اسکرول میخوره
-      !!!  اینجوری ننویس w-[1366px]  */}
+      {/* <Footer /> */}
     </>
   );
 }

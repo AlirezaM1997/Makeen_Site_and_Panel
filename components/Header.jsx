@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 //next
 import Image from "next/image";
 
@@ -18,7 +17,6 @@ const Header = () => {
           height="100"
           viewBox="0 0 1366 100"
           className="absolute h-[100px] w-full text-white shadow-2xl"
-
         >
           <path
             id="Path_12"

@@ -56,7 +56,7 @@ const Footer = () => {
     <>
       <footer className="w-screen h-[554px] top-[30px] left- relative -blue-500">
         <div className="w-[96%] h-[489px] left-[30px]  bg-[#001d36] absolute top-[30px] rounded-[20px]  ">
-          <img src="/assets/images/Union 5.svg" className="absolute bottom-[0px] left-[40px]"  />
+          <img src="/public/assets/images/" className="absolute bottom-[0px] left-[40px]"  />
           <img onClick={() => scrollClick()} className="ml-[685px] absolute top-[-14px] cursor-pointer transition ease-in-out delay-150  hover:-translate-y-2 " src="/assets/images/Go Up.png" alt="go up" />
           <img
             className="w-[118px] absolute  h-[42px] ml-[640px] top-[40px] "
