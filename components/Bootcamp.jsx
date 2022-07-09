@@ -4,7 +4,7 @@ import VideoSlider from "./VideoSlider";
 const Bootcamp = () => {
   return (
     <>
-      <div className="pt-[115px] pb-[58px] px-[30px] mt-[60px]">
+      <div className="pt-[115px] pb-[58px] px-[30px] mt-[75px]">
         <div className="bg-[#FFF2EA] flex rounded-[20px]">
           <div className="w-1/2 pl-[95px] pr-[80px] ">
             <div className="w-[494px] absolute">
@@ -49,8 +49,8 @@ const Bootcamp = () => {
                     transform="matrix(0.978, 0.208, -0.208, 0.978, 128.772, -106.396)"
                     fill="none"
                     stroke="#667f94"
-                    stroke-linecap="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeWidth="1.5"
                   />
                   <path
                     id="Path_17"

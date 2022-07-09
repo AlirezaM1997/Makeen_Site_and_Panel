@@ -41,7 +41,7 @@ const VideoSlider = () => {
   return (
     <>
       <div>
-        <div className="slider-wrapper  ">
+        <div>
           <div className="-top-[80px] relative">
             <div className="relative rounded-[10px] overflow-hidden h-full">
               <video
@@ -58,10 +58,12 @@ const VideoSlider = () => {
           <div className="-mt-[20px] thumbnail">
             <Slider {...settingsThumbs}>
               {slidesData.map((slide, index) => (
-                <div className="rounded-[4px] overflow-hidden transition-all duration-300">
+                <div
+                  key={index}
+                  className="rounded-[4px] overflow-hidden transition-all duration-300"
+                >
                   <video
                     className="w-full h-[100px] object-cover"
-                    key={index}
                     preload="metadata"
                     onClick={() => videoslider(slide.id)}
                   >

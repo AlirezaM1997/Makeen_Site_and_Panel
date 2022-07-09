@@ -48,9 +48,6 @@ import "../styles/globals.css";
       <Component {...pageProps} />
       <EstelamVaHamrahsho />
       {/* <Footer /> */}
-      {/* there is some bugs in footer */}
-      {/* عرض صفحه اسکرول میخوره
-      !!!  اینجوری ننویس w-[1366px]  */}
     </>
   );
 }

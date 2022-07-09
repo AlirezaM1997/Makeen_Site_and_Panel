@@ -22,7 +22,7 @@ const EstelamVaHamrahsho = () => {
             src={"/assets/images/estelamVaHamrahsho.png"}
             alt="gerd"
           />
-          <h1 className="-red-500 hover:hidden w-fit font-iranYekan font-extrabold	 text-[24px] text-[#00213E] absolute top-[20px] right-[80px] ">
+          <h1 className="-red-500 hover:hidden w-fit font-iranYekan font-extrabold text-[24px] text-[#00213E] absolute top-[20px] right-[80px] ">
             استعلام دانشجویان مکین
           </h1>
           <div className="-red-500 w-[383px] absolute top-[70px] right-[80px]">

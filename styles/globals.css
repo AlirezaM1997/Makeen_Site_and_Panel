@@ -12,5 +12,5 @@ a {
   font-family: "IRANYEKAN";
   ascent-override: 99%;
   src: url("../public/assets/fonts/iran-yekan/Qs_Iranyekan.ttf");
+  font-display: swap;
 }
-
