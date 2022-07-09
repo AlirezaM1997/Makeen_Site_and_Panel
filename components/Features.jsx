@@ -1,6 +1,5 @@
 //next
 import Image from "next/image";
-
 //other
 import { useState } from "react";
 
@@ -42,7 +41,6 @@ const Features = () => {
     document.getElementById("intimateTitle").style.color = "#ECF9FD";
     document.getElementById("intimateDescription").style.color = "#C7ECFA";
   };
-
   const resetColor = () => {
     setTeacherHover(false);
     setPaymentHover(false);
@@ -50,7 +48,6 @@ const Features = () => {
     setWorkshopHover(false);
     setGuaranteeHover(false);
     setIntimateHover(false);
-
     document.getElementById("teacherTitle").style.color = "initial";
     document.getElementById("teacherDescription").style.color = "initial";
     document.getElementById("paymentTitle").style.color = "initial";
@@ -66,7 +63,15 @@ const Features = () => {
   };
   return (
     <>
-      <div className="mt-[170px] px-[50px]">
+      <div className="mt-[170px] px-[50px] pt-[26px] relative">
+        <div className="absolute right-0 top-0">
+          <Image src="/assets/images/feature-r.png" height={85} width={80} />
+        </div>
+        <div className="absolute right-0 w-[375px] h-[475px] bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-20 blur-[50px] -z-[1] "></div>
+        <div className="absolute -left-[115px] top-0 ">
+          <Image src="/assets/images/feature-l.png" height={256} width={256} />
+        </div>
+        <div className="absolute left-0 w-[339px] h-[339px] bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] -z-[1] "></div>
         <header>
           <h1 className="text-[20px] leading-[35px] font-iranYekan text-[#00213E] font-extrabold text-center mb-5">
             ویژگی های مکین
