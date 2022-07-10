@@ -54,13 +54,13 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="w-[1365px] h-[554px] top-[30px] left-[30px] relative -blue-500">
-        <div className="w-[1365px] h-[489px]  bg-[#001d36] absolute top-[30px] rounded-[20px]  ">
-          <img src="/assets/images/Union 5.svg" className="absolute bottom-[0px] left-[40px]"  />
+      <footer className="w-screen h-[554px] top-[30px] left- relative -blue-500">
+        <div className="w-[96%] h-[489px] left-[30px]  bg-[#001d36] absolute top-[30px] rounded-[20px]  ">
+          <img src="/public/assets/images/" className="absolute bottom-[0px] left-[40px]"  />
           <img onClick={() => scrollClick()} className="ml-[685px] absolute top-[-14px] cursor-pointer transition ease-in-out delay-150  hover:-translate-y-2 " src="/assets/images/Go Up.png" alt="go up" />
           <img
             className="w-[118px] absolute  h-[42px] ml-[640px] top-[40px] "
-            src="/assets/images/آکادمی مکین بزرگ.png"
+            src="/assets/images/makeenFooterLogo.png"
             alt="makeen logo"
           />
           <p className="ml-[255px] opacity-70 leading-[35px] mt-[123px] text-[#ECF9FD] w-[876px] h-[97px] text-[14px] text-center font-iranYekan	">

@@ -9,7 +9,7 @@ import Statistics from "./Statistics";
 import Bootcamp from "./Bootcamp";
 import Features from "./Features";
 import Courses from "./Courses";
-import EstelamVaHamrahsho from "./estelamVaHamrahSho";
+import EstelamVaHamrahsho from "./EstelamVaHamrahSho";
 
 const Layout = ({ children }) => {
   const router = useRouter();
@@ -25,6 +25,8 @@ const Layout = ({ children }) => {
         <Bootcamp />
         <Features />
         <Courses />
+        <AskedQuestion />
+        <MaghalatVaMataleb />
         <EstelamVaHamrahsho />
       </>
     );

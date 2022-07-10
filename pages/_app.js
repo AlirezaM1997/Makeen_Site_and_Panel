@@ -31,7 +31,7 @@ const MyApp = ({ Component, pageProps }) => {
       </Head>
       <Header />
       <Layout>
-        <Component {...pageProps}/>
+        <Component {...pageProps} />
       </Layout>
     </>
   );
