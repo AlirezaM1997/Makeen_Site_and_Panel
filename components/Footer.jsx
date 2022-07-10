@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import styles from "../styles/Footer.module.css";
+import Image from "next/image";
 
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
@@ -54,16 +55,34 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="w-screen h-[554px] top-[30px] left- relative -blue-500">
-        <div className="w-[96%] h-[489px] left-[30px]  bg-[#001d36] absolute top-[30px] rounded-[20px]  ">
-          <img src="/public/assets/images/" className="absolute bottom-[0px] left-[40px]"  />
-          <img onClick={() => scrollClick()} className="ml-[685px] absolute top-[-14px] cursor-pointer transition ease-in-out delay-150  hover:-translate-y-2 " src="/assets/images/Go Up.png" alt="go up" />
-          <img
-            className="w-[118px] absolute  h-[42px] ml-[640px] top-[40px] "
-            src="/assets/images/makeenFooterLogo.png"
-            alt="makeen logo"
-          />
-          <p className="ml-[255px] opacity-70 leading-[35px] mt-[123px] text-[#ECF9FD] w-[876px] h-[97px] text-[14px] text-center font-iranYekan	">
+      <footer className="w-full px-[30px] py-[40px] mt-[30px">
+        <div className="flex justify-center">
+          <div>
+            <img
+              src="/assets/images/backgroundFooter.png"
+              alt="footer"
+            />
+          </div>
+          <div className=" h-fit w-screen  absolute flex justify-center pt-[10px] cursor-pointer transition  delay-150  hover:-translate-y-1   ">
+            <Image
+              onClick={() => scrollClick()}
+              width={10}
+              height={13}
+              className=""
+              src="/assets/images/Go Up.png"
+              alt="go up"
+            />
+          </div>
+          <div className="flex justify-center w-screen mt-[60px] absolute">
+            <Image
+              width={118}
+              height={42}
+              className=""
+              src="/assets/images/makeenFooterLogo.png"
+              alt="makeen logo"
+            />
+          </div>
+          <p className="absolute opacity-70 leading-[35px] mt-[123px] text-[#ECF9FD] w-screen flex justify-center h-fit px-[280px] text-[10px] lg:text-[14px] text-center font-iranYekan	">
             آکادمی مکین ، یه محیط صمیمی و تخصصیه که تمام تلاشش ایجاد فرصت های
             شغلی برای جوانان این سرزمینه. ما توی آکادمی مکین با استفاده از
             متدولوژی آموزشی منحصر به فرد ، کمک میکنیم تا آدم های با انگیزه بتونن
@@ -71,7 +90,7 @@ const Footer = () => {
             .بهشون آینده میدیم
           </p>
 
-          <div className=" bg--500 absolute ml-[400px] mt-[60px] flex justify-between w-[650px]">
+          <div className="absolute mt-[270px] flex justify-between px-[390px] w-screen">
             <div className="relative">
               <div
                 onMouseEnter={() => hoverGoogleShow()}
@@ -164,9 +183,10 @@ const Footer = () => {
             </div>
           </div>
 
-          <ul className="-green-500 font-iranYekan mt-[160px] flex-row-reverse	 flex justify-evenly text-right ml-[250px] w-[876px] h-[80px] absolute text-[16px] border-t-2 border-[#30495e]   ">
+          <ul className=" font-iranYekan mt-[340px] flex-row-reverse	px-[290px] pt-[60px] flex justify-evenly text-right w-screen h-fit absolute text-[16px] ">
+            <hr className="absolute w-[60%] px-[120px] border-[#294359] "  />
             <Link href="/">
-              <li className="flex justify-center text-[#768b9b] hover:text-white hover:cursor-pointer   pb-[17px]  mt-[35px] transition font-semibold leading-[25px]  opacity-50 relative  hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100 ease-in-out before:duration-300">
+              <li className=" flex justify-center text-[#768b9b] hover:text-white hover:cursor-pointer  pb-[17px]  mt-[35px] transition font-semibold leading-[25px]  opacity-50 relative  hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100 ease-in-out before:duration-300">
                 دوره ها
               </li>
             </Link>
@@ -196,7 +216,7 @@ const Footer = () => {
               </li>
             </Link>
           </ul>
-          <p className="  -red-400 mt-[280px] pb-[10px] mb-[20px] text-center text-[#00213E] opacity-50 after:content-['©'] after:ml-2 ">
+          <p className="absolute mt-[520px] pb-[10px] text-center text-[#00213E] opacity-50 after:content-['©'] after:ml-2 ">
             .تمام حق و حقوق این سایت متعلق به موسسه ایده آل رسانه مکین می باشد
           </p>
         </div>
