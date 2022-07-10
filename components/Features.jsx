@@ -72,6 +72,7 @@ const Features = () => {
           <Image src="/assets/images/feature-l.png" height={256} width={256} />
         </div>
         <div className="absolute left-0 w-[339px] h-[339px] bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] -z-[1] "></div>
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[339px] h-[339px] bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] -z-[1] "></div>
         <header>
           <h1 className="text-[20px] leading-[35px] font-iranYekan text-[#00213E] font-extrabold text-center mb-5">
             ویژگی های مکین
