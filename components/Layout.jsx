@@ -10,6 +10,8 @@ import Bootcamp from "./Bootcamp";
 import Features from "./Features";
 import Courses from "./Courses";
 import EstelamVaHamrahsho from "./EstelamVaHamrahSho";
+import AskedQuestion from './AskedQuestion'
+import MaghalatVaMataleb from './MaghalatVaMataleb'
 
 const Layout = ({ children }) => {
   const router = useRouter();
