@@ -1,3 +1,4 @@
+import styles from "../styles/maghaleVaMatlab.module.css";
 
 const MaghalatVaMataleb = () => {
   return (

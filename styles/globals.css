@@ -14,19 +14,11 @@ a {
   src: url("../public/assets/fonts/iran-yekan/Qs_Iranyekan.ttf");
   font-display: swap;
 }
-.ratio {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-/* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }

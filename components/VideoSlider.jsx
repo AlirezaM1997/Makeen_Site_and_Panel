@@ -64,7 +64,7 @@ const VideoSlider = () => {
               </div>
             </div>
           </div>
-          <div className="-mt-[20px] thumbnail">
+          <div className="-mt-[20px] thumbnail" id="videoSlider">
             <Slider {...settingsThumbs}>
               {slidesData.map((slide, index) => (
                 <div

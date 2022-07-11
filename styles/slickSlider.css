@@ -1,5 +1,5 @@
-.slick-prev,
-.slick-next {
+#videoSlider .slick-prev,
+#videoSlider .slick-next {
   background: white !important;
   border-radius: 50% !important;
   width: 35px !important;
@@ -7,38 +7,49 @@
   box-shadow: -3px 10px 20px #00000029 !important;
   position: absolute !important;
 }
-.slick-prev:before,
-.slick-next:before {
+#videoSlider .slick-prev:before,
+#videoSlider .slick-next:before {
   font-family: "Font Awesome 5 Free" !important;
   font-weight: 900 !important;
   color: black !important;
   text-align: center !important;
   font-size: 1.3rem !important;
 }
-.slick-next:before {
+#videoSlider .slick-next:before {
   content: "\f061" !important;
 }
-.slick-prev:before {
+#videoSlider .slick-prev:before {
   content: "\f060" !important;
 }
-.slick-prev {
+#videoSlider .slick-prev {
   left: -50px !important;
 }
-.slick-next {
+#videoSlider .slick-next {
   right: -50px !important;
 }
 .slick-track {
   width: max-content !important;
 }
-.slick-dots {
+#videoSlider .slick-dots {
   display: none !important;
 }
-.slick-slide > div {
+#videoSlider .slick-slide > div {
   margin: 0 10px;
 }
-.slick-list {
+#videoSlider .slick-list {
   margin: 0 -10px;
 }
-.slick-slide *:focus {
+#videoSlider .slick-slide *:focus {
   outline: none;
+}
+
+#courseSlider .slick-slide {
+  width: 220px !important;
+  margin-right: 30px;
+}
+#courseSlider .slick-track {
+  top: 20px !important;
+}
+#courseSlider .slick-list {
+  height: 400px !important;
 }
