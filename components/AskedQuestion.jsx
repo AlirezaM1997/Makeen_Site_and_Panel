@@ -321,7 +321,7 @@ const AskedQuestion = () => {
             </ul>
           </div>
 
-          <h1 className="text-[#c1c4c5] hover:text-[#fdfdfd] cursor-pointer w-screen flex justify-center bottom-[100px] absolute font-iranYekan">
+          <h1 className="text-[#c1c4c5] hover:text-[#fdfdfd] cursor-pointer w-full flex justify-center bottom-[100px] absolute font-iranYekan">
             مشاهده ی سوالات بیشتر
           </h1>
         </div>

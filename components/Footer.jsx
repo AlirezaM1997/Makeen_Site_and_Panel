@@ -1,10 +1,7 @@
-import Link from "next/link";
 import { useState } from "react";
-import styles from "../styles/Footer.module.css";
+import Link from "next/link";
 import Image from "next/image";
 
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
 const Footer = () => {
   const [instagram, setInstagram] = useState(false);
   const [message, setMessage] = useState(false);
@@ -12,37 +9,11 @@ const Footer = () => {
   const [key, setKey] = useState(false);
   const [google, setGoogle] = useState(false);
 
-  const hoverInstagranShow = () => {
-    setInstagram(true);
-  };
-  const hoverInstagranLeave = () => {
+  const hoverLeave = () => {
     setInstagram(false);
-  };
-  const hoverMessageShow = () => {
-    setMessage(true);
-  };
-  const hoverMessageLeave = () => {
     setMessage(false);
-  };
-
-  const hoverPhoneShow = () => {
-    setPhone(true);
-  };
-  const hoverPhoneLeave = () => {
     setPhone(false);
-  };
-
-  const hoverKeyShow = () => {
-    setKey(true);
-  };
-  const hoverKeyLeave = () => {
     setKey(false);
-  };
-
-  const hoverGoogleShow = () => {
-    setGoogle(true);
-  };
-  const hoverGoogleLeave = () => {
     setGoogle(false);
   };
 
@@ -55,12 +26,13 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="w-full px-[30px] py-[40px] mt-[30px">
-        <div className="flex justify-center">
-          <div>
-            <img
+      <footer className="w-full px-[30px] py-[40px] mt-[30px]">
+        <div className="flex justify-center relative">
+          <div className="h-[489px]">
+            <Image
               src="/assets/images/backgroundFooter.png"
               alt="footer"
+              layout="fill"
             />
           </div>
           <div className=" h-fit w-full  absolute flex justify-center pt-[10px] cursor-pointer transition  delay-150  hover:-translate-y-1   ">
@@ -70,7 +42,7 @@ const Footer = () => {
               height={13}
               className=""
               src="/assets/images/Go Up.png"
-              alt="go up"
+              alt="go-up"
             />
           </div>
           <div className="flex justify-center w-full mt-[60px] absolute">
@@ -79,7 +51,7 @@ const Footer = () => {
               height={42}
               className=""
               src="/assets/images/makeenFooterLogo.png"
-              alt="makeen logo"
+              alt="makeen-logo"
             />
           </div>
           <p className="absolute opacity-70 leading-[35px] mt-[123px] text-[#ECF9FD] w-full flex justify-center h-fit px-[280px] text-[10px] lg:text-[14px] text-center font-iranYekan	">
@@ -93,14 +65,17 @@ const Footer = () => {
           <div className="absolute mt-[270px] flex justify-between px-[390px] w-full">
             <div className="relative">
               <div
-                onMouseEnter={() => hoverGoogleShow()}
-                onMouseLeave={() => hoverGoogleLeave()}
+                onMouseEnter={() => setGoogle(true)}
+                onMouseLeave={() => hoverLeave()}
                 className="w-[35px] h-[35px] hover:shadow-[0_3px_9px_0px] hover:shadow-[#fff] flex justify-items-center justify-center rounded-[50%] bg-gradient-[129deg] from-[#FFEEBB]  to-[#fac4bf]  bg-origin-padding bg-no-repeat cursor-pointer"
               >
-                <img
-                  className="self-center shadow-white"
+                <Image
                   src="/assets/images/google-maps-logo.png"
-                  alt="google map pic"
+                  height={16}
+                  width={16}
+                  objectFit={"contain"}
+                  alt="google-map"
+                  className="self-center shadow-white"
                 />
               </div>
               {google ? (
@@ -111,14 +86,17 @@ const Footer = () => {
             </div>
             <div className="relative">
               <div
-                onMouseEnter={() => hoverKeyShow()}
-                onMouseLeave={() => hoverKeyLeave()}
+                onMouseEnter={() => setKey(true)}
+                onMouseLeave={() => hoverLeave()}
                 className="w-[35px] h-[35px]  hover:shadow-[0px_3px_9px_px] hover:shadow-[#fff] flex justify-items-center justify-center  rounded-[50%] bg-[#ebecec] cursor-pointer"
               >
-                <img
-                  className="self-center"
+                <Image
                   src="/assets/images/key.png"
-                  alt="key pic"
+                  height={16}
+                  width={16}
+                  objectFit={"contain"}
+                  className="self-center"
+                  alt="key"
                 />
                 {key ? (
                   <p className="-red-500 text-[#ECF9FD] w-[250px] absolute top-[50px] text-center font-[14px] -[-40px] font-iranYekan">
@@ -129,14 +107,17 @@ const Footer = () => {
             </div>
             <div className="relative">
               <div
-                onMouseEnter={() => hoverPhoneShow()}
-                onMouseLeave={() => hoverPhoneLeave()}
+                onMouseEnter={() => setPhone(true)}
+                onMouseLeave={() => hoverLeave()}
                 className="w-[35px] h-[35px] hover:shadow-[0px_3px_9px_px] hover:shadow-[#fff] flex justify-items-center justify-center  rounded-[50%] bg-gradient-[132deg] from-[#ecf9fd] to-[#DAF2FB] bg-origin-padding bg-no-repeat cursor-pointer"
               >
-                <img
-                  className={styles.mask}
+                <Image
                   src="/assets/images/phone.png"
-                  alt="phone pic"
+                  height={16}
+                  width={16}
+                  objectFit={"contain"}
+                  alt="phone"
+                  className="self-center"
                 />
               </div>
               {phone ? (
@@ -147,14 +128,17 @@ const Footer = () => {
             </div>
             <div className="--400 relative">
               <div
-                onMouseEnter={() => hoverMessageShow()}
-                onMouseLeave={() => hoverMessageLeave()}
+                onMouseEnter={() => setMessage(true)}
+                onMouseLeave={() => hoverLeave()}
                 className="w-[35px] h-[35px] hover:shadow-[0px_3px_9px_px] hover:shadow-[#fff] flex justify-items-center justify-center rounded-[50%] bg-gradient-[132deg] from-[#FFF2EA] to-[#f8e1d4] bg-origin-padding bg-no-repeat cursor-pointer"
               >
-                <img
-                  className="self-center"
+                <Image
                   src="/assets/images/message.png"
-                  alt="message pic"
+                  height={16}
+                  width={16}
+                  objectFit={"contain"}
+                  className="self-center"
+                  alt="message"
                 />
               </div>
               {message ? (
@@ -165,14 +149,17 @@ const Footer = () => {
             </div>
             <div className="--400 w-[100px] relative">
               <div
-                onMouseEnter={() => hoverInstagranShow()}
-                onMouseLeave={() => hoverInstagranLeave()}
-                className="w-[35px] h-[35px] hover:shadow-[0px_3px_9px_px] hover:shadow-[#fff] flex justify-items-center justify-center  rounded-[50%]  bg-gradient-[132deg] from-[#E6EAED] to-[#bcc2c7] bg-origin-padding bg-no-repeat cursor-pointer"
+                onMouseEnter={() => setInstagram(true)}
+                onMouseLeave={() => hoverLeave()}
+                className="w-[35px] h-[35px] relative hover:shadow-[0px_3px_9px_px] hover:shadow-[#fff] flex justify-items-center justify-center  rounded-[50%]  bg-gradient-[132deg] from-[#E6EAED] to-[#bcc2c7] bg-origin-padding bg-no-repeat cursor-pointer"
               >
-                <img
-                  className="self-center"
+                <Image
                   src="/assets/images/instagram.png"
-                  alt="instagram pic"
+                  height={16}
+                  width={16}
+                  objectFit={"contain"}
+                  className="self-center"
+                  alt="instagram"
                 />
               </div>
               {instagram ? (
@@ -184,7 +171,7 @@ const Footer = () => {
           </div>
 
           <ul className=" font-iranYekan mt-[340px] flex-row-reverse	px-[290px] pt-[60px] flex justify-evenly text-right w-full h-fit absolute text-[16px] ">
-            <hr className="absolute w-[60%] px-[120px] border-[#294359] "  />
+            <hr className="absolute w-[60%] px-[120px] border-[#294359] " />
             <Link href="/">
               <li className=" flex justify-center text-[#768b9b] hover:text-white hover:cursor-pointer  pb-[17px]  mt-[35px] transition font-semibold leading-[25px]  opacity-50 relative  hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100 ease-in-out before:duration-300">
                 دوره ها

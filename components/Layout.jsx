@@ -12,6 +12,7 @@ import Courses from "./Courses";
 import EstelamVaHamrahsho from "./EstelamVaHamrahSho";
 import AskedQuestion from './AskedQuestion'
 import MaghalatVaMataleb from './MaghalatVaMataleb'
+import Methdology from "./Methodology";
 
 const Layout = ({ children }) => {
   const router = useRouter();
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
         <Bootcamp />
         <Features />
         <Courses />
+        <Methdology />
         <AskedQuestion />
         <MaghalatVaMataleb />
         <EstelamVaHamrahsho />

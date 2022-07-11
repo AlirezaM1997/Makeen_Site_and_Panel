@@ -13,6 +13,7 @@ const Cooperation = () => {
             <Image
               src="/assets/images/cooperation-header-image.png"
               layout="fill"
+              alt="cooperation-header"
               className="bgHeader border-[0.5px] border-[#CACBCB] rounded-[20px]"
             />
             <span className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] text-[20px] text-[#ECF9FD] font-iranYekan leading-[3px] font-extrabold">

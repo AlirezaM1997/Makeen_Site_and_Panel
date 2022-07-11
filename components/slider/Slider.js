@@ -35,25 +35,23 @@ const Slider = () => {
 
   return (
     <>
-
-        <div className="w-full mt-[71px] pr-[30px] pl-[30px]">
-          <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
-          <Arrows
-            prevSlide={() =>
-              setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
-            }
-            nextSlide={() =>
-              setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
-            }
-          />
-          <Dots
-            timer={timer}
-            activeIndex={activeIndex}
-            sliderImage={sliderImage}
-            onclick={(activeIndex) => setActiveIndex(activeIndex)}
-          />
-        </div>
-
+      <div className="w-full mt-[71px] pr-[30px] pl-[30px]">
+        <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
+        <Arrows
+          prevSlide={() =>
+            setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+          }
+          nextSlide={() =>
+            setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
+          }
+        />
+        <Dots
+          timer={timer}
+          activeIndex={activeIndex}
+          sliderImage={sliderImage}
+          onclick={(activeIndex) => setActiveIndex(activeIndex)}
+        />
+      </div>
     </>
   );
 };

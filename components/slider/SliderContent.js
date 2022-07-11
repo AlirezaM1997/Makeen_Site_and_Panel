@@ -12,7 +12,6 @@ function SliderContent({ activeIndex, sliderImage }) {
               : "hidden"
           }
         >
-          {/* <img className="w-full h-full absolute object-cover rounded-[20px]" src={slide.urls} alt="" /> */}
           <Image
             src={slide.urls}
             alt="slide"

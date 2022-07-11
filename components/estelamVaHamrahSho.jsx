@@ -1,6 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
+
 import { useState } from "react";
-import styles from "../styles/estelamVaHamrahSho.module.css";
 import Image from "next/image";
 
 const EstelamVaHamrahsho = () => {
@@ -26,12 +25,13 @@ const EstelamVaHamrahsho = () => {
               height={91}
             />
           </div>
-
-          <img
-            className={styles.helaleImage}
+          <Image
+            className="helaleImage"
             src={"/assets/images/estelamVaHamrahsho.png"}
             alt="gerd"
+            layout="fill"
           />
+
           <h1 className="-red-500 w-fit font-iranYekan font-extrabold text-[24px] text-[#00213E] absolute top-[20px] right-[80px] "></h1>
           <h1 className="-red-500  w-fit font-iranYekan font-extrabold text-[24px] text-[#00213E] absolute top-[20px] right-[80px] ">
             استعلام دانشجویان مکین
@@ -79,8 +79,9 @@ const EstelamVaHamrahsho = () => {
               alt="moshak kochak"
             />
           </div>
-          <img
-            className={styles.helaleImage}
+          <Image
+            className="helaleImage"
+            layout="fill"
             src={"/assets/images/hamrahSho.png"}
             alt="gerd"
           />
@@ -106,6 +107,13 @@ const EstelamVaHamrahsho = () => {
           </div>
         </div>
       </section>
+      <style>
+        {`
+        .helaleImage {
+            filter: opacity(0.1) drop-shadow(0 0 0 #ceeffc); 
+          }
+          `}
+      </style>
     </>
   );
 };
