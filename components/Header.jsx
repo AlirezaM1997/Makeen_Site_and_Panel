@@ -30,11 +30,10 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="z-10">
+        <div className="z-10 w-[62px] h-[63px] relative">
           <Image
             src="/assets/images/logo.png"
-            width={62}
-            height={63}
+            layout="fill"
             className="z-10"
             alt="logo"
           ></Image>

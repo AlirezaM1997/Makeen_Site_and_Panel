@@ -36,23 +36,23 @@ const Footer = () => {
             />
           </div>
           <div className=" h-fit w-full  absolute flex justify-center pt-[10px] cursor-pointer transition  delay-150  hover:-translate-y-1   ">
-            <Image
-              onClick={() => scrollClick()}
-              width={10}
-              height={13}
-              className=""
-              src="/assets/images/Go Up.png"
-              alt="go-up"
-            />
+            <div className="w-[10px] h-[13px] relative">
+              <Image
+                onClick={() => scrollClick()}
+                layout="fill"
+                src="/assets/images/goUp.png"
+                alt="go-up"
+              />
+            </div>
           </div>
           <div className="flex justify-center w-full mt-[60px] absolute">
-            <Image
-              width={118}
-              height={42}
-              className=""
-              src="/assets/images/makeenFooterLogo.png"
-              alt="makeen-logo"
-            />
+            <div className="w-[118px] h-[42px] relative">
+              <Image
+                layout="fill"
+                src="/assets/images/makeenFooterLogo.png"
+                alt="makeen-logo"
+              />
+            </div>
           </div>
           <p className="absolute opacity-70 leading-[35px] mt-[123px] text-[#ECF9FD] w-full flex justify-center h-fit px-[280px] text-[10px] lg:text-[14px] text-center font-iranYekan	">
             آکادمی مکین ، یه محیط صمیمی و تخصصیه که تمام تلاشش ایجاد فرصت های
@@ -69,14 +69,15 @@ const Footer = () => {
                 onMouseLeave={() => hoverLeave()}
                 className="w-[35px] h-[35px] hover:shadow-[0_3px_9px_0px] hover:shadow-[#fff] flex justify-items-center justify-center rounded-[50%] bg-gradient-[129deg] from-[#FFEEBB]  to-[#fac4bf]  bg-origin-padding bg-no-repeat cursor-pointer"
               >
-                <Image
-                  src="/assets/images/google-maps-logo.png"
-                  height={16}
-                  width={16}
-                  objectFit={"contain"}
-                  alt="google-map"
-                  className="self-center shadow-white"
-                />
+                <div className="w-[16px] h-[16px] self-center shadow-white relative">
+                  <Image
+                    src="/assets/images/google-maps-logo.png"
+                    layout="fill"
+                    objectFit={"contain"}
+                    alt="google-map"
+                    className="self-center shadow-white"
+                  />
+                </div>
               </div>
               {google ? (
                 <p className="bg--500 text-[#ECF9FD] w-max absolute top-[50px] right-[-50px] font-iranYekan	 		">
@@ -90,14 +91,14 @@ const Footer = () => {
                 onMouseLeave={() => hoverLeave()}
                 className="w-[35px] h-[35px]  hover:shadow-[0px_3px_9px_px] hover:shadow-[#fff] flex justify-items-center justify-center  rounded-[50%] bg-[#ebecec] cursor-pointer"
               >
-                <Image
-                  src="/assets/images/key.png"
-                  height={16}
-                  width={16}
-                  objectFit={"contain"}
-                  className="self-center"
-                  alt="key"
-                />
+                <div className="w-[16px] h-[16px] self-center relative">
+                  <Image
+                    src="/assets/images/key.png"
+                    layout="fill"
+                    objectFit={"contain"}
+                    alt="key"
+                  />
+                </div>
                 {key ? (
                   <p className="-red-500 text-[#ECF9FD] w-[250px] absolute top-[50px] text-center font-[14px] -[-40px] font-iranYekan">
                     تهران، مترو علم و صنعت، خيابان فرجام، پلاک 495، طبقه پنجم
@@ -111,14 +112,14 @@ const Footer = () => {
                 onMouseLeave={() => hoverLeave()}
                 className="w-[35px] h-[35px] hover:shadow-[0px_3px_9px_px] hover:shadow-[#fff] flex justify-items-center justify-center  rounded-[50%] bg-gradient-[132deg] from-[#ecf9fd] to-[#DAF2FB] bg-origin-padding bg-no-repeat cursor-pointer"
               >
-                <Image
-                  src="/assets/images/phone.png"
-                  height={16}
-                  width={16}
-                  objectFit={"contain"}
-                  alt="phone"
-                  className="self-center"
-                />
+                <div className="w-[16px] h-[16px] self-center relative">
+                  <Image
+                    src="/assets/images/phone.png"
+                    layout="fill"
+                    objectFit={"contain"}
+                    alt="phone"
+                  />
+                </div>
               </div>
               {phone ? (
                 <p className="bg--500 text-[#ECF9FD] w-max absolute top-[50px] right-[-40px] font-iranYekan">
@@ -132,14 +133,14 @@ const Footer = () => {
                 onMouseLeave={() => hoverLeave()}
                 className="w-[35px] h-[35px] hover:shadow-[0px_3px_9px_px] hover:shadow-[#fff] flex justify-items-center justify-center rounded-[50%] bg-gradient-[132deg] from-[#FFF2EA] to-[#f8e1d4] bg-origin-padding bg-no-repeat cursor-pointer"
               >
-                <Image
-                  src="/assets/images/message.png"
-                  height={16}
-                  width={16}
-                  objectFit={"contain"}
-                  className="self-center"
-                  alt="message"
-                />
+                <div className="w-[16px] h-[16px] self-center relative">
+                  <Image
+                    src="/assets/images/message.png"
+                    layout="fill"
+                    objectFit={"contain"}
+                    alt="message"
+                  />
+                </div>
               </div>
               {message ? (
                 <p className="bg--500 text-[#ECF9FD] w-fit absolute top-[50px] right-[-40px] font-iranYekan">
@@ -153,14 +154,14 @@ const Footer = () => {
                 onMouseLeave={() => hoverLeave()}
                 className="w-[35px] h-[35px] relative hover:shadow-[0px_3px_9px_px] hover:shadow-[#fff] flex justify-items-center justify-center  rounded-[50%]  bg-gradient-[132deg] from-[#E6EAED] to-[#bcc2c7] bg-origin-padding bg-no-repeat cursor-pointer"
               >
-                <Image
-                  src="/assets/images/instagram.png"
-                  height={16}
-                  width={16}
-                  objectFit={"contain"}
-                  className="self-center"
-                  alt="instagram"
-                />
+                <div className="w-[16px] h-[16px] self-center relative">
+                  <Image
+                    src="/assets/images/instagram.png"
+                    layout="fill"
+                    objectFit={"contain"}
+                    alt="instagram"
+                  />
+                </div>
               </div>
               {instagram ? (
                 <p className="bg--500 text-[#ECF9FD] w-fit absolute right-[10px] top-[50px] font-iranYekan ">

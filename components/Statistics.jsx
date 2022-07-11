@@ -17,7 +17,13 @@ const Statistics = () => {
             </div>
             <div className="bg-gradient-[134deg] from-[#E6EAED] to-[#8094A6] relative rounded-[10px] bg-origin-padding bg-no-repeat flex justify-center items-center w-[60px] h-[60px]">
               <div className="bg-[#CCD4DB] absolute w-[44px] h-[44px] blur-[10px] bottom-0"></div>
-              <Image src="/assets/images/student.png" width={31} height={28} alt='student'/>
+              <div className="w-[31px] h-[28px] relative">
+                <Image
+                  src="/assets/images/student.png"
+                  layout="fill"
+                  alt="student"
+                />
+              </div>
             </div>
           </div>
           <div className="flex items-center">
@@ -29,8 +35,13 @@ const Statistics = () => {
             </div>
             <div className="bg-gradient-[132deg] from-[#FFF2EA] to-[#FFD7C0] relative rounded-[10px] bg-origin-padding bg-no-repeat flex justify-center items-center w-[60px] h-[60px]">
               <div className="bg-[#FFE4D5] absolute w-[44px] h-[44px] blur-[10px] bottom-0"></div>
-
-              <Image src="/assets/images/clock.png" width={30} height={30} alt='clock'/>
+              <div className="w-[30px] h-[30px] relative">
+                <Image
+                  src="/assets/images/clock.png"
+                  layout="fill"
+                  alt="clock"
+                />
+              </div>
             </div>
           </div>
           <div className="flex items-center">
@@ -42,8 +53,13 @@ const Statistics = () => {
             </div>
             <div className="bg-gradient-[132deg] from-[#ECF9FD] to-[#DAF2FB] relative rounded-[10px] bg-origin-padding bg-no-repeat flex justify-center items-center w-[60px] h-[60px]">
               <div className="bg-[#DAF2FB] absolute w-[36px] h-[36px] blur-[10px] bottom-0"></div>
-
-              <Image src="/assets/images/teacher.png" width={30} height={33} alt='teacher'/>
+              <div className="w-[30px] h-[33px] relative">
+                <Image
+                  src="/assets/images/teacher.png"
+                  layout="fill"
+                  alt="teacher"
+                />
+              </div>
             </div>
           </div>
           <div className="flex items-center">
@@ -55,8 +71,13 @@ const Statistics = () => {
             </div>
             <div className="bg-gradient-[129deg] from-[#EDEEEE] to-[#CACBCB] relative rounded-[10px] bg-origin-padding bg-no-repeat flex justify-center items-center w-[60px] h-[60px]">
               <div className="bg-[#DBDCDC] absolute w-[36px] h-[36px] blur-[10px] bottom-0"></div>
-
-              <Image src="/assets/images/course.png" width={30} height={28} alt='course'/>
+              <div className="w-[30px] h-[28px] relative">
+                <Image
+                  src="/assets/images/course.png"
+                  layout="fill"
+                  alt="course"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Image from "next/image";
 
@@ -18,12 +17,9 @@ const EstelamVaHamrahsho = () => {
       <section className="flex flex-row-reverse justify-evenly">
         <div className="bg-[#def4fc] w-[645px] relative rounded-[20px] h-[250px]">
           <div className="absolute right-[5px] top-[-30px] ">
-            <Image
-              src={"/assets/images/cap.png"}
-              alt="cap"
-              width={91}
-              height={91}
-            />
+            <div className="w-[91px] h-[91px] relative">
+              <Image src={"/assets/images/cap.png"} alt="cap" layout="fill" />
+            </div>
           </div>
           <Image
             className="helaleImage"
@@ -64,20 +60,22 @@ const EstelamVaHamrahsho = () => {
 
         <div className="bg-[#e6eaed] w-[645px] relative rounded-[20px] h-[250px] ">
           <div className=" absolute right-[5px] top-[-20px] ">
-            <Image
-              width={96}
-              height={73}
-              src="/assets/images/moshakBozorg.png"
-              alt="moshak"
-            />
+            <div className="w-[96px] h-[73px] relative">
+              <Image
+                layout="fill"
+                src="/assets/images/moshakBozorg.png"
+                alt="moshak"
+              />
+            </div>
           </div>
           <div className=" absolute top-[30px] left-[30px] ">
-            <Image
-              width={54}
-              height={41}
-              src="/assets/images/moshakeKochak.png"
-              alt="moshak kochak"
-            />
+            <div className="w-[54px] h-[41px] relative">
+              <Image
+                layout="fill"
+                src="/assets/images/moshakeKochak.png"
+                alt="moshak kochak"
+              />
+            </div>
           </div>
           <Image
             className="helaleImage"

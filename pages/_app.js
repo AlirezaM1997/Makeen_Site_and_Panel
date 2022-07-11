@@ -14,10 +14,7 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <link
-          href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-          rel="stylesheet"
-        />
+       
         <link
           rel="stylesheet"
           type="text/css"

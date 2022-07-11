@@ -26,6 +26,7 @@ module.exports = {
       },
       fontFamily: {
         iranYekan: ["IRANYEKAN"],
+        fa: ["fa"],
       },
       transitionProperty: {
         menu_item_transition: "background-size 0.5s, color 0.5s",
