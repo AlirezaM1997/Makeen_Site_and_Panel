@@ -65,11 +65,21 @@ const Features = () => {
     <>
       <div className="mt-[170px] px-[50px] pt-[26px] relative">
         <div className="absolute right-0 top-0">
-          <Image src="/assets/images/feature-r.png" height={85} width={80} />
+          <Image
+            src="/assets/images/feature-r.png"
+            height={85}
+            width={80}
+            alt="feature-design"
+          />
         </div>
         <div className="absolute right-0 w-[375px] h-[475px] bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-20 blur-[50px] -z-[1] "></div>
         <div className="absolute -left-[115px] top-0 ">
-          <Image src="/assets/images/feature-l.png" height={256} width={256} />
+          <Image
+            src="/assets/images/feature-l.png"
+            height={256}
+            width={256}
+            alt="feature-design"
+          />
         </div>
         <div className="absolute left-0 w-[339px] h-[339px] bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] -z-[1] "></div>
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[339px] h-[339px] bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] -z-[1] "></div>
@@ -96,6 +106,7 @@ const Features = () => {
                 className=""
                 height={31}
                 width={28}
+                alt="card1"
               />
             </div>
             <div className="mt-[25px] mb-[15px] z-[1]">
@@ -132,6 +143,7 @@ const Features = () => {
                 className=""
                 height={31}
                 width={28}
+                alt="card2"
               />
             </div>
             <div className="mt-[25px] mb-[15px] z-[1]">
@@ -168,6 +180,7 @@ const Features = () => {
                 className=""
                 height={31}
                 width={28}
+                alt="card3"
               />
             </div>
             <div className="mt-[25px] mb-[15px] z-[1]">
@@ -203,6 +216,7 @@ const Features = () => {
                 className=""
                 height={31}
                 width={28}
+                alt="card4"
               />
             </div>
             <div className="mt-[25px] mb-[15px] z-[1]">
@@ -238,6 +252,7 @@ const Features = () => {
                 className=""
                 height={31}
                 width={28}
+                alt="card5"
               />
             </div>
             <div className="mt-[25px] mb-[15px] z-[1]">
@@ -273,6 +288,7 @@ const Features = () => {
                 className=""
                 height={31}
                 width={28}
+                alt="card6"
               />
             </div>
             <div className="mt-[25px] mb-[15px] z-[1]">
