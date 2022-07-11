@@ -7,7 +7,7 @@ import Cooperation from "./Cooperation";
 import Slider from "./slider/Slider";
 import Statistics from "./Statistics";
 import Bootcamp from "./Bootcamp";
-// import Features from "./Features";
+import Features from "./Features";
 import Courses from "./Courses";
 import EstelamVaHamrahsho from "./EstelamVaHamrahSho";
 import AskedQuestion from './AskedQuestion'
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
         <Slider />
         <Statistics />
         <Bootcamp />
-        {/* <Features /> */}
+        <Features />
         <Courses />
         <AskedQuestion />
         <MaghalatVaMataleb />
