@@ -63,7 +63,7 @@ const Footer = () => {
               alt="footer"
             />
           </div>
-          <div className=" h-fit w-screen  absolute flex justify-center pt-[10px] cursor-pointer transition  delay-150  hover:-translate-y-1   ">
+          <div className=" h-fit w-full  absolute flex justify-center pt-[10px] cursor-pointer transition  delay-150  hover:-translate-y-1   ">
             <Image
               onClick={() => scrollClick()}
               width={10}
@@ -73,7 +73,7 @@ const Footer = () => {
               alt="go up"
             />
           </div>
-          <div className="flex justify-center w-screen mt-[60px] absolute">
+          <div className="flex justify-center w-full mt-[60px] absolute">
             <Image
               width={118}
               height={42}
@@ -82,7 +82,7 @@ const Footer = () => {
               alt="makeen logo"
             />
           </div>
-          <p className="absolute opacity-70 leading-[35px] mt-[123px] text-[#ECF9FD] w-screen flex justify-center h-fit px-[280px] text-[10px] lg:text-[14px] text-center font-iranYekan	">
+          <p className="absolute opacity-70 leading-[35px] mt-[123px] text-[#ECF9FD] w-full flex justify-center h-fit px-[280px] text-[10px] lg:text-[14px] text-center font-iranYekan	">
             آکادمی مکین ، یه محیط صمیمی و تخصصیه که تمام تلاشش ایجاد فرصت های
             شغلی برای جوانان این سرزمینه. ما توی آکادمی مکین با استفاده از
             متدولوژی آموزشی منحصر به فرد ، کمک میکنیم تا آدم های با انگیزه بتونن
@@ -90,7 +90,7 @@ const Footer = () => {
             .بهشون آینده میدیم
           </p>
 
-          <div className="absolute mt-[270px] flex justify-between px-[390px] w-screen">
+          <div className="absolute mt-[270px] flex justify-between px-[390px] w-full">
             <div className="relative">
               <div
                 onMouseEnter={() => hoverGoogleShow()}
@@ -183,7 +183,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <ul className=" font-iranYekan mt-[340px] flex-row-reverse	px-[290px] pt-[60px] flex justify-evenly text-right w-screen h-fit absolute text-[16px] ">
+          <ul className=" font-iranYekan mt-[340px] flex-row-reverse	px-[290px] pt-[60px] flex justify-evenly text-right w-full h-fit absolute text-[16px] ">
             <hr className="absolute w-[60%] px-[120px] border-[#294359] "  />
             <Link href="/">
               <li className=" flex justify-center text-[#768b9b] hover:text-white hover:cursor-pointer  pb-[17px]  mt-[35px] transition font-semibold leading-[25px]  opacity-50 relative  hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100 ease-in-out before:duration-300">

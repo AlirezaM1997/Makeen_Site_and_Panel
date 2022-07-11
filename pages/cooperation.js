@@ -4,7 +4,6 @@ import Header from "../components/Header";
 const cooperationPage = () => {
   return (
     <>
-      <Header />
       <Cooperation />
     </>
   );
