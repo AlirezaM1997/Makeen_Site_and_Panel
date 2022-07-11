@@ -52,7 +52,7 @@ const VideoSlider = () => {
                 width={494}
                 height={343}
               ></video> */}
-              <div class="relative">
+              <div className="relative">
                 <span className="block pt-[57%]"></span>
                 <iframe
                   src="https://www.aparat.com/video/video/embed/videohash/49kDR/vt/frame?recom=none"
