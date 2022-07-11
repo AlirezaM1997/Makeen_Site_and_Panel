@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
         <Bootcamp />
         <Features />
         <Courses />
-        {/* <AskedQuestion /> */}
+        <AskedQuestion />
         <MaghalatVaMataleb />
         <EstelamVaHamrahsho />
       </>
