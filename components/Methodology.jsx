@@ -27,7 +27,7 @@ const Methdology = () => {
             </p>
           </div>
 
-          <div className="relative w-[50%] ">
+          <div className="relative w-[50%]">
             <div
               style={{ zIndex: 999 }}
               className="absolute right-[380px] top-[160px] "
@@ -40,8 +40,9 @@ const Methdology = () => {
               />
             </div>
             <div
-            style={{ zIndex: 888 }}
-             className="absolute right-[180px] top-[30px] ">
+              style={{ zIndex: 888 }}
+              className="absolute right-[180px] top-[30px] "
+            >
               <Image
                 src={"/assets/images/methImage2.png"}
                 alt="Image 2"
@@ -49,7 +50,17 @@ const Methdology = () => {
                 height={331}
               />
             </div>
-            <div className="absolute top-[140px] left-[210px] ">
+            <div className="h-[40%] w-[15%] top-[80px] left-[150px] absolute bg-[#37BBEC] bg-gradient-[90deg] bg-origin-padding blur-[50px] bg-no-repeat opacity-20"></div>
+            <div className="absolute top-[60px] left-[160px]  ">
+              <Image
+                width={248}
+                height={248}
+                src={"/assets/images/methFeature2@2x.png"}
+                alt="feature"
+              />
+            </div>
+            <div className="h-[40%] w-[15%] bottom-[0px] left-[260px] absolute bg-[#FF792C] bg-gradient-[90deg] bg-origin-padding blur-[50px] bg-no-repeat opacity-20"></div>
+            <div className="absolute rotate-[220deg]  bottom-[60px] left-[260px] ">
               <Image
                 width={69}
                 height={69}
@@ -57,6 +68,8 @@ const Methdology = () => {
                 alt="feature"
               />
             </div>
+
+
           </div>
         </div>
       </div>
