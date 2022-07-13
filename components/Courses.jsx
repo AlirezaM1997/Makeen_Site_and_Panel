@@ -58,8 +58,9 @@ const Courses = () => {
             {slidesData.map((slide, index) => (
               <div
                 key={index}
-                className="group rounded-[10px] p-[20px] pt-[7px] w-[200px] relative shadow-[0px_0px_10px_#00000014] bg-[#FFFFFF] transition-all border-[0.5px] border-[#CACBCB] duration-300 font-iranYekan cursor-grab"
+                className="group rounded-b-[10px] p-[20px] pt-[7px] w-[200px] relative shadow-[0px_0px_10px_#00000014] bg-[#FFFFFF] transition-all border-[0.5px] border-[#CACBCB] duration-300 font-iranYekan cursor-grab"
               >
+                <div className="h-1 rounded-t-[10px] absolute bottom-full left-0 group-hover:h-3 w-full transition-height duration-300 ease-out bg-[#FFFFFF]"></div>
                 <div className="flex flex-col justify-center items-center ">
                   <div className="relative w-[100px] h-[115px] top-0 group-hover:-top-[20px] transition-top duration-300 ease-out">
                     <Image

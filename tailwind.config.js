@@ -13,13 +13,18 @@ module.exports = {
     },
     extend: {
       keyframes: {
-        changeScale: {
+        growScale: {
           "0%" : { transform: "scale(0) translate(50%,50%)" },
           "100%": { transform: "scale(1) translate(0%,0%)"},
         },
+        shrinkScale: {
+          "0%" : { transform: "scale(1) translate(0%,0%)" },
+          "100%": { transform: "scale(0) translate(50%,50%)"},
+        },
       },
       animation: {
-        hoverPaint: 'changeScale 0.3s ease-out',
+        mouseInPaint: 'growScale 0.3s ease-out',
+        mouseOutPaint: 'shrinkScale 0.3s ease-out',
       },
       backgroundImage: {
         menu_item: "linear-gradient(#37BBEC, #37BBEC)",

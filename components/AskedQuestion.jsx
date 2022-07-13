@@ -41,7 +41,7 @@ const AskedQuestion = () => {
           {/* <div className="absolute bg-red-500">
             <Image width={100} height={100} src={'/assets/images/orangeCircle.png'} alt="Orange Cirle" />
           </div> */}
-          <h1 className="text-[#ECF9FD] w-screen flex justify-center mt-[60px] text-[20px] font-extrabold font-iranYekan absolute ">
+          <h1 className="text-[#ECF9FD] w-full flex justify-center mt-[60px] text-[20px] font-extrabold font-iranYekan absolute ">
             سوالات متداول شما
           </h1>
 

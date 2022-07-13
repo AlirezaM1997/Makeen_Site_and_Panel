@@ -99,7 +99,7 @@ const EstelamVaHamrahsho = () => {
             </button>
             <input
               type="email"
-              placeholder="کد گواهی دوره"
+              placeholder="ایمیل"
               className="rounded-[10px] text-right focus:w-[330px] focus:placeholder:text-transparent duration-300 w-[380px] outline-black  pr-[15px]	"
             />
           </div>
