@@ -14,7 +14,6 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-       
         <link
           rel="stylesheet"
           type="text/css"

@@ -1588,7 +1588,7 @@
   dependencies:
     "postcss-selector-parser" "^6.0.6"
 
-"postcss-selector-parser@^6.0.10", "postcss-selector-parser@^6.0.6":
+"postcss-selector-parser@^6.0.10", "postcss-selector-parser@^6.0.4", "postcss-selector-parser@^6.0.6":
   "integrity" "sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w=="
   "resolved" "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.0.10.tgz"
   "version" "6.0.10"
@@ -1890,7 +1890,19 @@
   "resolved" "https://registry.npmjs.org/tailwindcss-gradient/-/tailwindcss-gradient-1.0.1.tgz"
   "version" "1.0.1"
 
-"tailwindcss@^3.1.4", "tailwindcss@3.x":
+"tailwindcss-nested-groups@^1.2.4":
+  "integrity" "sha512-SrW9VTgH5/PmW/E0q1+TC7TckhVfonDpiYiLKsRYX57FEcM3LemiH7JYcsTlubM+eAVkd9Jjj03pTiyfnDBibQ=="
+  "resolved" "https://registry.npmjs.org/tailwindcss-nested-groups/-/tailwindcss-nested-groups-1.2.4.tgz"
+  "version" "1.2.4"
+  dependencies:
+    "postcss-selector-parser" "^6.0.4"
+
+"tailwindcss-scoped-groups@^2.0.0":
+  "integrity" "sha512-uE9PJzfjqzsKlZ0dUjG5yPwBmkEZ/qmrXMLjykRs0otolUHAIclbtV49JQGyeYLo8YA7WPMgzKOg2e4snVyHqw=="
+  "resolved" "https://registry.npmjs.org/tailwindcss-scoped-groups/-/tailwindcss-scoped-groups-2.0.0.tgz"
+  "version" "2.0.0"
+
+"tailwindcss@^3.1.4", "tailwindcss@>=1 <=2", "tailwindcss@>=3", "tailwindcss@3.x":
   "integrity" "sha512-NrxbFV4tYsga/hpWbRyUfIaBrNMXDxx5BsHgBS4v5tlyjf+sDsgBg5m9OxjrXIqAS/uR9kicxLKP+bEHI7BSeQ=="
   "resolved" "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.1.4.tgz"
   "version" "3.1.4"

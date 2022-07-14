@@ -3,6 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+//next
+import Image from "next/image";
+
 const VideoSlider = () => {
   const settingsThumbs = {
     dots: true,
@@ -14,23 +17,24 @@ const VideoSlider = () => {
 
   const slidesData = [
     {
-      id: "https://www.aparat.com/video/video/embed/videohash/49kDR/vt/frame?recom=none",
+      id: "/assets/images/videoSlide1.png",
     },
     {
-      id: "https://www.aparat.com/video/video/embed/videohash/SqtYO/vt/frame?recom=none",
+      id: "/assets/images/videoSlide2.png",
     },
     {
-      id: "https://www.aparat.com/video/video/embed/videohash/49kDR/vt/frame?recom=none",
+      id: "/assets/images/videoSlide3.png",
     },
     {
-      id: "https://www.aparat.com/video/video/embed/videohash/SqtYO/vt/frame?recom=none",
+      id: "/assets/images/videoSlide1.png",
     },
     {
-      id: "https://www.aparat.com/video/video/embed/videohash/49kDR/vt/frame?recom=none",
+      id: "/assets/images/videoSlide2.png",
     },
     {
-      id: "https://www.aparat.com/video/video/embed/videohash/SqtYO/vt/frame?recom=none",
+      id: "/assets/images/videoSlide3.png",
     },
+
   ];
 
   function videoslider(links) {
@@ -55,7 +59,7 @@ const VideoSlider = () => {
               <div className="relative">
                 <span className="block pt-[57%]"></span>
                 <iframe
-                  src="https://www.aparat.com/video/video/embed/videohash/49kDR/vt/frame?recom=none"
+                  src="https://www.aparat.com/video/video/embed/videohash/49kDR/vt/frame"
                   allowFullScreen="true"
                   webkitallowfullscreen="true"
                   mozallowfullscreen="true"
@@ -69,23 +73,12 @@ const VideoSlider = () => {
               {slidesData.map((slide, index) => (
                 <div
                   key={index}
-                  className="rounded-[4px] overflow-hidden transition-all duration-300"
+                  className="rounded-[4px] w-10 h-[100px] overflow-hidden transition-all duration-300"
                 >
-                  <iframe
-                    src={slide.id}
-                    allowFullScreen="true"
-                    webkitallowfullscreen="true"
-                    mozallowfullscreen="true"
-                    onClick={() => videoslider(slide.id)}
-                    className="w-full h-[100px]"
-                  ></iframe>
-                  {/* <video
-                    className="w-full h-[100px] object-cover"
-                    preload="metadata"
-                    onClick={() => videoslider(slide.id)}
-                  >
-                    <source src={slide.id} type="video/mp4"></source>
-                  </video> */}
+                 <div className="w-[150px] h-[100px] relative">
+
+                  <Image src={slide.id} layout='fill' height={100} width={120} />
+                 </div>
                 </div>
               ))}
             </Slider>
@@ -97,3 +90,19 @@ const VideoSlider = () => {
 };
 
 export default VideoSlider;
+
+{/* <iframe
+src={slide.id}
+allowFullScreen="true"
+webkitallowfullscreen="true"
+mozallowfullscreen="true"
+onClick={() => videoslider(slide.id)}
+className="w-full h-[100px]"
+></iframe>
+<video
+className="w-full h-[100px] object-cover"
+preload="metadata"
+onClick={() => videoslider(slide.id)}
+>
+<source src={slide.id} type="video/mp4"></source>
+</video> */}
