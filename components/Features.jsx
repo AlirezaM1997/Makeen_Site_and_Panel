@@ -60,7 +60,7 @@ const Features = () => {
               برسونن
             </div>
             <div
-              className={`hidden absolute group-hover:block group-hover:animate-mouseInPaint top-0 left-0 bg-[#45C0ED] rounded-[20px] w-full h-full z-[0]`}
+              className={`absolute scale-0 transition duration-300 group-hover:scale-100 group-hover:animate-mouseInPaint top-0 left-0 bg-[#45C0ED] rounded-[20px] w-full h-full z-[0]`}
             ></div>
           </div>
 
@@ -93,7 +93,7 @@ const Features = () => {
               مستعده، بتونه بهره ببره
             </div>
             <div
-              className={`hidden absolute group-hover:block group-hover:animate-mouseInPaint top-0 left-0 bg-[#FF792C] rounded-[20px] w-full h-full z-[0]`}
+              className={`absolute scale-0 transition duration-300 group-hover:scale-100 group-hover:animate-mouseInPaint top-0 left-0 bg-[#FF792C] rounded-[20px] w-full h-full z-[0]`}
             ></div>
           </div>
 
@@ -124,7 +124,7 @@ const Features = () => {
               جونیور بدونی
             </div>
             <div
-              className={`hidden group-hover:block group-hover:animate-mouseInPaint absolute top-0 left-0 bg-[#00294D] rounded-[20px] w-full h-full z-[0]`}
+              className={`scale-0 transition duration-300 group-hover:scale-100 group-hover:animate-mouseInPaint absolute top-0 left-0 bg-[#00294D] rounded-[20px] w-full h-full z-[0]`}
             ></div>
           </div>
           <div className="group relative bg-[#FFFFFF] border-[0.5px] border-[#CACBCB] rounded-[20px] shadow-[10px_10px_20px_#00000014] flex flex-col items-center py-[30px] px-[22px]">
@@ -154,7 +154,7 @@ const Features = () => {
               تجربه، که از شما یه حرفه ای میسازه
             </div>
             <div
-              className={`hidden group-hover:block group-hover:animate-mouseInPaint absolute top-0 left-0 bg-[#00294D] rounded-[20px] w-full h-full z-[0]`}
+              className={`scale-0 transition duration-300 group-hover:scale-100 group-hover:animate-mouseInPaint absolute top-0 left-0 bg-[#00294D] rounded-[20px] w-full h-full z-[0]`}
             ></div>
           </div>
           <div className="group relative bg-[#FFFFFF] border-[0.5px] border-[#CACBCB] rounded-[20px] shadow-[10px_10px_20px_#00000014] flex flex-col items-center py-[30px] px-[22px]">
@@ -184,7 +184,7 @@ const Features = () => {
               روش ما جواب میده
             </div>
             <div
-              className={`hidden group-hover:block group-hover:animate-mouseInPaint absolute top-0 left-0 bg-[#45C0ED] rounded-[20px] w-full h-full z-[0]`}
+              className={`scale-0 transition duration-300 group-hover:scale-100 group-hover:animate-mouseInPaint absolute top-0 left-0 bg-[#45C0ED] rounded-[20px] w-full h-full z-[0]`}
             ></div>
           </div>
           <div className="group relative bg-[#FFFFFF] border-[0.5px] border-[#CACBCB] rounded-[20px] shadow-[10px_10px_20px_#00000014] flex flex-col items-center py-[30px] px-[22px]">
@@ -214,7 +214,7 @@ const Features = () => {
               داری
             </div>
             <div
-              className={`hidden group-hover:block group-hover:animate-mouseInPaint absolute top-0 left-0 bg-[#FF792C] rounded-[20px] w-full h-full z-[0]`}
+              className={`scale-0 transition duration-300 group-hover:scale-100 group-hover:animate-mouseInPaint absolute top-0 left-0 bg-[#FF792C] rounded-[20px] w-full h-full z-[0]`}
             ></div>
           </div>
         </section>
