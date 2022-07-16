@@ -117,7 +117,7 @@ const Cooperation = () => {
                 شماره تماس
               </label>
               <input
-                type="text"
+                type="number"
                 className="border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none"
                 placeholder="شماره تماس خود را وارد کنید"
               />
@@ -151,7 +151,7 @@ const Cooperation = () => {
                 تعداد پرسنل
               </label>
               <input
-                type="text"
+                type="number"
                 className="border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none"
                 placeholder="تعداد پرسنل شرکت خود را وارد کنید"
               />
