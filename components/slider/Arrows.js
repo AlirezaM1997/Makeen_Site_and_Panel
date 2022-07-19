@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 function Arrows({ prevSlide, nextSlide }) {
@@ -28,9 +27,9 @@ function Arrows({ prevSlide, nextSlide }) {
                 transform="translate(0 -6.837)"
                 fill="none"
                 stroke="#00294d"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
               />
               <path
                 id="Path_14"
@@ -39,9 +38,9 @@ function Arrows({ prevSlide, nextSlide }) {
                 transform="translate(0)"
                 fill="none"
                 stroke="#00294d"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
               />
             </g>
           </svg>
@@ -72,9 +71,9 @@ function Arrows({ prevSlide, nextSlide }) {
                 transform="translate(0 -6.837)"
                 fill="none"
                 stroke="#00294d"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
               />
               <path
                 id="Path_14"
@@ -83,9 +82,9 @@ function Arrows({ prevSlide, nextSlide }) {
                 transform="translate(0)"
                 fill="none"
                 stroke="#00294d"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
               />
             </g>
           </svg>

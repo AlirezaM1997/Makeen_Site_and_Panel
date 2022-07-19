@@ -11,22 +11,6 @@ const Header = () => {
           className="absolute h-[100px] w-full text-white"
           alt="header"
         />
-        {/* <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1366"
-          height="100"
-          viewBox="0 0 1366 100"
-          className="absolute h-[100px] w-full text-white"
-
-        >
-          <path
-            id="Path_12"
-            data-name="Path 12"
-            d="M101.785-200.411v70.755H710v.078a116.574,116.574,0,0,1,21.792,1.6,38.489,38.489,0,0,1,22.914,13.621,38.756,38.756,0,0,0,30.079,13.951c14.431,0,23.215-5.273,33.417-18.768h0c7.72-8.783,27.761-10.273,37.064-10.477h612.519v-70.755Z"
-            transform="translate(-101.785 200.411)"
-            fill="#fff"
-          />
-        </svg> */}
         <div className="w-full absolute top-0 left-0 z-10 h-[30px] bg-gradient-[271deg] from-[#37BBEC] to-[#FF792C] bg-origin-padding blur-[30px] bg-no-repeat opacity-30"></div>
         <div className="w-1/2 mr-8">
           <ul className="list-none flex justify-between font-iranYekan xl:text-[14px] lg:text-[11px] text-[9px]">

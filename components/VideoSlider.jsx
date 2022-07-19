@@ -77,7 +77,7 @@ const VideoSlider = () => {
                 >
                  <div className="w-[150px] h-[100px] relative">
 
-                  <Image src={slide.id} layout='fill' height={100} width={120} />
+                  <Image src={slide.id} layout='fill' alt='videoSlider'/>
                  </div>
                 </div>
               ))}

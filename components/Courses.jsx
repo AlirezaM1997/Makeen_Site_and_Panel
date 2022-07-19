@@ -57,8 +57,8 @@ const Courses = () => {
               </button>
             </div>
           </div>
-        </div>
-        <div id="courseSlider" className="-mt-[290px]">
+        </div>q
+        <div id="courseSlider" className="-mt-[320px]">
           <Slider {...setting}>
             {slidesData.map((slide, index) => (
               <div
@@ -80,7 +80,10 @@ const Courses = () => {
                     <Link href={"#"}>
                       <div className=" relative">
                         <a className="">
-                          <div dir="rtl" className="flex justify-center items-center">
+                          <div
+                            dir="rtl"
+                            className="flex justify-center items-center"
+                          >
                             <span className="text-[#8094A6] peer text-[14px] leading-[25px] hover:text-[#00213E] transition-spacing duration-[0.4s] ease-in-out hover:pl-4 pl-1">
                               بیشتر بدانید
                             </span>
@@ -98,9 +101,9 @@ const Courses = () => {
                                 transform="translate(-0.249 -0.073)"
                                 fill="none"
                                 stroke="#8094a6"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="1.5"
                               />
                             </svg>
                           </div>

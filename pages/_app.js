@@ -25,12 +25,16 @@ const MyApp = ({ Component, pageProps }) => {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
+        <link
+          href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          rel="stylesheet"
+        />
       </Head>
       <Header />
       <Layout>
         <Component {...pageProps} />
       </Layout>
-      <Footer/>
+      <Footer />
     </>
   );
 };
