@@ -36,7 +36,7 @@ const WhyBootcamp = () => {
           <h1 className="text-[20px] text-[#00213E] font-iranYekan leading-[35px] font-black">
             چرا بوت کمپ مکین؟
           </h1>
-          <h6 className="text-[16px] text-[#4D6982] font-iranYekan leading-[36px] font-bold mt-[21px] mb-[35px]">
+          <h6 className="text-[16px] pl-8 text-[#4D6982] font-iranYekan leading-[36px] font-bold mt-[21px] mb-[35px]">
             بوت کمپ مکین حدود 10 ساله که در حال پرورش نیروهای متخصص و آماده به
             کار برای بازار کاره و از نیازهای بازار کار به خوبی با خبره و میدونی
             که چه مهارت هایی برای استخدام شدن لازمه. ما دوره های مختلفی رو

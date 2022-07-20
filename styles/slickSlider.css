@@ -6,14 +6,23 @@
   height: 35px !important;
   box-shadow: -3px 10px 20px #00000029 !important;
   position: absolute !important;
+  transition : all 0.3s;
+}
+#videoSlider .slick-prev:hover,
+#videoSlider .slick-next:hover {
+  background: #00294d !important;
 }
 #videoSlider .slick-prev:before,
 #videoSlider .slick-next:before {
   font-family: "Font Awesome 5 Free" !important;
-  font-weight: 900 !important;
-  color: black !important;
+  font-weight: 600 !important;
+  color: #00294d !important;
   text-align: center !important;
-  font-size: 1.3rem !important;
+  font-size: 1.1rem !important;
+}
+#videoSlider .slick-prev:hover:before,
+#videoSlider .slick-next:hover:before {
+  color: white !important;
 }
 #videoSlider .slick-next:before {
   content: "\f061" !important;
