@@ -1,4 +1,3 @@
-//components
 import VideoSlider from "./VideoSlider";
 
 const Bootcamp = () => {

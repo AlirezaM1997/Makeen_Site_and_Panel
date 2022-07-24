@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import SliderContent from "./SliderContent";
 import Dots from "./Dots";
 import Arrows from "./Arrows";
@@ -19,7 +19,6 @@ const Slider = () => {
 
     const interval = setInterval(() => {
       if (i === 100) {
-        // eslint-disable-next-line react-hooks/exhaustive-deps
         i = 0;
       } else {
         i++;

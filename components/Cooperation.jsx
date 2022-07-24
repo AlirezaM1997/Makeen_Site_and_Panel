@@ -1,8 +1,5 @@
-//next
 import Head from "next/head";
 import Image from "next/image";
-
-//form
 import Select from "react-select";
 
 const courses = [

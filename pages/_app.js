@@ -1,11 +1,6 @@
-//next
 import Head from "next/head";
-
-//style
 import "../styles/globals.css";
 import "../styles/slickSlider.css";
-
-//components
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";

@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 function SliderContent({ activeIndex, sliderImage }) {
   return (
     <section>

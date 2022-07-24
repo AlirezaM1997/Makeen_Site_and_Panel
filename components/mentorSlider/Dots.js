@@ -1,4 +1,4 @@
-function Dots({ activeIndex, onclick, sliderImage, timer }) {
+export default function Dots({ activeIndex, onclick, sliderImage, timer }) {
   return (
     <>
       <div className="all-dots mt-[30px] flex justify-center">
@@ -22,5 +22,3 @@ function Dots({ activeIndex, onclick, sliderImage, timer }) {
     </>
   );
 }
-
-export default Dots;

@@ -1,7 +1,5 @@
-//next
 import { useRouter } from "next/router";
 import Head from "next/head";
-//components
 import Cooperation from "./Cooperation";
 import Slider from "./slider/Slider";
 import Statistics from "./Statistics";
