@@ -1,6 +1,6 @@
+import MentorSlider from "./mentorSlider/Slider";
 
 const OurMentors = () => {
-
   return (
     <>
       <section className="mt-[130px]">
@@ -10,7 +10,7 @@ const OurMentors = () => {
         <h3 className="text-[#00213E] text-[16px] leading-[28px] font-bold font-iranYekan text-center mt-5 mb-[50px]">
           منتورهای ما بهترین متخصص ها توی زمینه ی کاری خودشون هستن
         </h3>
-
+        <MentorSlider />
       </section>
     </>
   );
