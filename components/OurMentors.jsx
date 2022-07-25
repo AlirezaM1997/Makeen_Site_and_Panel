@@ -3,7 +3,7 @@ import MentorSlider from "./mentorSlider/Slider";
 const OurMentors = () => {
   return (
     <>
-      <section className="mt-[130px]">
+      <section className="mt-[130px] px-[30px]">
         <h1 className="text-[#00213E] text-[20px] leading-[35px] font-extrabold font-iranYekan text-center">
           منتورهای ما
         </h1>

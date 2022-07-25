@@ -32,8 +32,14 @@ const MentorSlider = () => {
 
   return (
     <>
-      <div className="w-full mt-[71px] pr-[30px] pl-[30px] flex flex-col justify-center items-center">
-        <SliderContent activeIndex={activeIndex} setActiveIndex={setActiveIndex} sliderImage={sliderImage} />
+      <div className="w-full mt-[71px]  flex flex-col justify-center items-center  rounded-[20px]">
+        <div className="bg-[#ECF9FD] rounded-[20px] pt-[40px] pb-[194px]">
+          <SliderContent
+            activeIndex={activeIndex}
+            setActiveIndex={setActiveIndex}
+            sliderImage={sliderImage}
+          />
+        </div>
         <Dots
           timer={timer}
           activeIndex={activeIndex}
