@@ -1,22 +1,35 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { PrevArrow } from "./Arrows";
 import { NextArrow } from "./Arrows";
-function SliderContent({ activeIndex, sliderImage }) {
+function SliderContent({ activeIndex, setActiveIndex, sliderImage }) {
+  const [flag, setFlag] = useState(false);
   const prevSlide = () => {
+    setFlag(true);
+    setActiveIndex(activeIndex < 1 ? sliderImage.length - 1 : activeIndex - 1);
     for (let index = 0; index < sliderImage.length; index++) {
       let element = sliderImage.splice(index, 1)[0];
       sliderImage.splice(index + 1, 0, element);
     }
   };
   const nextSlide = () => {
+    setFlag(true);
+    setActiveIndex(
+      activeIndex === sliderImage.length - 1 ? 0 : activeIndex + 1
+    );
     for (let index = 0; index < sliderImage.length; index++) {
       let element = sliderImage.splice(index, 1)[0];
       sliderImage.splice(index - 6, 0, element);
     }
   };
   useEffect(() => {
-    nextSlide();
+    setFlag(false);
+    if (!flag) {
+      for (let index = 0; index < sliderImage.length; index++) {
+        let element = sliderImage.splice(index, 1)[0];
+        sliderImage.splice(index - 6, 0, element);
+      }
+    }
   }, [activeIndex]);
   return (
     <section className="w-full grid grid-cols-9 grid-rows-1 justify-items-center items-center">
