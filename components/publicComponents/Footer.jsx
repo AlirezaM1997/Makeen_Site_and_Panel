@@ -1,14 +1,12 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-const Footer = () => {
+export default function Footer  () {
   const [instagram, setInstagram] = useState(false);
   const [message, setMessage] = useState(false);
   const [phone, setPhone] = useState(false);
   const [key, setKey] = useState(false);
   const [google, setGoogle] = useState(false);
-
   const hoverLeave = () => {
     setInstagram(false);
     setMessage(false);
@@ -16,14 +14,12 @@ const Footer = () => {
     setKey(false);
     setGoogle(false);
   };
-
   const scrollClick = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
-
   return (
     <>
       <footer className="w-full px-[30px] py-[40px] mt-[30px]">
@@ -61,7 +57,6 @@ const Footer = () => {
             به رویاهاشون .برسن. ما توی مکین ، فقط به دانشجوها آموزش نمیدیم. ما
             .بهشون آینده میدیم
           </p>
-
           <div className="absolute mt-[270px] flex justify-between px-[390px] w-full">
             <div className="relative">
               <div
@@ -170,7 +165,6 @@ const Footer = () => {
               ) : null}
             </div>
           </div>
-
           <ul className=" font-iranYekan mt-[340px] flex-row-reverse	px-[290px] pt-[60px] flex justify-evenly text-right w-full h-fit absolute text-[16px] ">
             <hr className="absolute w-[60%] px-[120px] border-[#294359] " />
             <Link href="/">
@@ -208,11 +202,8 @@ const Footer = () => {
             .تمام حق و حقوق این سایت متعلق به موسسه ایده آل رسانه مکین می باشد
           </p>
         </div>
-
         {/* <img className=" absolute left-[-40px] w-[500px] top-[200px] " src="/assets/images/Group 115@2x.png" alt="halghe" /> */}
       </footer>
     </>
   );
 };
-
-export default Footer;

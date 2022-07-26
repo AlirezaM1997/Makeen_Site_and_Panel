@@ -1,19 +1,19 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import Cooperation from "./Cooperation";
-import Slider from "./slider/Slider";
-import Statistics from "./Statistics";
-import Bootcamp from "./Bootcamp";
-import Features from "./Features";
-import Courses from "./Courses";
-import EstelamVaHamrahsho from "./EstelamVaHamrahSho";
-import AskedQuestion from './AskedQuestion'
-import MaghalatVaMataleb from './MaghalatVaMataleb'
-import Methdology from "./Methodology";
-import WhyBootcamp from "./WhyBootcamp";
-import OurMentors from "./OurMentors";
-import Makeeniha from "./Makeeniha";
-import InstallmentPayment from "./InstallmentPayment";
+import Cooperation from "./Cooperation"
+import Slider from "./homeComponents/imageSlider/Slider";
+import Statistics from "./homeComponents/Statistics";
+import Bootcamp from "./homeComponents/Bootcamp";
+import Features from "./homeComponents/Features";
+import Courses from "./homeComponents/Courses";
+import EstelamVaHamrahsho from "./homeComponents/EstelamVaHamrahSho";
+import AskedQuestion from './homeComponents/AskedQuestion'
+import MaghalatVaMataleb from './homeComponents/MaghalatVaMataleb'
+import Methdology from "./homeComponents/Methodology";
+import WhyBootcamp from "./homeComponents/WhyBootcamp";
+import OurMentors from "./homeComponents/OurMentors";
+import Makeeniha from "./homeComponents/Makeeniha";
+import InstallmentPayment from "./homeComponents/InstallmentPayment";
 
 const Layout = ({ children }) => {
   const router = useRouter();

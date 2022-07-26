@@ -1,9 +1,9 @@
 import Head from "next/head";
 import "../styles/globals.css";
 import "../styles/slickSlider.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/publicComponents/Header";
 import Layout from "../components/Layout";
+import Footer from "../components/publicComponents/Footer";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
