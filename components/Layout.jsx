@@ -12,8 +12,8 @@ import MaghalatVaMataleb from './MaghalatVaMataleb'
 import Methdology from "./Methodology";
 import WhyBootcamp from "./WhyBootcamp";
 import OurMentors from "./OurMentors";
+import Makeeniha from "./Makeeniha";
 import InstallmentPayment from "./InstallmentPayment";
-// import Makeeniha from "./Makeeniha";
 
 const Layout = ({ children }) => {
   const router = useRouter();
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
         <WhyBootcamp/>
         <OurMentors/>
         <InstallmentPayment/>
-        {/* <Makeeniha /> */}
+        <Makeeniha />
         <Methdology />
         <AskedQuestion />
         <MaghalatVaMataleb />

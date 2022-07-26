@@ -1,9 +1,9 @@
 import Image from "next/image";
-
 export default function InstallmentPayment() {
   return (
     <>
-      <div className="flex h-[512px] pl-[0px] mt-[79px]">
+      <div className="flex h-[512px] pl-[0px] mt-[40px] relative">
+        <div className="w-[130px] h-[339px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-10 blur-[50px] bottom-0 right-0 rounded-full"></div>
         <div className="relative w-[638px] h-full">
           <Image
             src="/assets/images/installment-payment.png"
