@@ -13,21 +13,22 @@ export default function Makeeniha() {
   return (
     <>
       <div className="h-[454px] relative font-iranYekan mt-[180px] overflow-hidden">
-          {/* <div className="absolute bg-white z-10 top-[30px] left-[10px] h-[86px] w-[40px] "></div> */}
-          <div className="absolute top-[45px] -left-[50px] w-[86px] h-[86px] ">
-            <Image
-              layout="fill"
-              src={"/assets/images/makiniha-left.png"}
-              alt="makiniha-left"
-            />
-          </div>
-          <div className="absolute bottom-[30px] -right-[82px] w-[144px] h-[144px] ">
-            <Image
-              layout="fill"
-              src={"/assets/images/makiniha-right.png"}
-              alt="makiniha-left"
-            />
-          </div>
+        <div className="w-[339px] h-[339px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-10 blur-[50px] top-[90px] right-[255px] rounded-full"></div>
+
+        <div className="absolute top-[45px] -left-[50px] w-[86px] h-[86px] ">
+          <Image
+            layout="fill"
+            src={"/assets/images/makiniha-left.png"}
+            alt="makiniha-left"
+          />
+        </div>
+        <div className="absolute bottom-[30px] -right-[82px] w-[144px] h-[144px] ">
+          <Image
+            layout="fill"
+            src={"/assets/images/makiniha-right.png"}
+            alt="makiniha-left"
+          />
+        </div>
         <div className=" text-[#00213E] text-center leading-[50px] ">
           <h1 className="text-[20px] font-extrabold ">مکین از زبان مکینی ها</h1>
           <h4 className="text-[16px]">
@@ -39,16 +40,28 @@ export default function Makeeniha() {
             {makeeniha.map((item, index) => {
               return (
                 <>
-                  <div className="flex flex-col" key={index}>
-                    <div className="w-[420px] h-[300px] relative rounded-[30px]">
+                  <div
+                    className="flex flex-col hover:cursor-grab active:cursor-grabbing"
+                    key={index}
+                  >
+                    <div className="w-[420px] h-[300px] relative rounded-[30px] p-12">
                       <Image
                         className=""
                         layout="fill"
                         src={"/assets/images/makeenihaBackground.webp"}
                         alt="makeeniha"
                       />
+                      <div className="relative w-[290px] h-[140px] text-[#00213E] text-[16px] leading-[28px] font-medium text-right  overflow-hidden">
+                        <div className="absolute">
+                          مکین جاییه که یاد میگیری رو پای خودت وایستی و این طوری
+                          میتونی از پس هر مشکلی که سر راهت قرار میگیری بر بیای
+                        </div>
+                      </div>
                     </div>
-                    <div className="flex leading-[35px] -mt-[30px] pr-[20px]" dir="rtl">
+                    <div
+                      className="flex leading-[35px] -mt-[30px] pr-[20px]"
+                      dir="rtl"
+                    >
                       <div>
                         <Image
                           width={60}
