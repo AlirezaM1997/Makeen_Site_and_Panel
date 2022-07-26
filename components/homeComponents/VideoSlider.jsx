@@ -2,8 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-
-const VideoSlider = () => {
+export default function VideoSlider() {
   const settingsThumbs = {
     dots: true,
     infinite: true,
@@ -31,13 +30,10 @@ const VideoSlider = () => {
     {
       id: "/assets/images/videoSlide3.png",
     },
-
   ];
-
   function videoslider(links) {
     document.querySelector(".mySlider").src = links;
   }
-
   return (
     <>
       <div>
@@ -72,10 +68,9 @@ const VideoSlider = () => {
                   key={index}
                   className="rounded-[4px] w-10 h-[100px] overflow-hidden transition-all duration-300"
                 >
-                 <div className="w-[150px] h-[100px] relative">
-
-                  <Image src={slide.id} layout='fill' alt='videoSlider'/>
-                 </div>
+                  <div className="w-[150px] h-[100px] relative">
+                    <Image src={slide.id} layout="fill" alt="videoSlider" />
+                  </div>
                 </div>
               ))}
             </Slider>
@@ -84,22 +79,4 @@ const VideoSlider = () => {
       </div>
     </>
   );
-};
-
-export default VideoSlider;
-
-{/* <iframe
-src={slide.id}
-allowFullScreen="true"
-webkitallowfullscreen="true"
-mozallowfullscreen="true"
-onClick={() => videoslider(slide.id)}
-className="w-full h-[100px]"
-></iframe>
-<video
-className="w-full h-[100px] object-cover"
-preload="metadata"
-onClick={() => videoslider(slide.id)}
->
-<source src={slide.id} type="video/mp4"></source>
-</video> */}
+}

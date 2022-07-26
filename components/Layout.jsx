@@ -1,14 +1,14 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import Cooperation from "./Cooperation"
+import Cooperation from "./Cooperation";
 import Slider from "./homeComponents/imageSlider/Slider";
 import Statistics from "./homeComponents/Statistics";
 import Bootcamp from "./homeComponents/Bootcamp";
 import Features from "./homeComponents/Features";
 import Courses from "./homeComponents/Courses";
 import EstelamVaHamrahsho from "./homeComponents/EstelamVaHamrahSho";
-import AskedQuestion from './homeComponents/AskedQuestion'
-import MaghalatVaMataleb from './homeComponents/MaghalatVaMataleb'
+import AskedQuestion from "./homeComponents/AskedQuestion";
+import Magazines from "./homeComponents/Magazines";
 import Methdology from "./homeComponents/Methodology";
 import WhyBootcamp from "./homeComponents/WhyBootcamp";
 import OurMentors from "./homeComponents/OurMentors";
@@ -29,19 +29,22 @@ const Layout = ({ children }) => {
         <Bootcamp />
         <Features />
         <Courses />
-        <WhyBootcamp/>
-        <OurMentors/>
-        <InstallmentPayment/>
+        <WhyBootcamp />
+        <OurMentors />
+        <InstallmentPayment />
         <Makeeniha />
         <Methdology />
         <AskedQuestion />
-        <MaghalatVaMataleb />
+        <Magazines />
         <EstelamVaHamrahsho />
       </>
     );
   } else if (router.pathname === "/cooperation") {
     return (
       <>
+        <Head>
+          <title>درخواست همکاری</title>
+        </Head>
         <Cooperation />
       </>
     );

@@ -35,48 +35,49 @@ export default function Makeeniha() {
             نظر فارغ التحصیلان مکین که حالا متخصص شدن درباره ی مکین
           </h4>
         </div>
-        <div className="-blue-500 px-[50px] py-[20px] h-[300px]" id="makeenihaSlider">
+        <div
+          className="-blue-500 px-[50px] py-[20px] h-[300px]"
+          id="makeenihaSlider"
+        >
           <Slider {...setting}>
-            {makeeniha.map((item, index) => {
-              return (
-                <div
-                  className="flex flex-col hover:cursor-grab active:cursor-grabbing"
-                  key={index} 
-                >
-                  <div className="w-[420px] h-[300px] relative rounded-[30px] p-[55px]">
-                    <Image
-                      className=""
-                      layout="fill"
-                      src={"/assets/images/makeenihaBackground.webp"}
-                      alt="makeeniha"
-                    />
-                    <div className="relative w-[290px] h-[140px] text-[#00213E] text-[16px] leading-[28px] font-medium text-right  overflow-hidden">
-                      <div className="absolute">
-                        مکین جاییه که یاد میگیری رو پای خودت وایستی و این طوری
-                        میتونی از پس هر مشکلی که سر راهت قرار میگیری بر بیای
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="flex leading-[35px] -mt-[30px] pr-[20px]"
-                    dir="rtl"
-                  >
-                    <div>
-                      <Image
-                        width={60}
-                        height={60}
-                        src={"/assets/images/Arman.png"}
-                        alt="Arman"
-                      />
-                    </div>
-                    <div className="text-[#4D6982] mr-[20px]">
-                      <h1 className="">آرمان عبدلی</h1>
-                      <h1 className="">ویستا</h1>
+            {makeeniha.map((item, index) => (
+              <div
+                className="flex flex-col hover:cursor-grab active:cursor-grabbing"
+                key={index}
+              >
+                <div className="w-[420px] h-[300px] relative rounded-[30px] p-[55px]">
+                  <Image
+                    className=""
+                    layout="fill"
+                    src={"/assets/images/makeenihaBackground.webp"}
+                    alt="makeeniha"
+                  />
+                  <div className="relative w-[290px] h-[140px] text-[#00213E] text-[16px] leading-[28px] font-medium text-right  overflow-hidden">
+                    <div className="absolute">
+                      مکین جاییه که یاد میگیری رو پای خودت وایستی و این طوری
+                      میتونی از پس هر مشکلی که سر راهت قرار میگیری بر بیای
                     </div>
                   </div>
                 </div>
-              );
-            })}
+                <div
+                  className="flex leading-[35px] -mt-[30px] pr-[20px]"
+                  dir="rtl"
+                >
+                  <div>
+                    <Image
+                      width={60}
+                      height={60}
+                      src={"/assets/images/Arman.png"}
+                      alt="Arman"
+                    />
+                  </div>
+                  <div className="text-[#4D6982] mr-[20px]">
+                    <h1 className="">آرمان عبدلی</h1>
+                    <h1 className="">ویستا</h1>
+                  </div>
+                </div>
+              </div>
+            ))}
           </Slider>
         </div>
       </div>
