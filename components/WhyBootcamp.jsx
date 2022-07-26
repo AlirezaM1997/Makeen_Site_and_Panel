@@ -21,7 +21,7 @@ const WhyBootcamp = () => {
               alt="whyBootcamp"
             />
           </div>
-          <div className="w-[220px] h-[220px] absolute top-5 left-5 -z-[1]">
+          <div className="w-[220px] h-[220px] absolute top-9 left-9 -z-[1]">
             <Image
               src="/assets/images/methFeature2.png"
               layout="fill"

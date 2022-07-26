@@ -11,8 +11,8 @@ const Courses = () => {
     arrows: false,
     speed: 300,
     slidesToShow: 5.5,
-    slidesToScroll: 1,
-    touchThreshold: 5,
+    slidesToScroll: 2,
+    touchThreshold: 6,
   };
   return (
     <>

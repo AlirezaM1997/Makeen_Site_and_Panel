@@ -12,6 +12,7 @@ import MaghalatVaMataleb from './MaghalatVaMataleb'
 import Methdology from "./Methodology";
 import WhyBootcamp from "./WhyBootcamp";
 import OurMentors from "./OurMentors";
+import InstallmentPayment from "./InstallmentPayment";
 // import Makeeniha from "./Makeeniha";
 
 const Layout = ({ children }) => {
@@ -30,6 +31,7 @@ const Layout = ({ children }) => {
         <Courses />
         <WhyBootcamp/>
         <OurMentors/>
+        <InstallmentPayment/>
         {/* <Makeeniha /> */}
         <Methdology />
         <AskedQuestion />
