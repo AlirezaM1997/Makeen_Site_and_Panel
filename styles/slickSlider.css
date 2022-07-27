@@ -88,3 +88,6 @@
 #magazines .slick-dots li button:before {
   font-size: 12px !important;
 }
+#magazines .slick-next ,  #magazines .slick-prev{
+  display:none !important;
+}

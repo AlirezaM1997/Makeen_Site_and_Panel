@@ -2,9 +2,11 @@ import Head from "next/head";
 import "../styles/globals.css";
 import "../styles/slickSlider.css";
 import Header from "../components/publicComponents/Header";
-import Layout from "../components/Layout";
 import Footer from "../components/publicComponents/Footer";
+import { useRouter } from "next/router";
+
 const MyApp = ({ Component, pageProps }) => {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -24,11 +26,13 @@ const MyApp = ({ Component, pageProps }) => {
           rel="stylesheet"
         />
       </Head>
-      <Header />
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-      <Footer />
+      {router.pathname === "/" || router.pathname === "/cooperation" ? (
+        <Header />
+      ) : null}
+      <Component {...pageProps} />
+      {router.pathname === "/" || router.pathname === "/cooperation" ? (
+        <Footer />
+      ) : null}
     </>
   );
 };

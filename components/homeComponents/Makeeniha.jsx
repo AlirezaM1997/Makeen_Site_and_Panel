@@ -18,15 +18,15 @@ export default function Makeeniha() {
         <div className="absolute top-[45px] -left-[50px] w-[86px] h-[86px] ">
           <Image
             layout="fill"
-            src={"/assets/images/makiniha-left.png"}
-            alt="makiniha-left"
+            src={"/assets/images/blueCircle3.png"}
+            alt="blueCircle3"
           />
         </div>
         <div className="absolute bottom-[30px] -right-[82px] w-[144px] h-[144px] ">
           <Image
             layout="fill"
-            src={"/assets/images/makiniha-right.png"}
-            alt="makiniha-left"
+            src={"/assets/images/blueCircle4.png"}
+            alt="blueCircle4"
           />
         </div>
         <div className=" text-[#00213E] text-center leading-[50px] ">

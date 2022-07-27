@@ -11,7 +11,7 @@ const EstelamVaHamrahsho = () => {
   const estelamBtnLeave = () => {
     setEstelam(false);
   };
-
+//////////////////////////////////////////////////// EDIT BUTTON
   return (
     <>
       <section className="flex flex-row-reverse justify-evenly">
@@ -34,7 +34,7 @@ const EstelamVaHamrahsho = () => {
           </h1>
           <div className="-red-500 w-[383px] absolute top-[70px] right-[80px]">
             <p className="w-fit font-iranYekan text-right text-[#4D6982] text-[16px] ">
-              برای استعلام از دانشجویان مکین کد گواهی دانشجویان را .در کادر زیر
+              برای استعلام از دانشجویان مکین کد گواهی دانشجویان را در کادر زیر
               وارد کنید
             </p>
           </div>
@@ -88,13 +88,13 @@ const EstelamVaHamrahsho = () => {
           </h1>
           <div className="-red-500 w-[383px] absolute top-[70px] right-[80px]">
             <p className="w-fit font-iranYekan text-right text-[#4D6982] text-[16px] ">
-              برای اطلاع از اخبار جدید مکین لطفا ایمیل خود را .در کادر زیر وارد
+              برای اطلاع از اخبار جدید مکین لطفا ایمیل خود را در کادر زیر وارد
               کنید
             </p>
           </div>
 
           <div className="-red-500 flex justify-between w-[480px] absolute bottom-[35px] right-[80px]">
-            <button className="p-[10px] text-[#ECF9FD]  font-iranYekan w-[70px] hover:-translate-y-2 duration-150 text-[12px] text-center bg-[#FF8641] rounded-[10px] ">
+            <button className="p-[10px] text-[#ECF9FD] font-iranYekan w-[70px] hover:-translate-y-2 duration-150 text-[12px] text-center bg-[#FF8641] rounded-[10px] ">
               عضویت
             </button>
             <input
