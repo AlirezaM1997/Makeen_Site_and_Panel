@@ -26,11 +26,11 @@ const MyApp = ({ Component, pageProps }) => {
           rel="stylesheet"
         />
       </Head>
-      {router.pathname === "/" || router.pathname === "/cooperation" ? (
+      {router.pathname === "/" || router.pathname === "/cooperation"|| router.pathname === "/blogs" ? (
         <Header />
       ) : null}
       <Component {...pageProps} />
-      {router.pathname === "/" || router.pathname === "/cooperation" ? (
+      {router.pathname === "/" || router.pathname === "/cooperation" || router.pathname === "/blogs" ? (
         <Footer />
       ) : null}
     </>
