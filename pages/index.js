@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Slider from "../components/homeComponents/imageSlider/Slider";
 import Statistics from "../components/homeComponents/Statistics";
 import Bootcamp from "../components/homeComponents/Bootcamp";
@@ -11,8 +12,7 @@ import WhyBootcamp from "../components/homeComponents/WhyBootcamp";
 import OurMentors from "../components/homeComponents/OurMentors";
 import Makeeniha from "../components/homeComponents/Makeeniha";
 import InstallmentPayment from "../components/homeComponents/InstallmentPayment";
-import Head from "next/head";
-export default function Home() {
+export default function home() {
   return (
     <>
       <Head>
