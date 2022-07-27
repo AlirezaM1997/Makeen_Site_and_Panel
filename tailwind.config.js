@@ -37,7 +37,7 @@ module.exports = {
         menu_item_transition: "background-size 0.5s, color 0.5s",
         'height' :"height",
         'top' :"top",
-        'spacing':'padding',
+        'spacing':'padding margin',
         'scale':'scale'
       },
     },

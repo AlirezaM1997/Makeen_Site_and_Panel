@@ -75,3 +75,16 @@
 #makeenihaSlider .slick-next {
   top: 37% !important;
 }
+#magazines .slick-slide {
+  padding-right : 10px;
+  padding-left : 10px;
+}
+#magazines .slick-track {
+  margin-bottom: 50px !important;
+}
+#magazines .slick-dots li{
+  margin: 0px !important;
+}
+#magazines .slick-dots li button:before {
+  font-size: 12px !important;
+}
