@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import NewRegistrationsTable from "./NewRegistrationsTable";
-
+import NewsletterEmails from "./NewsletterEmails";
 export default function Dashboard() {
   return (
     <>
@@ -239,8 +239,10 @@ export default function Dashboard() {
           </div>
         </aside>
         <div className="flex mr-[108px] mt-4">
-          <div className="w-1/3"></div>
-          <div className="w-2/3 shadow-[0px_0px_5px_#00000017] rounded-[14px] pt-[18px] relative">
+          <div className="w-1/3 shadow-[0px_0px_5px_#00000017] rounded-[14px] pt-[18px] relative px-2">
+            <NewsletterEmails/>
+          </div>
+          <div className="w-2/3 shadow-[0px_0px_5px_#00000017] rounded-[14px] pt-[18px] relative px-2 ml-[15px]">
             <NewRegistrationsTable />
           </div>
         </div>

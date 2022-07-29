@@ -5,7 +5,7 @@ export default function NewRegistrationsTable() {
   const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   return (
     <>
-      <table dir="rtl" className="mx-auto relative overflow-hidden">
+      <table dir="rtl" className="mx-auto relative overflow-hidden w-full">
         <thead>
           <tr className="text-[12px] text-[#103F7B] leading-[21p] font-bold font-iranYekan text-center">
             <td className="text-right max-w-[100px]">نام و نام خانوادگی</td>
@@ -51,7 +51,7 @@ export default function NewRegistrationsTable() {
                 <td>{`تهرانپارس`}</td>
               ) : null}
               <td className="px-4 py-4 relative">
-                <div className="relative  w-4 h-4">
+                <div className="relative w-4 h-4">
                   <Image
                     src={"/assets/images/delete.png"}
                     layout="fill"
