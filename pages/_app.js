@@ -1,8 +1,8 @@
 import Head from "next/head";
 import "../styles/globals.css";
 import "../styles/slickSlider.css";
-import Header from "../components/publicComponents/Header";
-import Footer from "../components/publicComponents/Footer";
+import Header from "../components/commonlyUsedComponents/Header";
+import Footer from "../components/commonlyUsedComponents/Footer";
 import { useRouter } from "next/router";
 
 const MyApp = ({ Component, pageProps }) => {

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import BlogCard from "../../components/publicComponents/BlogCard";
+import BlogCard from "../../components/commonlyUsedComponents/BlogCard";
 export default function blogs() {
   const allBlogs = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
