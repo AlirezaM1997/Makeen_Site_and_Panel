@@ -86,8 +86,8 @@ export default function blogs() {
               </div>
             </div>
           </div>
-          <div className="relative w-1/2 h-[400px]">
-            <Image src={"/assets/images/lastBlog.png"} layout="fill" />
+          <div className="relative w-1/2 h-[400px] ">
+            <Image src={"/assets/images/lastBlog.png"} layout="fill" className="rounded-[20px]"/>
           </div>
         </div>
         <hr className="mb-[39px]" />

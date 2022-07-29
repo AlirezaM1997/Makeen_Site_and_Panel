@@ -16,7 +16,7 @@ export default function DashboardLayout({ children }) {
           </div>
           <div className="flex flex-col justify-between items-center relative">
             <div className="flex flex-col mt-[51px] text-[#292D32] text-[12px] leading-[21px] font-medium font-iranYekan">
-              <Link href={"#"}>
+              <Link href={"/admin/dashboard"}>
                 <a className="flex flex-col items-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ export default function DashboardLayout({ children }) {
                   <span>داشبورد</span>
                 </a>
               </Link>
-              <Link href={"#"}>
+              <Link href={"/admin/setting"}>
                 <a className="flex flex-col items-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

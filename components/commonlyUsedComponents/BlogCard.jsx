@@ -8,8 +8,8 @@ export default function BlogCard({item , index}) {
       >
         <div className="relative h-[220px]">
           <Image
-            layout="fill"
-            src={"/assets/images/magazine1.png"}
+            layout="fill" className="rounded-[6px]"
+            src={"/assets/images/lastBlog.png"}
             alt="Magazine"
           />
         </div>
@@ -26,7 +26,8 @@ export default function BlogCard({item , index}) {
           <div className="relative w-[35px] h-[35px]">
             <Image
               layout="fill"
-              src={"/assets/images/magazineAvatar.png"}
+              className="rounded-full"
+              src={"/assets/images/sadeghikia.png"}
               alt="magazineAvatar"
             />
           </div>

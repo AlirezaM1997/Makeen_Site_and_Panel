@@ -67,6 +67,7 @@ export default function Makeeniha() {
                     <Image
                       width={60}
                       height={60}
+                      className="rounded-full"
                       src={"/assets/images/Arman.png"}
                       alt="Arman"
                     />
