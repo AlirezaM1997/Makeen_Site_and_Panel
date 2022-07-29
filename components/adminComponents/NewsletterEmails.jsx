@@ -20,7 +20,7 @@ export default function NewsletterEmails() {
                 index % 2 === 0 ? "bg-[#F6F6F6]" : ""
               }`}
             >
-              <td className="flex items-center py-4 px-2">
+              <td className="flex items-center py-3 px-2">
                 <div className="relative w-4 h-4 mr-2">
                   <Image src={"/assets/images/newsletters.png"} layout="fill" />
                 </div>
