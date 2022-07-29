@@ -5,7 +5,7 @@ import Header from "../components/commonlyUsedComponents/Header";
 import Footer from "../components/commonlyUsedComponents/Footer";
 import { useRouter } from "next/router";
 
-const MyApp = ({ Component, pageProps }) => {
+export default function MyApp ({ Component, pageProps }) {
   const router = useRouter();
   return (
     <>
@@ -36,4 +36,3 @@ const MyApp = ({ Component, pageProps }) => {
     </>
   );
 };
-export default MyApp;
