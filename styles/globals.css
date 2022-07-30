@@ -21,6 +21,26 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
+}
+.css-1s2u09g-control,
+.css-1pahdxg-control {
+  padding: 8px;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border-width: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.css-1pahdxg-control:focus,
+.css-1pahdxg-control:hover,
+.css-1pahdxg-control:active {
+  border-color: transparent !important;
+  border-width: 0 !important;
+  box-shadow: none !important;
+}
+#modal-course-select .css-1s2u09g-control,
+#modal-course-select .css-1pahdxg-control {
+  padding: 0px;
 }
