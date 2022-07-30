@@ -36,7 +36,7 @@ export default function Makeeniha() {
           </h4>
         </div>
         <div
-          className="-blue-500 px-[50px] py-[20px] h-[300px]"
+          className="px-[50px] py-[20px] h-[300px]"
           id="makeenihaSlider"
         >
           <Slider {...setting}>
@@ -45,9 +45,9 @@ export default function Makeeniha() {
                 className="flex flex-col hover:cursor-grab active:cursor-grabbing"
                 key={index}
               >
-                <div className="w-[420px] h-[300px] relative rounded-[30px] p-[55px]">
+                <div className="w-[420px] h-[300px] relative p-[55px]">
                   <Image
-                    className=""
+                    className="shadow-[10px_10px_300px_#0000000D]"
                     layout="fill"
                     src={"/assets/images/makeenihaBackground.webp"}
                     alt="makeeniha"

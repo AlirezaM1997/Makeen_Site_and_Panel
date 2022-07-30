@@ -1,21 +1,21 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { showHideModalAction } from "../../slices/showRegistrationModalSlice";
+
 export default function RegisterationModal(props) {
   const modalMode = useSelector((state) => state.modalMode.value);
-
+  const dispatch = useDispatch();
   return (
     <>
       <section>
-        <div className="container">
+        <div className="">
           <div
-            id="myModal"
             className={`${
               modalMode ? "block" : "hidden"
-            } fixed w-full h-full top-0 left-0 z-[1001] bg-[#4D6982] backdrop-blur-[10px]`}
-            // onClick={() => props.hideModal()}
+            } fixed w-full h-full top-0 left-0 z-[1001] p-[48px] bg-[#4D6982] backdrop-blur-[10px]`}
+            onClick={() => dispatch(showHideModalAction(false))}
           >
             <section
-              className="fixed bg-white rounded-3xl transition-all duration-1000 w-[37.5rem] h-[18.75rem] p-5 pt-6 right-2/4 
-            bottom-1/2 translate-x-2/4 translate-y-1/2 animate-[opac_1s_ease-in-out]"
+              className="bg-white absolute rounded-[20px] shadow-[10px_10px_20px_#00000014] w-[85%] h-[85%] p-5 pt-6 right-1/2 bottom-1/2 translate-x-2/4 translate-y-1/2"
               onClick={(e) => e.stopPropagation()}
             >
               kkkkkkkkkkkkkkkkkkkkkkkk

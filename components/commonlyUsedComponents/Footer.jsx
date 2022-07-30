@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-export default function Footer  () {
+export default function Footer() {
   const [instagram, setInstagram] = useState(false);
   const [message, setMessage] = useState(false);
   const [phone, setPhone] = useState(false);
@@ -22,8 +22,22 @@ export default function Footer  () {
   };
   return (
     <>
-      <footer className="w-full px-[30px] py-[40px] mt-[30px]">
-        <div className="flex justify-center relative">
+      <footer className="w-full px-[30px] mt-[85px] relative">
+        <div className="flex justify-center relative overflow-hidden">
+          <div className="absolute -left-[145px] -bottom-[345px] w-[625px] h-[625px] z-10 mix-blend-lighten">
+            <Image
+              layout="fill"
+              src={"/assets/images/footer_left_whiteCircle.png"}
+              alt="footer_left_whiteCircle"
+            />
+          </div>
+          <div className="absolute -right-[175px] top-[30px] w-[396px] h-[396px] z-10 mix-blend-lighten">
+            <Image
+              layout="fill"
+              src={"/assets/images/footer_right_whiteCircle.png"}
+              alt="footer_left_whiteCircle"
+            />
+          </div>
           <div className="h-[489px]">
             <Image
               src="/assets/images/backgroundFooter.png"
@@ -198,12 +212,11 @@ export default function Footer  () {
               </li>
             </Link>
           </ul>
-          <p className="absolute mt-[520px] pb-[10px] text-center text-[#00213E] opacity-50 after:content-['©'] after:ml-2 ">
-            .تمام حق و حقوق این سایت متعلق به موسسه ایده آل رسانه مکین می باشد
-          </p>
         </div>
-        {/* <img className=" absolute left-[-40px] w-[500px] top-[200px] " src="/assets/images/Group 115@2x.png" alt="halghe" /> */}
+          <div className="pb-[10px] my-4 text-center text-[#00213E] opacity-50 after:content-['©'] after:ml-2 ">
+            .تمام حق و حقوق این سایت متعلق به موسسه ایده آل رسانه مکین می باشد
+          </div>
       </footer>
     </>
   );
-};
+}
