@@ -12,12 +12,14 @@ import WhyBootcamp from "../components/homeComponents/WhyBootcamp";
 import OurMentors from "../components/homeComponents/OurMentors";
 import Makeeniha from "../components/homeComponents/Makeeniha";
 import InstallmentPayment from "../components/homeComponents/InstallmentPayment";
+import RegisterationModal from "../components/homeComponents/RegisterationModal";
 export default function home() {
   return (
     <>
       <Head>
         <title>آکادمی مکین</title>
       </Head>
+      <RegisterationModal/>
       <Slider />
       <Statistics />
       <Bootcamp />

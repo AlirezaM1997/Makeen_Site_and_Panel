@@ -4,8 +4,9 @@ import "../styles/slickSlider.css";
 import Header from "../components/commonlyUsedComponents/Header";
 import Footer from "../components/commonlyUsedComponents/Footer";
 import { useRouter } from "next/router";
-
-export default function MyApp ({ Component, pageProps }) {
+import { Provider } from "react-redux";
+import { store } from "../store/store";
+export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
     <>
@@ -26,13 +27,19 @@ export default function MyApp ({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-      {router.pathname === "/" || router.pathname === "/cooperation"|| router.pathname === "/blogs" ? (
-        <Header />
-      ) : null}
-      <Component {...pageProps} />
-      {router.pathname === "/" || router.pathname === "/cooperation" || router.pathname === "/blogs" ? (
-        <Footer />
-      ) : null}
+      <Provider store={store}>
+        {router.pathname === "/" ||
+        router.pathname === "/cooperation" ||
+        router.pathname === "/blogs" ? (
+          <Header />
+        ) : null}
+        <Component {...pageProps} />
+        {router.pathname === "/" ||
+        router.pathname === "/cooperation" ||
+        router.pathname === "/blogs" ? (
+          <Footer />
+        ) : null}
+      </Provider>
     </>
   );
-};
+}

@@ -27,7 +27,6 @@ export default function SliderContent({
     }
   };
   useEffect(() => {
-    console.log(activeIndex);
     setFlag(false);
     if (!flag) {
       for (let index = 0; index < sliderImage.length; index++) {

@@ -12,7 +12,7 @@ export default function Makeeniha() {
   };
   return (
     <>
-      <div className="h-[454px] relative font-iranYekan mt-[180px] overflow-hidden">
+      <div className="h-[454px] relative font-iranYekan mt-[150px] overflow-hidden">
         <div className="w-[339px] h-[339px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-10 blur-[50px] top-[90px] right-[255px] rounded-full"></div>
         <div className="w-[205px] h-[205px] absolute bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-10 blur-[50px] top-[154px] left-0"></div>
         <div className="absolute top-[45px] -left-[50px] w-[86px] h-[86px] ">
