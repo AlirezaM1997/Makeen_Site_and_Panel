@@ -53,12 +53,12 @@ export default function RegisterationModal() {
     email: Yup.string()
       .email("لطفا یک ایمیل صحیح وارد کنید")
       .required("لطفا ایمیل خود را وارد کنید"),
-    birthday: Yup.string("لطفا تاریخ تولد خود را وارد کنید").required(
-      "لطفا تاریخ تولد خود را وارد کنید"
-    ),
-    // .date(),
-    // .transform(parseDateString)
-    // .max(new Date()),
+    birthday: Yup.string("لطفا تاریخ تولد خود را وارد کنید")
+      .required("لطفا تاریخ تولد خود را وارد کنید")
+      .matches(
+        /^\d{4}\/(0[1-9]|1[012])\/(0[1-9]|[12][0-9]|3[01])$/,
+        "تاریخ تولد خود را به صورت 1300/01/01 وارد کنید"
+      ),
     address: Yup.string("لطفا آدرس خودتونو وارد کنید").required(
       "لطفا آدرس خودتونو وارد کنید"
     ),
