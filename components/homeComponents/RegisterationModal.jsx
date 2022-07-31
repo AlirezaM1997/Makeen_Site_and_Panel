@@ -42,6 +42,9 @@ export default function RegisterationModal() {
   const modalMode = useSelector((state) => state.modalMode.value);
   const dispatch = useDispatch();
 
+  Yup.addMethod(Yup.string, "stripEmptyString", function () {
+    return this.transform((value) => (value === "" ? undefined : value));
+  });
   const validationSchema = Yup.object().shape({
     fullname: Yup.string("لطفا نام خود را وارد کنید").required(
       "لطفا نام خود را وارد کنید"
@@ -53,12 +56,20 @@ export default function RegisterationModal() {
     email: Yup.string()
       .email("لطفا یک ایمیل صحیح وارد کنید")
       .required("لطفا ایمیل خود را وارد کنید"),
+    course: Yup.string()
+      .required("لطفا یک مورد را انتخاب کنید")
+      .stripEmptyString()
+      .default("React / React Native دوره ی"),
     birthday: Yup.string("لطفا تاریخ تولد خود را وارد کنید")
       .required("لطفا تاریخ تولد خود را وارد کنید")
       .matches(
         /^\d{4}\/(0[1-9]|1[012])\/(0[1-9]|[12][0-9]|3[01])$/,
         "تاریخ تولد خود را به صورت 1300/01/01 وارد کنید"
       ),
+    gender: Yup.string()
+      .required("لطفا یک مورد را انتخاب کنید")
+      .stripEmptyString()
+      .default("خانم"),
     address: Yup.string("لطفا آدرس خودتونو وارد کنید").required(
       "لطفا آدرس خودتونو وارد کنید"
     ),
@@ -90,7 +101,20 @@ export default function RegisterationModal() {
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="flex justify-between items-center">
-              <div className="relative w-[10px] h-[10px] cursor-pointer">
+              <div
+                className="relative w-[10px] h-[10px] cursor-pointer"
+                onClick={() => {
+                  dispatch(showHideModalAction(false));
+                  reset({
+                    fullname: "",
+                    phone: "",
+                    email: "",
+                    birthday: "",
+                    address: "",
+                    feutures: "",
+                  });
+                }}
+              >
                 <Image src={"/assets/images/quit-modal.png"} layout="fill" />
               </div>
               <h1 className="text-[#00213E] text-[20px] leading-[35px] font-extrabold">
