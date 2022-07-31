@@ -37,6 +37,7 @@ const gender = [
 export default function RegisterationModal() {
   const modalMode = useSelector((state) => state.modalMode.value);
   const dispatch = useDispatch();
+  const register = () => {};
   return (
     <>
       <div
@@ -46,7 +47,7 @@ export default function RegisterationModal() {
         onClick={() => dispatch(showHideModalAction(false))}
       >
         <section
-          className="bg-white absolute px-16 py-6 flex rounded-[20px] shadow-[10px_10px_20px_#00000014] w-[85%] h-[90%] right-1/2 bottom-1/2 translate-x-1/2 translate-y-1/2"
+          className="bg-white absolute px-16 py-6 flex rounded-[20px] shadow-[10px_10px_20px_#00000014] w-[90%] h-[95%] right-1/2 bottom-1/2 translate-x-1/2 translate-y-1/2"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="font-iranYekan w-[65%] pr-16">
@@ -68,7 +69,7 @@ export default function RegisterationModal() {
                 </label>
                 <input
                   type="text"
-                  className="border-[#CACBCB] border-[1px] rounded-[10px] p-[11px] w-full focus:outline-none"
+                  className="border-[#CACBCB] border-[1px] rounded-[10px] p-[11px] w-full focus:outline-none placeholder:text-[12px] placeholder:leading-[36px]"
                   placeholder="نام خودتونو کامل وارد کنید"
                 />
               </div>
@@ -78,7 +79,7 @@ export default function RegisterationModal() {
                 </label>
                 <input
                   type="text"
-                  className="border-[#CACBCB] border-[1px] rounded-[10px] p-[11px] w-full focus:outline-none"
+                  className="border-[#CACBCB] border-[1px] rounded-[10px] p-[11px] w-full focus:outline-none placeholder:text-[12px] placeholder:leading-[36px]"
                   placeholder="شماره تماس خود را وارد کنید"
                 />
               </div>
@@ -88,7 +89,7 @@ export default function RegisterationModal() {
                 </label>
                 <input
                   type="text"
-                  className="border-[#CACBCB] border-[1px] rounded-[10px] p-[11px] w-full focus:outline-none"
+                  className="border-[#CACBCB] border-[1px] rounded-[10px] p-[11px] w-full focus:outline-none placeholder:text-[12px] placeholder:leading-[36px]"
                   placeholder="ایمیل خود را وارد کنید"
                 />
               </div>
@@ -118,7 +119,7 @@ export default function RegisterationModal() {
                 </label>
                 <input
                   type="text"
-                  className="border-[#CACBCB] border-[1px] rounded-[10px] p-[11px] w-full focus:outline-none"
+                  className="border-[#CACBCB] border-[1px] rounded-[10px] p-[11px] w-full focus:outline-none placeholder:text-[12px] placeholder:leading-[36px]"
                   placeholder="تاریخ تولد خود را به صورت 1300/01/01 وارد کنید"
                 />
               </div>
@@ -131,7 +132,7 @@ export default function RegisterationModal() {
                 </label>
                 <Select
                   menuPlacement="bottom"
-                  className="border-[#CACBCB] border-[1px] rounded-[10px] w-full focus:outline-none py-[5px]"
+                  className="border-[#CACBCB] border-[1px] rounded-[10px] w-full focus:outline-none py-[5px] placeholder:text-[12px]"
                   options={gender}
                   defaultValue={{
                     label: "خانم",
@@ -148,7 +149,7 @@ export default function RegisterationModal() {
                 </label>
                 <input
                   type="text"
-                  className="border-[#CACBCB] border-[1px] rounded-[10px] p-[11px] w-full focus:outline-none"
+                  className="border-[#CACBCB] border-[1px] rounded-[10px] p-[11px] w-full focus:outline-none  placeholder:text-[12px] placeholder:leading-[36px]"
                   placeholder="آدرس خودتون رو وارد کنید"
                 />
               </div>
@@ -158,13 +159,16 @@ export default function RegisterationModal() {
                 </label>
                 <input
                   type="text"
-                  className="border-[#CACBCB] border-[1px] rounded-[10px] p-[11px] w-full focus:outline-none"
+                  className="border-[#CACBCB] border-[1px] rounded-[10px] p-[11px] w-full focus:outline-none placeholder:text-[12px] placeholder:leading-[36px]"
                   placeholder="ویژگی های بارز خود را وارد کنید"
                 />
               </div>
             </div>
-            <div className="flex justify-center mt-[15px]">
-              <button className="bg-[#00294D] text-[#ECF9FD] py-[10px] px-[63px] rounded-[10px] text-[16px] font-iranYekan leading-[28px] font-bold">
+            <div className="flex justify-center mt-[40px]">
+              <button
+                className="bg-[#00294D] text-[#ECF9FD] py-[6px] px-[63px] rounded-[10px] text-[16px] font-iranYekan leading-[28px] font-bold"
+                onClick={() => register()}
+              >
                 ثبت نام
               </button>
             </div>
