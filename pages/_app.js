@@ -27,29 +27,21 @@ export default function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-<<<<<<< HEAD
-      {router.pathname === "/" || router.pathname === "/cooperation" || router.pathname === "/bootcamp" ? (
-        <Header />
-      ) : null}
-      <Component {...pageProps} />
-      {router.pathname === "/" || router.pathname === "/cooperation" || router.pathname === "/bootcamp" ? (
-        <Footer />
-      ) : null}
-=======
       <Provider store={store}>
         {router.pathname === "/" ||
         router.pathname === "/cooperation" ||
+        router.pathname === "/bootcamp" ||
         router.pathname === "/blogs" ? (
           <Header />
         ) : null}
         <Component {...pageProps} />
         {router.pathname === "/" ||
         router.pathname === "/cooperation" ||
+        router.pathname === "/bootcamp" ||
         router.pathname === "/blogs" ? (
           <Footer />
         ) : null}
       </Provider>
->>>>>>> 0acca4be51e6fc1b14b42dbe71ad5ed3ae72387c
     </>
   );
 }
