@@ -193,19 +193,6 @@ const Cooperation = () => {
           .bgHeader{
             filter:brightness(70%) blur(8px) opacity(0.8) contrast(1.2) drop-shadow(2px 4px 6px black);
           }
-          .css-1s2u09g-control , .css-1pahdxg-control{
-            padding: 8px;
-            background-color: transparent !important;
-            border-color:transparent !important;
-            border-width: 0 !important;
-            border-radius: 0 !important;
-            box-shadow: none !important;
-          }
-          .css-1pahdxg-control:focus , .css-1pahdxg-control:hover , .css-1pahdxg-control:active{
-            border-color:transparent !important;
-            border-width: 0 !important;
-            box-shadow: none !important;
-          }
           `}
       </style>
     </>

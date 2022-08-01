@@ -12,7 +12,7 @@ export default function Makeeniha() {
   };
   return (
     <>
-      <div className="h-[454px] relative font-iranYekan mt-[180px] overflow-hidden">
+      <div className="h-[454px] relative font-iranYekan mt-[150px] overflow-hidden">
         <div className="w-[339px] h-[339px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-10 blur-[50px] top-[90px] right-[255px] rounded-full"></div>
         <div className="w-[205px] h-[205px] absolute bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-10 blur-[50px] top-[154px] left-0"></div>
         <div className="absolute top-[45px] -left-[50px] w-[86px] h-[86px] ">
@@ -36,7 +36,7 @@ export default function Makeeniha() {
           </h4>
         </div>
         <div
-          className="-blue-500 px-[50px] py-[20px] h-[300px]"
+          className="px-[50px] py-[20px] h-[300px]"
           id="makeenihaSlider"
         >
           <Slider {...setting}>
@@ -45,9 +45,9 @@ export default function Makeeniha() {
                 className="flex flex-col hover:cursor-grab active:cursor-grabbing"
                 key={index}
               >
-                <div className="w-[420px] h-[300px] relative rounded-[30px] p-[55px]">
+                <div className="w-[420px] h-[300px] relative p-[55px]">
                   <Image
-                    className=""
+                    className="shadow-[10px_10px_300px_#0000000D]"
                     layout="fill"
                     src={"/assets/images/makeenihaBackground.webp"}
                     alt="makeeniha"
@@ -67,6 +67,7 @@ export default function Makeeniha() {
                     <Image
                       width={60}
                       height={60}
+                      className="rounded-full"
                       src={"/assets/images/Arman.png"}
                       alt="Arman"
                     />

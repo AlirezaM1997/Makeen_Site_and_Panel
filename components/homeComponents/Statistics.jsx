@@ -6,7 +6,7 @@ const Statistics = () => {
       <div className="pt-[90px] pb-[56px] px-[50px] relative">
         <div className="absolute h-full w-[180px] top-0 right-0 bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-20 blur-[50px]"></div>
         <div className="absolute h-[107px] w-[59px] top-0 right-0 bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-40 blur-[50px]"></div>
-        <div className="absolute h-[137px] w-[69px] top-0 left-0 bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px]"></div>
+        <div className="absolute h-[137px] w-[69px] top-0 left-0 bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-30 blur-[50px]"></div>
         <div className="flex flex-row-reverse justify-between">
           <div className="flex items-center">
             <div className="flex flex-col items-end pr-3">

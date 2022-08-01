@@ -9,14 +9,16 @@ const WhyBootcamp = () => {
         <div className="w-[45%] relative">
           <div className="h-[400px] w-[350px] absolute right-0">
             <Image
-              src="/assets/images/whyBootcamp-img2.png"
+              src="/assets/images/whyBootcamp.png"
+              className="rounded-[20px]"
               layout="fill"
               alt="whyBootcamp"
             />
           </div>
           <div className="w-[260px] h-[296px] absolute -bottom-[85px]">
             <Image
-              src="/assets/images/whyBootcamp-img1.png"
+              src="/assets/images/whyBootcamp.png"
+              className="rounded-[20px]"
               layout="fill"
               alt="whyBootcamp"
             />
@@ -31,11 +33,11 @@ const WhyBootcamp = () => {
           <div className="w-[261px] h-[261px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] top-8 left-8 -z-[1]"></div>
           <div className="w-[261px] h-[261px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] -bottom-[130px] -right-[130px] -z-[1]"></div>
         </div>
-        <div dir="rtl" className="flex flex-col relative w-[55%] py-4">
+        <div dir="rtl" className="flex flex-col relative w-[55%] py-4 pl-8">
           <h1 className="text-[20px] text-[#00213E] font-iranYekan leading-[35px] font-black">
             چرا بوت کمپ مکین؟
           </h1>
-          <h6 className="text-[16px] pl-8 text-[#4D6982] font-iranYekan leading-[36px] font-bold mt-[21px] mb-[35px]">
+          <h6 className="text-[16px] text-[#4D6982] font-iranYekan leading-[36px] font-bold mt-[21px] mb-[35px]">
             بوت کمپ مکین حدود 10 ساله که در حال پرورش نیروهای متخصص و آماده به
             کار برای بازار کاره و از نیازهای بازار کار به خوبی با خبره و میدونی
             که چه مهارت هایی برای استخدام شدن لازمه. ما دوره های مختلفی رو
@@ -48,7 +50,7 @@ const WhyBootcamp = () => {
             <div className="text-[#4D6982] text-[16px] leading-[36px] font-iranYekan font-bold">
               برای شروع رو این دکمه کلیک کن
             </div>
-            <div className="w-[130px] h-[40px] relative mx-[20px]">
+            <div className="w-[120px] h-[40px] relative mx-[20px]">
               <Image
                 src="/assets/images/whyBootcamp-arrow.png"
                 layout="fill"

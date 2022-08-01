@@ -1,30 +1,30 @@
 const sliderImage = [
   {
-    urls: "/assets/images/mentor1.png",
+    urls: "/assets/images/sadeghikia.png",
     name: 'sadeghi',
   },
   {
-    urls: "/assets/images/mentor2.png",
+    urls: "/assets/images/sadeghikia.png",
     name: 'solgi',
   },
   {
-    urls: "/assets/images/mentor3.png",
+    urls: "/assets/images/sadeghikia.png",
     name: 'name3',
   },
   {
-    urls: "/assets/images/mentor4.png",
+    urls: "/assets/images/sadeghikia.png",
     name: 'name4',
   },
   {
-    urls: "/assets/images/mentor5.png",
+    urls: "/assets/images/sadeghikia.png",
     name: 'name5',
   },
   {
-    urls: "/assets/images/mentor6.png",
+    urls: "/assets/images/sadeghikia.png",
     name: 'aghche',
   },
   {
-    urls: "/assets/images/mentor7.png",
+    urls: "/assets/images/sadeghikia.png",
     name: 'name7',
   },
 

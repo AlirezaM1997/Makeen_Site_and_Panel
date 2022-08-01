@@ -27,7 +27,6 @@ export default function SliderContent({
     }
   };
   useEffect(() => {
-    console.log(activeIndex);
     setFlag(false);
     if (!flag) {
       for (let index = 0; index < sliderImage.length; index++) {
@@ -43,7 +42,7 @@ export default function SliderContent({
           src={sliderImage[0].urls}
           alt="slide"
           layout="fill"
-          className="rounded-[20px]"
+          className="rounded-full"
         />
       </div>
       <div className="w-[60px] relative h-[60px] inline-block">
@@ -51,7 +50,7 @@ export default function SliderContent({
           src={sliderImage[1].urls}
           alt="slide"
           layout="fill"
-          className="rounded-[20px]"
+          className="rounded-full"
         />
       </div>
       <div className="w-[80px] relative h-[80px] inline-block">
@@ -59,7 +58,7 @@ export default function SliderContent({
           src={sliderImage[2].urls}
           alt="slide"
           layout="fill"
-          className="rounded-[20px]"
+          className="rounded-full"
         />
       </div>
       <div className=" relative w-[35px] h-[35px]  inline-block">
@@ -70,7 +69,7 @@ export default function SliderContent({
           src={sliderImage[3].urls}
           alt="slide"
           layout="fill"
-          className="rounded-[20px]"
+          className="rounded-full"
         />
         <div className="mt-[10rem] pt-[10px]">
           <h1 className="text-[24px] text-[#00213E] font-iranYekan leading-[41px] font-bold text-center">
@@ -92,7 +91,7 @@ export default function SliderContent({
           src={sliderImage[4].urls}
           alt="slide"
           layout="fill"
-          className="rounded-[20px]"
+          className="rounded-full"
         />
       </div>
       <div className="w-[60px] relative h-[60px] inline-block">
@@ -100,7 +99,7 @@ export default function SliderContent({
           src={sliderImage[5].urls}
           alt="slide"
           layout="fill"
-          className="rounded-[20px]"
+          className="rounded-full"
         />
       </div>
       <div className="w-[40px] relative h-[40px] inline-block">
@@ -108,7 +107,7 @@ export default function SliderContent({
           src={sliderImage[6].urls}
           alt="slide"
           layout="fill"
-          className="rounded-[20px]"
+          className="rounded-full"
         />
       </div>
     </section>

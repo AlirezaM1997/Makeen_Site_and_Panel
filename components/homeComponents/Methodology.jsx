@@ -5,8 +5,8 @@ export default function Methdology() {
       <div className="relative mt-[200px] flex justify-between h-[464px] mb-[150px] font-iranYekan pr-[120px] pl-[86px]">
         <div className="w-[123px] h-[123px] absolute top-[5px] left-0  bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px]"></div>
         <div className="h-[283px] w-[126px] absolute top-[23px] left-0  bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] blur-[50px] opacity-20"></div>
-        <div className="w-[62%] pr-[168px] relative pt-[75px]" dir="rtl">
-          <div className="absolute right-[95px] top-[88px] w-[58px] h-[63px]">
+        <div className="w-[62%] pr-[168px] relative my-auto" dir="rtl">
+          <div className="absolute right-[95px] top-[14px] w-[58px] h-[63px]">
             <Image
               layout="fill"
               src={"/assets/images/circleArrow.png"}
@@ -28,14 +28,16 @@ export default function Methdology() {
         <div className="relative w-[38%] pt-[23px]">
           <div className="absolute left-0 top-[160px] w-[220px] h-[250px] z-10">
             <Image
-              src={"/assets/images/methodology1.png"}
+              src={"/assets/images/whyBootcamp.png"}
+              className="rounded-[20px]"
               alt="methodology1"
               layout="fill"
             />
           </div>
           <div className="absolute right-0 top-[30px] w-[290px] h-[331px]">
             <Image
-              src={"/assets/images/methodology2.png"}
+              src={"/assets/images/whyBootcamp.png"}
+              className="rounded-[20px]"
               alt="methodology2"
               layout="fill"
             />
@@ -49,7 +51,7 @@ export default function Methdology() {
               alt="blueCircle1"
             />
           </div>
-          <div className="absolute bottom-[100px] right-[200px] w-[69px] h-[69px] -z-[1]">
+          <div className="absolute bottom-[71px] right-[173px] w-[69px] h-[69px] -z-[1]">
             <Image
               layout="fill"
               src={"/assets/images/blueCircle2.png"}
