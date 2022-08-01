@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-export default function NewRegistrationsTable() {
+export default function RegistrationsTable() {
   const currentRouter = useRouter();
   const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   return (

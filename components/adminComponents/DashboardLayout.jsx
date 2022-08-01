@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 export default function DashboardLayout({ children }) {
+  // className="invert-[100%] sepia-[125%] saturate-[115%] hue-rotate-[178deg] brightness-[99%] contrast-[100%]"
   return (
     <>
       <section className="px-[30px] py-4 relative">
@@ -23,7 +24,6 @@ export default function DashboardLayout({ children }) {
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
-                    className="invert-[100%] sepia-[125%] saturate-[115%] hue-rotate-[178deg] brightness-[99%] contrast-[100%]"
                   >
                     <g
                       id="vuesax_outline_home-2"
@@ -35,14 +35,14 @@ export default function DashboardLayout({ children }) {
                           id="Vector"
                           d="M16.049,20.832H4.813A4.819,4.819,0,0,1,0,16.011V8.824A5.336,5.336,0,0,1,1.863,5.031L7.093.957A5.045,5.045,0,0,1,12.808.821l6,4.2a5.3,5.3,0,0,1,2.057,3.938v7.062A4.817,4.817,0,0,1,16.049,20.832ZM7.986,2.1,2.756,6.176a3.942,3.942,0,0,0-1.3,2.648v7.188a3.366,3.366,0,0,0,3.357,3.366H16.049a3.358,3.358,0,0,0,3.357-3.356V8.959A3.848,3.848,0,0,0,17.97,6.214l-6-4.2A3.613,3.613,0,0,0,7.986,2.1Z"
                           transform="translate(1.569 1.599)"
-                          fill="#37bbec"
+                          fill="#292d32"
                         />
                         <path
                           id="Vector-2"
                           data-name="Vector"
                           d="M.941,5.649A.948.948,0,0,1,0,4.707V.941A.948.948,0,0,1,.941,0a.948.948,0,0,1,.941.941V4.707A.948.948,0,0,1,.941,5.649Z"
                           transform="translate(11.059 13.41)"
-                          fill="#37bbec"
+                          fill="#292d32"
                         />
                         <path
                           id="Vector-3"
@@ -98,7 +98,7 @@ export default function DashboardLayout({ children }) {
                   <span>تنظیمات</span>
                 </a>
               </Link>
-              <Link href={"#"}>
+              <Link href={"/admin/registeration"}>
                 <a className="flex flex-col items-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -160,7 +160,6 @@ export default function DashboardLayout({ children }) {
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
-                    className=""
                   >
                     <g
                       id="vuesax_outline_home-2"
@@ -172,14 +171,14 @@ export default function DashboardLayout({ children }) {
                           id="Vector"
                           d="M16.049,20.832H4.813A4.819,4.819,0,0,1,0,16.011V8.824A5.336,5.336,0,0,1,1.863,5.031L7.093.957A5.045,5.045,0,0,1,12.808.821l6,4.2a5.3,5.3,0,0,1,2.057,3.938v7.062A4.817,4.817,0,0,1,16.049,20.832ZM7.986,2.1,2.756,6.176a3.942,3.942,0,0,0-1.3,2.648v7.188a3.366,3.366,0,0,0,3.357,3.366H16.049a3.358,3.358,0,0,0,3.357-3.356V8.959A3.848,3.848,0,0,0,17.97,6.214l-6-4.2A3.613,3.613,0,0,0,7.986,2.1Z"
                           transform="translate(1.569 1.599)"
-                          fill="#37bbec"
+                          fill="#292d32"
                         />
                         <path
                           id="Vector-2"
                           data-name="Vector"
                           d="M.941,5.649A.948.948,0,0,1,0,4.707V.941A.948.948,0,0,1,.941,0a.948.948,0,0,1,.941.941V4.707A.948.948,0,0,1,.941,5.649Z"
                           transform="translate(11.059 13.41)"
-                          fill="#37bbec"
+                          fill="#292d32"
                         />
                         <path
                           id="Vector-3"
@@ -201,7 +200,6 @@ export default function DashboardLayout({ children }) {
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
-                    className=""
                   >
                     <g
                       id="vuesax_outline_home-2"
@@ -213,14 +211,14 @@ export default function DashboardLayout({ children }) {
                           id="Vector"
                           d="M16.049,20.832H4.813A4.819,4.819,0,0,1,0,16.011V8.824A5.336,5.336,0,0,1,1.863,5.031L7.093.957A5.045,5.045,0,0,1,12.808.821l6,4.2a5.3,5.3,0,0,1,2.057,3.938v7.062A4.817,4.817,0,0,1,16.049,20.832ZM7.986,2.1,2.756,6.176a3.942,3.942,0,0,0-1.3,2.648v7.188a3.366,3.366,0,0,0,3.357,3.366H16.049a3.358,3.358,0,0,0,3.357-3.356V8.959A3.848,3.848,0,0,0,17.97,6.214l-6-4.2A3.613,3.613,0,0,0,7.986,2.1Z"
                           transform="translate(1.569 1.599)"
-                          fill="#37bbec"
+                          fill="#292d32"
                         />
                         <path
                           id="Vector-2"
                           data-name="Vector"
                           d="M.941,5.649A.948.948,0,0,1,0,4.707V.941A.948.948,0,0,1,.941,0a.948.948,0,0,1,.941.941V4.707A.948.948,0,0,1,.941,5.649Z"
                           transform="translate(11.059 13.41)"
-                          fill="#37bbec"
+                          fill="#292d32"
                         />
                         <path
                           id="Vector-3"

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import NewRegistrationsTable from "./NewRegistrationsTable";
+import RegistrationsTable from "./RegistrationsTable";
 import NewsletterEmails from "./NewsletterEmails";
 export default function Dashboard() {
   return (
@@ -9,7 +9,7 @@ export default function Dashboard() {
             <NewsletterEmails />
           </div>
           <div className="w-2/3 shadow-[0px_0px_5px_#00000017] rounded-[14px] pt-[18px] relative px-2 ml-[15px] pb-3">
-            <NewRegistrationsTable />
+            <RegistrationsTable />
             <div className="mt-9">
               <button className="flex items-center justify-center border-[1px] border-[#12B428] rounded-[10px] px-4 py-[10px]">
                 <div className="relative w-[14px] h-[16px]">
