@@ -88,12 +88,12 @@ export default function RegisterationModal() {
     <>
       <div
         className={`${
-          modalMode ? "block" : "hidden"
-        } fixed w-full h-full top-0 left-0 z-[1001] p-[48px] bg-[#4d698266] backdrop-blur-[10px]`}
+          modalMode ? "block" : "-top-full"
+        } fixed w-full h-full top-0 left-0 z-[1001] p-[48px] bg-[#4d698266] backdrop-blur-[10px] transition-top`}
         onClick={() => dispatch(showHideModalAction(false))}
       >
         <section
-          className="bg-white absolute px-16 py-6 flex rounded-[20px] shadow-[10px_10px_20px_#00000014] w-[90%] h-[95%] right-1/2 bottom-1/2 translate-x-1/2 translate-y-1/2"
+          className="bg-white absolute px-16 py-6 flex rounded-[20px] shadow-[10px_10px_20px_#00000014] w-[90%] h-[95%] right-1/2 bottom-1/2 translate-x-1/2 translate-y-1/2 animate-comeFromUp"
           onClick={(e) => e.stopPropagation()}
         >
           <form

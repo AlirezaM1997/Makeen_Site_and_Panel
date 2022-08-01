@@ -21,10 +21,15 @@ module.exports = {
           "0%": { transform: "scale(1) translate(0%,0%)" },
           "100%": { transform: "scale(0) translate(50%,50%)" },
         },
+        upToDown: {
+          "0%": { bottom: "100%", right: "50%" },
+          "100%": { bottom: "50%", right: "50%" },
+        },
       },
       animation: {
         mouseInPaint: "growScale 0.3s ease-out",
         mouseOutPaint: "shrinkScale 0.3s ease-out",
+        comeFromUp: "upToDown 0.3s ease-in-out",
       },
       backgroundImage: {
         menu_item: "linear-gradient(#37BBEC, #37BBEC)",
