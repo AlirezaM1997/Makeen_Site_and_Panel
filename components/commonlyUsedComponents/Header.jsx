@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import { showHideModalAction } from "../../slices/showRegistrationModalSlice";
 export default function Header() {
   const dispatch = useDispatch();
@@ -26,9 +26,11 @@ export default function Header() {
                 <a>بلاگ</a>
               </Link>
             </li>
-            <li className="xl:mr-[66px] lg:mr-12 mr-10 mb-1 pb-[14px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative flex justify-center hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
-              درباره مکین
-            </li>
+            <Link href={"/aboutmakeen"}>
+              <li className="xl:mr-[66px] lg:mr-12 mr-10 mb-1 pb-[14px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative flex justify-center hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
+                درباره مکین
+              </li>
+            </Link>
             <Link href={"/bootcamp"}>
               <li className="xl:mr-[66px] lg:mr-12 mr-10 mb-1 pb-[14px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative flex justify-center hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
                 بوت کمپ
