@@ -32,7 +32,8 @@ export default function MyApp({ Component, pageProps }) {
         {router.pathname === "/" ||
         router.pathname === "/cooperation" ||
         router.pathname === "/bootcamp" ||
-        router.pathname === "/blogs" ? (
+        router.pathname === "/blogs" ||
+        router.pathname === "/aboutmakeen" ? (
           <Header />
         ) : null}
         <RegisterationModal/>
@@ -40,7 +41,8 @@ export default function MyApp({ Component, pageProps }) {
         {router.pathname === "/" ||
         router.pathname === "/cooperation" ||
         router.pathname === "/bootcamp" ||
-        router.pathname === "/blogs" ? (
+        router.pathname === "/blogs" ||
+        router.pathname === "/aboutmakeen" ? (
           <Footer />
         ) : null}
       </Provider>
