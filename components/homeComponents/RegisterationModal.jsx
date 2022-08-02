@@ -41,6 +41,7 @@ const gender = [
 export default function RegisterationModal() {
   const modalMode = useSelector((state) => state.modalMode.value);
   const dispatch = useDispatch();
+  console.log('mode',modalMode);
 
   Yup.addMethod(Yup.string, "stripEmptyString", function () {
     return this.transform((value) => (value === "" ? undefined : value));

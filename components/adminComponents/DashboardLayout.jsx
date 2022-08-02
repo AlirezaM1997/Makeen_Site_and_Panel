@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 export default function DashboardLayout({ children }) {
+  const router = useRouter()
   // className="invert-[100%] sepia-[125%] saturate-[115%] hue-rotate-[178deg] brightness-[99%] contrast-[100%]"
   return (
     <>
@@ -11,7 +13,7 @@ export default function DashboardLayout({ children }) {
         >
           موسسه ایده آل رسانه مکین
         </header>
-        <aside className="absolute right-[30px] top-4 w-[92px] h-screen p-[20px] shadow-[0px_0px_5px_#00000017] rounded-[14px]">
+        <aside className="fixed right-[30px] top-4 w-[92px] p-[20px] shadow-[0px_0px_5px_#00000017] rounded-[14px]">
           <div className="relative w-[52px] h-[52px]">
             <Image src={"/assets/images/logo.png"} layout="fill" alt="logo" />
           </div>
@@ -234,7 +236,7 @@ export default function DashboardLayout({ children }) {
                 </a>
               </Link>
             </div>
-            <div className="relative w-6 h-6 mt-[100px]">
+            <div className="relative w-6 h-6 mt-[85px]">
               <Image
                 src={"/assets/images/logout.png"}
                 layout="fill"
