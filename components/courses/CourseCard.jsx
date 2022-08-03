@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useDispatch } from "react-redux";
+import { showHideModalAction } from "../../slices/showRegistrationModalSlice";
 export const CourseCard = () => {
+  const dispatch = useDispatch();
   return (
     <>
       <div className="pt-[30px] pb-[25px] px-[30px] flex flex-col w-full h-full items-center shadow-[10px_10px_20px_#00000014] rounded-[20px] border-[0.5px] border-[#00000014]">
@@ -21,34 +24,35 @@ export const CourseCard = () => {
               اطلاعات بیشتر
             </a>
           </Link>
-          <Link href={"#"}>
-            <a className="cursor-pointer relative">
-              <div dir="rtl" className="flex justify-center items-center ">
-                <span className="text-[#00294D] peer text-[16px] leading-[28px] pl-1">
-                  ثبت نام دوره
-                </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="5.041"
-                  height="8.554"
-                  viewBox="0 0 5.041 8.554"
-                  className="peer-hover:-translate-x-[10px] transition-all duration-300 ease-out"
-                >
-                  <path
-                    id="Path_58"
-                    dataname="Path 58"
-                    d="M4.229,7.567,1,4.351l3.23-3.217"
-                    transform="translate(-0.249 -0.073)"
-                    fill="none"
-                    stroke="#8094a6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.5"
-                  />
-                </svg>
-              </div>
-            </a>
-          </Link>
+
+          <div
+            dir="rtl"
+            className="flex justify-center items-center cursor-pointer relative"
+            onClick={() => dispatch(showHideModalAction(true))}
+          >
+            <span className="text-[#00294D] peer text-[16px] leading-[28px] pl-1">
+              ثبت نام دوره
+            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="5.041"
+              height="8.554"
+              viewBox="0 0 5.041 8.554"
+              className="peer-hover:-translate-x-[10px] transition-all duration-300 ease-out"
+            >
+              <path
+                id="Path_58"
+                dataname="Path 58"
+                d="M4.229,7.567,1,4.351l3.23-3.217"
+                transform="translate(-0.249 -0.073)"
+                fill="none"
+                stroke="#8094a6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </>

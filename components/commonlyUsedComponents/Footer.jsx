@@ -72,7 +72,7 @@ export default function Footer() {
             .بهشون آینده میدیم
           </p>
           <div className="absolute mt-[270px] flex justify-between px-[390px] w-full">
-            <div className="relative">
+            <div className="relative z-10">
               <div
                 onMouseEnter={() => setGoogle(true)}
                 onMouseLeave={() => hoverLeave()}

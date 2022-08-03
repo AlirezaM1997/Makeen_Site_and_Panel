@@ -111,7 +111,7 @@ export default function RegisterationModal() {
           >
             <div className="flex justify-between items-center">
               <div
-                className="relative w-[10px] h-[10px] cursor-pointer"
+                className="rounded-full border-[#707070] border-[1px] border-opacity-20 w-[35px] h-[35px] flex justify-center items-center cursor-pointer"
                 onClick={() => {
                   dispatch(showHideModalAction(false));
                   reset({
@@ -124,7 +124,9 @@ export default function RegisterationModal() {
                   });
                 }}
               >
-                <Image src={"/assets/images/quit-modal.png"} layout="fill" />
+                <div className="relative w-[13px] h-[13px]">
+                  <Image src={"/assets/images/quit-modal.png"} layout="fill" />
+                </div>
               </div>
               <h1 className="text-[#00213E] text-[20px] leading-[35px] font-extrabold">
                 !مکینی شو
