@@ -121,7 +121,7 @@ export default function Cooperation () {
           </div>
           <div
             dir="rtl"
-            className="grid grid-cols-2 grid-rows-5 gap-y-[18px] gap-x-[58px] justify-items-center items-centerd mt-[50px]"
+            className="grid grid-cols-2 grid-rows-5 gap-y-[18px] gap-x-[58px] justify-items-center mt-[50px]"
           >
             <div className="flex flex-col items-start w-full">
               <label className="text-[14px] text-[#00213E] font-iranYekan leading-[36px] font-bold">

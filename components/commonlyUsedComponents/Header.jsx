@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { showHideModalAction } from "../../slices/showRegistrationModalSlice";
 export default function Header() {
-  const modalMode = useSelector((state) => state.modalMode.value);
   const dispatch = useDispatch();
   return (
     <>

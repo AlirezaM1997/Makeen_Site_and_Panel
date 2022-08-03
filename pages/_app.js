@@ -31,6 +31,7 @@ export default function MyApp({ Component, pageProps }) {
       <Provider store={store}>
         {router.pathname === "/" ||
         router.pathname === "/cooperation" ||
+        router.pathname === "/courses" ||
         router.pathname === "/bootcamp" ||
         router.pathname === "/blogs" ||
         router.pathname === "/aboutmakeen" ? (
@@ -40,6 +41,7 @@ export default function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
         {router.pathname === "/" ||
         router.pathname === "/cooperation" ||
+        router.pathname === "/courses" ||
         router.pathname === "/bootcamp" ||
         router.pathname === "/blogs" ||
         router.pathname === "/aboutmakeen" ? (
