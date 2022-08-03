@@ -5,7 +5,7 @@ export default function Blogs() {
   const allBlogs = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <>
-      <section className="pt-[140px] px-[50px]">
+      <section className="pt-[140px] px-[50px] mb-[120px]">
         <h1 className="text-[#00213e] text-[20px] leading-[35px] font-extrabold font-iranYekan text-center">
           بلاگ
         </h1>

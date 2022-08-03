@@ -92,7 +92,7 @@ export default function Cooperation () {
       <Head>
         <title>درخواست همکاری</title>
       </Head>
-      <div>
+      <div className="mb-[100px]">
         <header className="px-[30px] relative">
           <div className="h-[302px] relative mt-[71px] rounded-[20px] overflow-hidden">
             <Image

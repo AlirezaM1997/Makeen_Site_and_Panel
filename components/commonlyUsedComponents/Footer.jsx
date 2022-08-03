@@ -22,7 +22,7 @@ export default function Footer() {
   };
   return (
     <>
-      <footer className="w-full px-[30px] mt-[85px] relative">
+      <footer className="w-full px-[30px] relative">
         <div className="flex justify-center relative overflow-hidden">
           <div className="absolute -left-[145px] -bottom-[345px] w-[625px] h-[625px] z-10 mix-blend-lighten">
             <Image
