@@ -135,7 +135,7 @@ export default function Cooperation () {
                 {...register("companyName")}
                 placeholder="نام شرکت خود را وارد کنید"
               />
-              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[5px] -mb-8">
+              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[0px] -mb-0">
                 {errors.companyName?.message}
               </span>
             </div>
