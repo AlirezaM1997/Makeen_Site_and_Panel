@@ -121,7 +121,7 @@ export default function Cooperation () {
           </div>
           <div
             dir="rtl"
-            className="grid grid-cols-2 grid-rows-5 gap-[30px] justify-items-center items-center mt-[50px]"
+            className="grid grid-cols-2 grid-rows-5 gap-y-[18px] gap-x-[58px] justify-items-center items-centerd mt-[50px]"
           >
             <div className="flex flex-col items-start w-full">
               <label className="text-[14px] text-[#00213E] font-iranYekan leading-[36px] font-bold">
@@ -131,11 +131,11 @@ export default function Cooperation () {
                 type="text"
                 className={`${
                   errors.companyName ? "border-[#B80000]" : ""
-                } border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none`}
+                } border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none placeholder:text-[12px] placeholder:leading-[36px]`}
                 {...register("companyName")}
                 placeholder="نام شرکت خود را وارد کنید"
               />
-              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[0px] -mb-0">
+              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[6px] -mb-[27px]">
                 {errors.companyName?.message}
               </span>
             </div>
@@ -147,11 +147,11 @@ export default function Cooperation () {
                 type="text"
                 className={`${
                   errors.representative ? "border-[#B80000]" : ""
-                } border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none`}
+                } border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none placeholder:text-[12px] placeholder:leading-[36px]`}
                 {...register("representative")}
                 placeholder="نام نماینده شرکت را وارد کنید"
               />
-              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[5px] -mb-8">
+              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[6px] -mb-[27px]">
                 {errors.representative?.message}
               </span>
             </div>
@@ -163,11 +163,11 @@ export default function Cooperation () {
                 type="text"
                 className={`${
                   errors.establishedYear ? "border-[#B80000]" : ""
-                } border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none`}
+                } border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none placeholder:text-[12px] placeholder:leading-[36px]`}
                 {...register("establishedYear")}
                 placeholder="سال تاسیس شرکت را به صورت 1300/01/1 وارد کنید"
               />
-              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[5px] -mb-8">
+              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[6px] -mb-[27px]">
                 {errors.establishedYear?.message}
               </span>
             </div>
@@ -179,11 +179,11 @@ export default function Cooperation () {
                 type="number"
                 className={`${
                   errors.phone ? "border-[#B80000]" : ""
-                } border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none`}
+                } border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none placeholder:text-[12px] placeholder:leading-[36px]`}
                 {...register("phone")}
                 placeholder="شماره تماس خود را وارد کنید"
               />
-              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[5px] -mb-8">
+              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[6px] -mb-[27px]">
                 {errors.phone?.message}
               </span>
             </div>
@@ -197,6 +197,8 @@ export default function Cooperation () {
                 render={({ field: { onChange } }) => (
                   <Select
                     menuPlacement="bottom"
+                    id="jobApplicantSelect"
+                    instanceId="jobApplicantSelect"
                     name="jobApplicant"
                     {...register("jobApplicant")}
                     placeholder="دوره ی مورد نظر خود را انتخاب کنید"
@@ -209,12 +211,12 @@ export default function Cooperation () {
                     }}
                     className={`${
                       errors.jobApplicant ? "border-[#B80000]" : ""
-                    } border-[#CACBCB] border-[1px] rounded-[10px] w-full focus:outline-none`}
+                    } border-[#CACBCB] border-[1px] rounded-[10px] w-full focus:outline-none placeholder:text-[12px] placeholder:leading-[36px]`}
                     isSearchable={false}
                   />
                 )}
               />
-              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[5px] -mb-8">
+              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[6px] -mb-[27px]">
                 {errors.jobApplicant?.message}
               </span>
             </div>
@@ -226,11 +228,11 @@ export default function Cooperation () {
                 type="text"
                 className={`${
                   errors.workingTitle ? "border-[#B80000]" : ""
-                } border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none`}
+                } border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none placeholder:text-[12px] placeholder:leading-[36px]`}
                 {...register("workingTitle")}
                 placeholder="عنوان کاری شرکت خود را وارد کنید"
               />
-              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[5px] -mb-8">
+              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[6px] -mb-[27px]">
                 {errors.workingTitle?.message}
               </span>
             </div>
@@ -242,11 +244,11 @@ export default function Cooperation () {
                 type="number"
                 className={`${
                   errors.numberOfPersonnel ? "border-[#B80000]" : ""
-                } border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none`}
+                } border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none placeholder:text-[12px] placeholder:leading-[36px]`}
                 {...register("numberOfPersonnel")}
                 placeholder="تعداد پرسنل شرکت خود را وارد کنید"
               />
-              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[5px] -mb-8">
+              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[6px] -mb-[27px]">
                 {errors.numberOfPersonnel?.message}
               </span>
             </div>
@@ -258,11 +260,11 @@ export default function Cooperation () {
                 type="text"
                 className={`${
                   errors.numberOfEmployees ? "border-[#B80000]" : ""
-                } border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none`}
+                } border-[#CACBCB] border-[1px] rounded-[10px] p-[15px] w-full focus:outline-none placeholder:text-[12px] placeholder:leading-[36px]`}
                 {...register("numberOfEmployees")}
                 placeholder="تعداد نیروی مورد نظر خود را وارد کنید"
               />
-              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[5px] -mb-8">
+              <span className="text-[10px] text-[#B80000] leading-[36px] font-bold -mt-[6px] -mb-[27px]">
                 {errors.numberOfEmployees?.message}
               </span>
             </div>
@@ -276,6 +278,8 @@ export default function Cooperation () {
                 render={({ field: { onChange } }) => (
                   <Select
                     menuPlacement="bottom"
+                    id="methodOfIntroductionSelect"
+                    instanceId="methodOfIntroduction"
                     name="methodOfIntroduction"
                     {...register("methodOfIntroduction")}
                     options={methodOfIntroduction}

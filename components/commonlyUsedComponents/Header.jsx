@@ -5,7 +5,6 @@ import { showHideModalAction } from "../../slices/showRegistrationModalSlice";
 export default function Header() {
   const modalMode = useSelector((state) => state.modalMode.value);
   const dispatch = useDispatch();
-  console.log("mode", modalMode);
   return (
     <>
       <div className="fixed top-0 min-h-[100px] w-full flex justify-center px-[47px] pt-[29px] z-[1000]">

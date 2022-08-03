@@ -193,6 +193,8 @@ export default function RegisterationModal() {
                   render={({ field: { onChange } }) => (
                     <Select
                       menuPlacement="bottom"
+                      id="courseSelect"
+                      instanceId='courseSelect'
                       name="course"
                       {...register("course")}
                       defaultValue={{
@@ -245,6 +247,8 @@ export default function RegisterationModal() {
                   render={({ field: { onChange } }) => (
                     <Select
                       menuPlacement="bottom"
+                      id="genderSelect"
+                      instanceId="genderSelect"
                       name="gender"
                       {...register("gender")}
                       defaultValue={{

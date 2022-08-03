@@ -49,7 +49,7 @@ export default function Magazines() {
         <div className="w-[183px] h-[193px] absolute bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-20 blur-[50px] bottom-[12px] left-0 rounded-full"></div>
         <Slider {...setting}>
           {magazines.map((item, index) => (
-            <BlogCard item={item} index={index} />
+            <BlogCard item={item} index={index} key={index}/>
           ))}
         </Slider>
       </div>

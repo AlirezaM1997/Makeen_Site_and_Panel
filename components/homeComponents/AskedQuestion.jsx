@@ -25,7 +25,7 @@ export default function AskedQuestion() {
           dir="rtl"
         >
           {Q.map((item, index) => (
-            <div className="relative">
+            <div key={index} className="relative">
               <li
                 className={`${
                   showAndHideAnswer === index

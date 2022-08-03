@@ -93,7 +93,7 @@ const Courses = () => {
                             >
                               <path
                                 id="Path_58"
-                                dataName="Path 58"
+                                dataname="Path 58"
                                 d="M4.229,7.567,1,4.351l3.23-3.217"
                                 transform="translate(-0.249 -0.073)"
                                 fill="none"
