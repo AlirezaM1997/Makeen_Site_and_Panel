@@ -5,6 +5,7 @@ import Select from "react-select";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
+import { useEffect } from "react";
 
 const courses = [
   {
@@ -83,6 +84,14 @@ export default function RegisterationModal() {
     });
   const { errors } = formState;
   const onSubmit = (data) => console.log(data);
+
+  useEffect(() => {
+    if (modalMode) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [modalMode]);
 
   return (
     <>
@@ -194,7 +203,7 @@ export default function RegisterationModal() {
                     <Select
                       menuPlacement="bottom"
                       id="courseSelect"
-                      instanceId='courseSelect'
+                      instanceId="courseSelect"
                       name="course"
                       {...register("course")}
                       defaultValue={{
