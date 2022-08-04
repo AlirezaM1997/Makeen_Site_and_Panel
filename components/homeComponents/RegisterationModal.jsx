@@ -98,7 +98,7 @@ export default function RegisterationModal() {
       <div
         className={`${
           modalMode ? "block" : "-top-full"
-        } fixed w-full h-full top-0 left-0 z-[1001] p-[48px] bg-[#4d698266] backdrop-blur-[10px] transition-top`}
+        } fixed w-full h-full top-0 left-0 z-[1001] p-[48px] bg-[#4d698266] backdrop-blur-[10px] transition-top duration-500`}
         onClick={() => dispatch(showHideModalAction(false))}
       >
         <section
