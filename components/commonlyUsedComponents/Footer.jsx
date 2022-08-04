@@ -45,7 +45,7 @@ export default function Footer() {
               layout="fill"
             />
           </div>
-          <div className=" h-fit w-full  absolute flex justify-center pt-[10px] cursor-pointer transition  delay-150  hover:-translate-y-1   ">
+          <div className="h-fit absolute flex justify-center pt-[10px] cursor-pointer transition  delay-150  hover:-translate-y-1   ">
             <div className="w-[10px] h-[13px] relative">
               <Image
                 onClick={() => scrollClick()}

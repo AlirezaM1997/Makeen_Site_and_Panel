@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useDispatch } from "react-redux";
 import { showHideModalAction } from "../../slices/showRegistrationModalSlice";
+import { _showHideModalAction } from "../../slices/showConsultationModal";
 export default function Header() {
   const dispatch = useDispatch();
   const router = useRouter();
@@ -18,7 +19,10 @@ export default function Header() {
         <div className="w-full absolute top-0 left-0 z-10 h-[30px] bg-gradient-[271deg] from-[#37BBEC] to-[#FF792C] bg-origin-padding blur-[30px] bg-no-repeat opacity-30"></div>
         <div className="w-1/2 mr-8">
           <ul className="list-none flex justify-between font-iranYekan xl:text-[14px] lg:text-[11px] text-[9px]">
-            <li className="xl:mr-[66px] lg:mr-12 mr-10 mb-1 pb-[14px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative flex justify-center hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100">
+            <li
+              className="xl:mr-[66px] lg:mr-12 mr-10 mb-1 pb-[14px] transition font-semibold leading-[25px] text-[#3E4041] opacity-50 relative flex justify-center hover:text-[#363839] hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100"
+              onClick={() => dispatch(_showHideModalAction(true))}
+            >
               درخواست مشاوره
             </li>
             <Link href={"/blogs"}>

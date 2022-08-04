@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import { Provider } from "react-redux";
 import { store } from "../store/store";
 import RegisterationModal from "../components/homeComponents/RegisterationModal";
+import ConsultationModal from "../components/homeComponents/ConsultationModal";
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
@@ -38,6 +39,7 @@ export default function MyApp({ Component, pageProps }) {
           <Header />
         ) : null}
         <RegisterationModal/>
+        <ConsultationModal/>
         <Component {...pageProps} />
         {router.pathname === "/" ||
         router.pathname === "/cooperation" ||
