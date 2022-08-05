@@ -36,8 +36,8 @@ const Navigator = () => {
     <>
       <div
         dir="rtl"
-        className=" w-[211px] pr-[20px] pt-[35px]  h-[255px] z-40 bg-[#FFFFFF] border-[.5px] rounded-[10px] right-[30px] 
-      fixed top-[310px] border-[#CACBCB] text-[#4D6982] "
+        className=" w-[211px] pr-[20px] pt-[35px]  h-[255px] z-40 bg-[#FFFFFF] border-[.5px] rounded-[10px] left-[1200px] 
+      sticky top-[310px] border-[#CACBCB] text-[#4D6982] "
       >
         <div className=" border-r-[1px] border-[#EDEEEE] pr-[10px] font-iranYekan leading-[20px] text-[14px] ">
           <h4

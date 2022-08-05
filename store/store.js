@@ -4,6 +4,6 @@ import  showHideModalSlice from '../slices/showRegistrationModalSlice';
 
 export const store = configureStore({
   reducer: {
-    modalMode: showHideModalSlice
+    modalMode: showHideModalSlice,
   },
 });

@@ -12,7 +12,7 @@ const BootCamp = () => {
     <>
       <section className=" ">
 
-        <div className="relative mx-[30px] h-[200px] mt-[100px] ">
+        <div className="relative mx-[30px] h-[200px] mt-[80px] ">
           <Image
             className=" "
             layout="fill"
@@ -27,7 +27,7 @@ const BootCamp = () => {
 
         <Highlights />
         <div
-          className="font-iranYekan pl-[120px] pr-[320px] mt-[100px]"
+          className="font-iranYekan pl-[120px] pr-[320px] mt-[-170px]"
           dir="rtl"
         >
           <PartOne />

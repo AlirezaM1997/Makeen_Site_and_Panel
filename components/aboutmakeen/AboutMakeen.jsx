@@ -8,7 +8,7 @@ const AboutMakeen = () => {
   return (
     <>
       <section>
-        <div className="relative mx-[30px] h-[200px] mt-[100px] ">
+        <div className="relative mx-[30px] h-[200px] mt-[80px] ">
           <Image
             layout="fill"
             objectFit="fill"
