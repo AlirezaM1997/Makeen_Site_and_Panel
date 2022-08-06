@@ -1,5 +1,4 @@
 import Image from "next/image";
-import headerImg from "../../public/assets/bootcamp/bootcamp.png";
 import Highlights from "./Highlights";
 import Navigator from "./Navigator";
 import PartFour from "./PartFour";
@@ -10,24 +9,24 @@ import PartTwo from "./PartTwo";
 const BootCamp = () => {
   return (
     <>
-      <section className=" ">
-
-        <div className="relative mx-[30px] h-[200px] mt-[80px] ">
+      <section className="mb-[80px]">
+        <div className="relative mx-[30px] h-[250px] mt-[71px] ">
           <Image
             className=" "
             layout="fill"
-            objectFit="fill"
             priority
             src={"/assets/bootcamp/bootcamp.png"}
-            alt="bootcamp image"
+            alt="bootcamp"
           />
         </div>
-
         <Navigator />
-
         <Highlights />
         <div
+<<<<<<< HEAD
           className="font-iranYekan pl-[120px] pr-[320px] mt-[-170px] mb-[100px]"
+=======
+          className="font-iranYekan pl-[120px] pr-[320px] mt-[-345px]"
+>>>>>>> c150a5e1205d5223aa8d61c38a4381abaeedcf56
           dir="rtl"
         >
           <PartOne />

@@ -4,7 +4,7 @@ const Navigator = () => {
   const [makeen, setMakeen] = useState(false);
 
   const goToMakeen = () => {
-    setMakeen(!makeen)
+    setMakeen(!makeen);
     window.scrollTo({
       top: 200,
       behavior: "smooth",
@@ -36,10 +36,10 @@ const Navigator = () => {
     <>
       <div
         dir="rtl"
-        className=" w-[211px] pr-[20px] pt-[35px]  h-[255px] z-40 bg-[#FFFFFF] border-[.5px] rounded-[10px] left-[1200px] 
-      sticky top-[310px] border-[#CACBCB] text-[#4D6982] "
+        className="w-[211px] pr-[20px] pt-[35px]  h-[255px] z-40 bg-[#FFFFFF] border-[0.5px] rounded-[10px] left-[1200px] mr-[30px] mt-[170px]
+                  sticky top-[310px] border-[#CACBCB] text-[#4D6982] "
       >
-        <div className=" border-r-[1px] border-[#EDEEEE] pr-[10px] font-iranYekan leading-[20px] text-[14px] ">
+        <div className=" border-r-[1px] border-[#EDEEEE] pr-[10px] font-iranYekan font-bold leading-[20px] text-[14px] ">
           <h4
             onClick={() => goToMakeen()}
             className={`hover:text-[#00213E] mb-[35px] cursor-pointer `}

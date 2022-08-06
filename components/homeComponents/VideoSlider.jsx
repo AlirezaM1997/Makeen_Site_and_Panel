@@ -13,44 +13,33 @@ export default function VideoSlider() {
 
   const slidesData = [
     {
-      id: "/assets/images/videoSlide1.png",
+      img: "/assets/images/videoSlide1.png",
+      src: "https://www.aparat.com/video/video/embed/videohash/iXASK/vt/frame",
     },
     {
-      id: "/assets/images/videoSlide2.png",
+      img: "/assets/images/videoSlide2.png",
+      src: "https://www.aparat.com/video/video/embed/videohash/CArZF/vt/frame",
     },
     {
-      id: "/assets/images/videoSlide3.png",
+      img: "/assets/images/videoSlide3.png",
+      src: "https://www.aparat.com/video/video/embed/videohash/49kDR/vt/frame",
     },
     {
-      id: "/assets/images/videoSlide1.png",
-    },
-    {
-      id: "/assets/images/videoSlide2.png",
-    },
-    {
-      id: "/assets/images/videoSlide3.png",
+      img: "/assets/images/videoSlide4.png",
+      src:"https://www.aparat.com/video/video/embed/videohash/tgH1h/vt/frame",
     },
   ];
-  function videoslider(links) {
+  function choiseVideo(links) {
     document.querySelector(".mySlider").src = links;
   }
+
   return (
     <>
       <div>
         <div>
-          <div className="-top-[80px] relative">
+          <div className="-top-[120px] relative h-[343px]">
             <div className="relative rounded-[10px] overflow-hidden h-full">
-              {/* <video
-                src="https://static.videezy.com/system/resources/previews/000/004/867/original/TurnTable_Logo_Reveal_Animation.mp4"
-                className="mySlider relative top-0 left-0"
-                loop
-                muted
-                controls
-                width={494}
-                height={343}
-              ></video> */}
-              <div className="relative">
-                <span className="block pt-[57%]"></span>
+              <div className="relative h-full">
                 <iframe
                   src="https://www.aparat.com/video/video/embed/videohash/49kDR/vt/frame"
                   allowFullScreen={true}
@@ -61,15 +50,16 @@ export default function VideoSlider() {
               </div>
             </div>
           </div>
-          <div className="-mt-[20px] thumbnail" id="videoSlider">
+          <div className="-mt-[70px] thumbnail" id="videoSlider">
             <Slider {...settingsThumbs}>
               {slidesData.map((slide, index) => (
                 <div
                   key={index}
-                  className="rounded-[4px] w-10 h-[100px] overflow-hidden transition-all duration-300"
+                  className="rounded-[4px] w-10 h-[100px] overflow-hidden transition-all duration-300 cursor-pointer"
+                  onClick={() => choiseVideo(slide.src)}
                 >
                   <div className="w-[150px] h-[100px] relative">
-                    <Image src={slide.id} layout="fill" alt="videoSlider" />
+                    <Image src={slide.img} layout="fill" alt="videoSlider" />
                   </div>
                 </div>
               ))}

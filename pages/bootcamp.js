@@ -1,11 +1,13 @@
+import Head from "next/head";
 import BootCamp from "../components/bootcamp/BootCamp";
 
-const bootcamp = () => {
+export default function bootcamp() {
   return (
     <>
+      <Head>
+        <title>بوت کمپ</title>
+      </Head>
       <BootCamp />
     </>
   );
-};
-
-export default bootcamp;
+}
