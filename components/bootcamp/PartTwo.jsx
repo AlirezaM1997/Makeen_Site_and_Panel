@@ -1,7 +1,10 @@
 const PartTwo = () => {
   return (
     <div className=" mt-[50px] ">
-      <h1 className=" text-[#00213E] mb-[20px] text-[24px] font-bold ">
+      <h1
+        className=" text-[#00213E] mb-[20px] text-[24px] font-bold "
+        id="bootcampTitle"
+      >
         بوت کمپ چیست؟
       </h1>
 
