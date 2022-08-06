@@ -27,7 +27,7 @@ const BootCamp = () => {
 
         <Highlights />
         <div
-          className="font-iranYekan pl-[120px] pr-[320px] mt-[-170px]"
+          className="font-iranYekan pl-[120px] pr-[320px] mt-[-170px] mb-[100px]"
           dir="rtl"
         >
           <PartOne />

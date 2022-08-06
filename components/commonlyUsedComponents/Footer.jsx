@@ -20,6 +20,7 @@ export default function Footer() {
       behavior: "smooth",
     });
   };
+
   return (
     <>
       <footer className="w-full px-[30px] relative">
@@ -213,9 +214,9 @@ export default function Footer() {
             </Link>
           </ul>
         </div>
-          <div className="pb-[10px] my-4 text-center text-[#00213E] opacity-50 after:content-['©'] after:ml-2 ">
-            .تمام حق و حقوق این سایت متعلق به موسسه ایده آل رسانه مکین می باشد
-          </div>
+        <div className="pb-[10px] my-4 text-center text-[#00213E] opacity-50 after:content-['©'] after:ml-2 ">
+          .تمام حق و حقوق این سایت متعلق به موسسه ایده آل رسانه مکین می باشد
+        </div>
       </footer>
     </>
   );
