@@ -22,7 +22,7 @@ const AboutMakeen = () => {
         <Highlights />
 
         <div
-          className="font-iranYekan pl-[120px] pr-[320px] mt-[100px]"
+          className="font-iranYekan pl-[120px] pr-[320px] mt-[-100px] mb-[100px]"
           dir="rtl"
         >
           <PartOne />
