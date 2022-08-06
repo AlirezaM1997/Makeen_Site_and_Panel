@@ -3,7 +3,7 @@ import VideoSlider from "./VideoSlider";
 const Bootcamp = () => {
   return (
     <>
-      <div className="pt-[115px] px-[30px] mt-[75px]">
+      <div className="pt-[115px] px-[30px] mt-[100px]">
         <div className="bg-[#FFF2EA] flex rounded-[20px]">
           <div className="w-1/2 pl-[95px] pr-[80px] ">
             <div className="w-[494px] absolute">

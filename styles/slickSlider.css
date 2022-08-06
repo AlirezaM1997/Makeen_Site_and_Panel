@@ -91,3 +91,6 @@
 #magazines .slick-next ,  #magazines .slick-prev{
   display:none !important;
 }
+.romeo-embed-detail-right, .romeo-embed-detail-left {
+  display: none !important;
+}
