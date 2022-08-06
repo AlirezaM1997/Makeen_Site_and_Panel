@@ -1,12 +1,15 @@
 import { useSelector, useDispatch } from "react-redux";
 import Image from "next/image";
 import { _showHideModalAction } from "../../../slices/showConsultationModal";
-import { useEffect } from "react";
+import dynamic from 'next/dynamic'
 
 export default function ConsultationModal() {
   const modalMode = useSelector((state) => state._modalMode.value);
   const dispatch = useDispatch();
-
+  const Map = dynamic(
+    () => import('./Map'), 
+    { ssr: false }
+  )
   return (
     <>
       <div
@@ -16,7 +19,7 @@ export default function ConsultationModal() {
         onClick={() => dispatch(_showHideModalAction(false))}
       >
         <section
-          className="bg-white absolute p-[30px] rounded-[20px] shadow-[10px_10px_20px_#00000014] w-[60%] h-[72%] right-1/2 bottom-1/2 translate-x-1/2 translate-y-1/2 animate-comeFromUp font-iranYekan"
+          className="bg-white absolute p-[30px] rounded-[20px] shadow-[10px_10px_20px_#00000014] w-[60%] h-[74%] right-1/2 bottom-1/2 translate-x-1/2 translate-y-1/2 animate-comeFromUp font-iranYekan"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex justify-between items-center">
@@ -39,12 +42,12 @@ export default function ConsultationModal() {
             </h1>
           </div>
 
-          <div className="w-full flex justify-between">
-            <div className="w-[45%]">
-              {/* <MapWithNoSsr /> */}
+          <div className="w-full flex justify-between mt-[20px]">
+            <div className="w-[40%]">
+              <Map />
             </div>
 
-            <div className="w-[55%] mt-[20px]">
+            <div className="w-[60%]">
               <h1 className="text-[14px] text-[#4D6982] text-right leading-[25px] font-bold">
                 براي دريافت مشاوره مي توانيد از راه هاي ارتباطی زير استفاده کنيد
               </h1>
@@ -112,6 +115,14 @@ export default function ConsultationModal() {
           </div>
         </section>
       </div>
+      <style>
+        {`
+        .leaflet-container {
+          height: 100%;
+          border-radius: 10px;
+        }
+        `}
+      </style>
     </>
   );
 }
