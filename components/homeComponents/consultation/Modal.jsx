@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import Image from "next/image";
+import { _showHideModalAction } from "../../../slices/showConsultationModal";
 import { useEffect } from "react";
-import { _showHideModalAction } from "../../slices/showConsultationModal";
 
 export default function ConsultationModal() {
   const modalMode = useSelector((state) => state._modalMode.value);
@@ -16,7 +16,7 @@ export default function ConsultationModal() {
         onClick={() => dispatch(_showHideModalAction(false))}
       >
         <section
-          className="bg-white absolute p-[30px] rounded-[20px] py-[70px] shadow-[10px_10px_20px_#00000014] w-[60%] h-[70%] right-1/2 bottom-1/2 translate-x-1/2 translate-y-1/2 animate-comeFromUp font-iranYekan"
+          className="bg-white absolute p-[30px] rounded-[20px] shadow-[10px_10px_20px_#00000014] w-[60%] h-[72%] right-1/2 bottom-1/2 translate-x-1/2 translate-y-1/2 animate-comeFromUp font-iranYekan"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex justify-between items-center">
@@ -39,18 +39,18 @@ export default function ConsultationModal() {
             </h1>
           </div>
 
-          <div className="-red-500 w-full h-full flex justify-between  ">
-            <div className="w-[296px] h-[341px] ml-[10px] mt-[40px] bg-white ">
+          <div className="w-full flex justify-between">
+            <div className="w-[45%]">
               {/* <MapWithNoSsr /> */}
             </div>
 
-            <div>
-              <h1 className="text-[14px] mt-[25px] text-[#4D6982] pl-[150px]">
+            <div className="w-[55%] mt-[20px]">
+              <h1 className="text-[14px] text-[#4D6982] text-right leading-[25px] font-bold">
                 براي دريافت مشاوره مي توانيد از راه هاي ارتباطی زير استفاده کنيد
               </h1>
 
-              <div className="flex justify-end mt-[50px] mr-[20px]">
-                <h1 className="pr-[30px] relative self-center text-[#00294D]">
+              <div className="flex justify-end mt-[35px]">
+                <h1 className="mr-[20px] relative self-center text-[#00294D] text-[16px] leading-[36px] font-bold">
                   @makeenacademy
                 </h1>
                 <div className=" w-[40px] h-[40px] rounded-[50%] flex justify-center bg-gradient-[132deg] from-[#E6EAED] to-[#c0d0dd] bg-origin-padding bg-no-repeat ">
@@ -64,9 +64,9 @@ export default function ConsultationModal() {
                 </div>
               </div>
 
-              <div className="flex justify-end mt-[50px] mr-[20px]">
-                <h1 className="pr-[30px] relative self-center text-[#00294D]">
-                  @Info@makeen.ir
+              <div className="flex justify-end mt-[30px]">
+                <h1 className="mr-[20px] relative self-center text-[#00294D] text-[16px] leading-[36px] font-bold">
+                  Info@makeen.ir
                 </h1>
                 <div className=" w-[40px] h-[40px] rounded-[50%] flex justify-center bg-gradient-[132deg] from-[#FFF2EA] to-[#FFD7C0] bg-origin-padding bg-no-repeat ">
                   <div className="w-[16px] h-[16px] relative self-center">
@@ -79,8 +79,8 @@ export default function ConsultationModal() {
                 </div>
               </div>
 
-              <div className="flex justify-end mt-[50px] mr-[20px]">
-                <h1 className="pr-[30px] relative self-center text-[#00294D]">
+              <div className="flex justify-end mt-[30px]">
+                <h1 className="mr-[20px] relative self-center text-[#00294D] text-[16px] leading-[36px] font-bold">
                   021-77188185-6
                 </h1>
                 <div className=" w-[40px] h-[40px] rounded-[50%] flex justify-center bg-gradient-[132deg] from-[#ECF9FD] to-[#DAF2FB] bg-origin-padding bg-no-repeat ">
@@ -94,14 +94,11 @@ export default function ConsultationModal() {
                 </div>
               </div>
 
-              <div className="flex justify-end mt-[50px] mr-[20px]">
-                <h1
-                  dir="rtl"
-                  className="pr-[30px] px-[150px] relative self-center text-[#00294D]"
-                >
+              <div className="flex justify-end mt-[30px]">
+                <h1 className="mr-[20px] relative self-center text-[#00294D] text-right text-[16px] leading-[36px] font-bold">
                   تهران، مترو علم و صنعت، خيابان فرجام، پلاک 495، طبقه پنجم
                 </h1>
-                <div className=" w-[50px] h-[40px] rounded-[50%] flex justify-center bg-gradient-[132deg] from-[#EDEEEE] to-[#CACBCB] bg-origin-padding bg-no-repeat ">
+                <div className=" w-[40px] h-[40px] rounded-[50%] flex justify-center bg-gradient-[132deg] from-[#EDEEEE] to-[#CACBCB] bg-origin-padding bg-no-repeat ">
                   <div className="w-[16px] h-[16px] relative self-center">
                     <Image
                       alt="instagram icon"

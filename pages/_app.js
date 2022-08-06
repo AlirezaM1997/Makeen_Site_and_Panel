@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import { Provider } from "react-redux";
 import { store } from "../store/store";
 import RegisterationModal from "../components/homeComponents/RegisterationModal";
-import ConsultationModal from "../components/homeComponents/ConsultationModal";
+import ConsultationModal from "../components/homeComponents/consultation/Modal";
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (

@@ -2,7 +2,7 @@ export default function Navigator() {
   const goToTitle = (title) => {
     const scrollDiv = document.getElementById(`${title}`).offsetTop;
     window.scrollTo({
-      top: scrollDiv -100,
+      top: scrollDiv - 100,
       behavior: "smooth",
     });
   };
@@ -16,7 +16,6 @@ export default function Navigator() {
         <div className=" border-r-[1.5px] border-[#EDEEEE] pr-[10px] font-iranYekan font-bold leading-[20px] text-[14px] ">
           <h4
             onClick={() => goToTitle("makeenTitle")}
-            
             className={`hover:text-[#00213E] mb-[35px] cursor-pointer `}
           >
             بوت کمپ مکین
