@@ -1789,6 +1789,11 @@
   dependencies:
     "language-subtag-registry" "~0.3.2"
 
+"leaflet-defaulticon-compatibility@^0.1.1":
+  "integrity" "sha512-vDBFdlUAwjSEGep9ih8kfJilf6yN8V9zTbF5NC/1ZwLeGko3RUQepspPnGCRMFV51dY3Lb3hziboicrFz+rxQA=="
+  "resolved" "https://registry.npmjs.org/leaflet-defaulticon-compatibility/-/leaflet-defaulticon-compatibility-0.1.1.tgz"
+  "version" "0.1.1"
+
 "leaflet@^1.8.0":
   "integrity" "sha512-gwhMjFCQiYs3x/Sf+d49f10ERXaEFCPr+nVTryhAW8DWbMGqJqt9G4XuIaHmFW08zYvhgdzqXGr8AlW8v8dQkA=="
   "resolved" "https://registry.npmjs.org/leaflet/-/leaflet-1.8.0.tgz"

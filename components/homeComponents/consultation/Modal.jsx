@@ -1,15 +1,19 @@
 import { useSelector, useDispatch } from "react-redux";
 import Image from "next/image";
 import { _showHideModalAction } from "../../../slices/showConsultationModal";
-import dynamic from 'next/dynamic'
-
+import dynamic from "next/dynamic";
+import { useEffect } from "react";
 export default function ConsultationModal() {
   const modalMode = useSelector((state) => state._modalMode.value);
   const dispatch = useDispatch();
-  const Map = dynamic(
-    () => import('./Map'), 
-    { ssr: false }
-  )
+  const Map = dynamic(() => import("./Map"), { ssr: false });
+  useEffect(() => {
+    if (modalMode) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [modalMode]);
   return (
     <>
       <div
@@ -41,17 +45,14 @@ export default function ConsultationModal() {
               ارتباط با ما
             </h1>
           </div>
-
           <div className="w-full flex justify-between mt-[20px]">
             <div className="w-[40%]">
               <Map />
             </div>
-
             <div className="w-[60%]">
               <h1 className="text-[14px] text-[#4D6982] text-right leading-[25px] font-bold">
                 براي دريافت مشاوره مي توانيد از راه هاي ارتباطی زير استفاده کنيد
               </h1>
-
               <div className="flex justify-end mt-[35px]">
                 <h1 className="mr-[20px] relative self-center text-[#00294D] text-[16px] leading-[36px] font-bold">
                   @makeenacademy
@@ -66,7 +67,6 @@ export default function ConsultationModal() {
                   </div>
                 </div>
               </div>
-
               <div className="flex justify-end mt-[30px]">
                 <h1 className="mr-[20px] relative self-center text-[#00294D] text-[16px] leading-[36px] font-bold">
                   Info@makeen.ir
@@ -81,7 +81,6 @@ export default function ConsultationModal() {
                   </div>
                 </div>
               </div>
-
               <div className="flex justify-end mt-[30px]">
                 <h1 className="mr-[20px] relative self-center text-[#00294D] text-[16px] leading-[36px] font-bold">
                   021-77188185-6
@@ -96,7 +95,6 @@ export default function ConsultationModal() {
                   </div>
                 </div>
               </div>
-
               <div className="flex justify-end mt-[30px]">
                 <h1 className="mr-[20px] relative self-center text-[#00294D] text-right text-[16px] leading-[36px] font-bold">
                   تهران، مترو علم و صنعت، خيابان فرجام، پلاک 495، طبقه پنجم
