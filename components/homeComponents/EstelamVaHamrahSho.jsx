@@ -14,7 +14,7 @@ const EstelamVaHamrahsho = () => {
 //////////////////////////////////////////////////// EDIT BUTTON
   return (
     <>
-      <section className="flex flex-row-reverse justify-evenly">
+      <section className="flex flex-row-reverse justify-evenly mb-[85px]">
         <div className="bg-[#def4fc] w-[645px] relative rounded-[20px] h-[250px]">
           <div className="absolute right-[5px] top-[-30px] ">
             <div className="w-[91px] h-[91px] relative">

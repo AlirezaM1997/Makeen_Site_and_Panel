@@ -53,7 +53,7 @@ export default function VideoSlider() {
                 <span className="block pt-[57%]"></span>
                 <iframe
                   src="https://www.aparat.com/video/video/embed/videohash/49kDR/vt/frame"
-                  allowFullScreen="true"
+                  allowFullScreen={true}
                   webkitallowfullscreen="true"
                   mozallowfullscreen="true"
                   className="mySlider absolute top-0 left-0 w-full h-full"

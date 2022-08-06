@@ -6,6 +6,8 @@ import Footer from "../components/commonlyUsedComponents/Footer";
 import { useRouter } from "next/router";
 import { Provider } from "react-redux";
 import { store } from "../store/store";
+import RegisterationModal from "../components/homeComponents/RegisterationModal";
+import ConsultationModal from "../components/homeComponents/ConsultationModal";
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
@@ -30,14 +32,18 @@ export default function MyApp({ Component, pageProps }) {
       <Provider store={store}>
         {router.pathname === "/" ||
         router.pathname === "/cooperation" ||
+        router.pathname === "/courses" ||
         router.pathname === "/bootcamp" ||
         router.pathname === "/blogs" ||
         router.pathname === "/aboutmakeen" ? (
           <Header />
         ) : null}
+        <RegisterationModal/>
+        <ConsultationModal/>
         <Component {...pageProps} />
         {router.pathname === "/" ||
         router.pathname === "/cooperation" ||
+        router.pathname === "/courses" ||
         router.pathname === "/bootcamp" ||
         router.pathname === "/blogs" ||
         router.pathname === "/aboutmakeen" ? (

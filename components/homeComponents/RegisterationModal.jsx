@@ -5,6 +5,7 @@ import Select from "react-select";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
+import { useEffect } from "react";
 
 const courses = [
   {
@@ -85,12 +86,20 @@ export default function RegisterationModal() {
   const { errors } = formState;
   const onSubmit = (data) => console.log(data);
 
+  useEffect(() => {
+    if (modalMode) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [modalMode]);
+
   return (
     <>
       <div
         className={`${
           modalMode ? "block" : "-top-full"
-        } fixed w-full h-full top-0 left-0 z-[1001] p-[48px] bg-[#4d698266] backdrop-blur-[10px] transition-top`}
+        } fixed w-full h-full top-0 left-0 z-[1001] p-[48px] bg-[#4d698266] backdrop-blur-[10px] transition-top duration-500`}
         onClick={() => dispatch(showHideModalAction(false))}
       >
         <section
@@ -103,7 +112,7 @@ export default function RegisterationModal() {
           >
             <div className="flex justify-between items-center">
               <div
-                className="relative w-[10px] h-[10px] cursor-pointer"
+                className="rounded-full border-[#707070] border-[1px] border-opacity-20 w-[35px] h-[35px] flex justify-center items-center cursor-pointer"
                 onClick={() => {
                   dispatch(showHideModalAction(false));
                   reset({
@@ -116,7 +125,9 @@ export default function RegisterationModal() {
                   });
                 }}
               >
-                <Image src={"/assets/images/quit-modal.png"} layout="fill" />
+                <div className="relative w-[13px] h-[13px]">
+                  <Image src={"/assets/images/quit-modal.png"} layout="fill" />
+                </div>
               </div>
               <h1 className="text-[#00213E] text-[20px] leading-[35px] font-extrabold">
                 !مکینی شو
@@ -194,6 +205,8 @@ export default function RegisterationModal() {
                   render={({ field: { onChange } }) => (
                     <Select
                       menuPlacement="bottom"
+                      id="courseSelect"
+                      instanceId="courseSelect"
                       name="course"
                       {...register("course")}
                       defaultValue={{
@@ -246,6 +259,8 @@ export default function RegisterationModal() {
                   render={({ field: { onChange } }) => (
                     <Select
                       menuPlacement="bottom"
+                      id="genderSelect"
+                      instanceId="genderSelect"
                       name="gender"
                       {...register("gender")}
                       defaultValue={{

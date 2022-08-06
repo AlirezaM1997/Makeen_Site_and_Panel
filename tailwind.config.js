@@ -29,7 +29,7 @@ module.exports = {
       animation: {
         mouseInPaint: "growScale 0.3s ease-out",
         mouseOutPaint: "shrinkScale 0.3s ease-out",
-        comeFromUp: "upToDown 0.3s ease-in-out",
+        comeFromUp: "upToDown 0.5s ease-in-out",
       },
       backgroundImage: {
         menu_item: "linear-gradient(#37BBEC, #37BBEC)",

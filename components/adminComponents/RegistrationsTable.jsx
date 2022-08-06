@@ -31,6 +31,7 @@ export default function RegistrationsTable() {
               className={`text-[12px] text-[#292D32] leading-[21p] font-medium font-iranYekan text-center ${
                 index % 2 === 0 ? "bg-[#F6F6F6]" : ""
               }`}
+              key={index}
             >
               <td className="text-right max-w-[108px] whitespace-normal break-words px-2 py-4">
                 {`طاهره هژبری`}

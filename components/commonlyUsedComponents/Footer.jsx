@@ -22,7 +22,7 @@ export default function Footer() {
   };
   return (
     <>
-      <footer className="w-full px-[30px] mt-[85px] relative">
+      <footer className="w-full px-[30px] relative">
         <div className="flex justify-center relative overflow-hidden">
           <div className="absolute -left-[145px] -bottom-[345px] w-[625px] h-[625px] z-10 mix-blend-lighten">
             <Image
@@ -45,7 +45,7 @@ export default function Footer() {
               layout="fill"
             />
           </div>
-          <div className=" h-fit w-full  absolute flex justify-center pt-[10px] cursor-pointer transition  delay-150  hover:-translate-y-1   ">
+          <div className="h-fit absolute flex justify-center pt-[10px] cursor-pointer transition  delay-150  hover:-translate-y-1   ">
             <div className="w-[10px] h-[13px] relative">
               <Image
                 onClick={() => scrollClick()}
@@ -72,7 +72,7 @@ export default function Footer() {
             .بهشون آینده میدیم
           </p>
           <div className="absolute mt-[270px] flex justify-between px-[390px] w-full">
-            <div className="relative">
+            <div className="relative z-10">
               <div
                 onMouseEnter={() => setGoogle(true)}
                 onMouseLeave={() => hoverLeave()}
