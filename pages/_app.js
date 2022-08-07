@@ -1,7 +1,8 @@
 import Head from "next/head";
+import dynamic from "next/dynamic";
 import "../styles/globals.css";
 import "../styles/slickSlider.css";
-import Header from "../components/commonlyUsedComponents/Header";
+const Header = dynamic(() => import("../components/commonlyUsedComponents/Header"), { ssr: false });
 import Footer from "../components/commonlyUsedComponents/Footer";
 import { useRouter } from "next/router";
 import { Provider } from "react-redux";
