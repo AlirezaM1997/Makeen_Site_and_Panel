@@ -23,7 +23,6 @@ const Slider = () => {
       setTimer(i);
     }, 50);
     return () => {
-      console.log('i',i);
       clearInterval(interval);
       clearInterval(slideInterval);
     };

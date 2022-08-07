@@ -1,49 +1,33 @@
-
-import { useState } from "react";
-
-const Navigator = () => {
-  const [makeen, setMakeen] = useState(false);
-
-
-  const goToWeAreMakeen = () => {
-    setMakeen(!makeen)
+export default function Navigator() {
+  const goToTitle = (title) => {
+    const scrollDiv = document.getElementById(`${title}`).offsetTop;
     window.scrollTo({
-      top: 200,
+      top: scrollDiv - 100,
       behavior: "smooth",
     });
   };
-
-  const goToFeatureOfMakeen = () => {
-    window.scrollTo({
-      top: 500,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <>
       <div
         dir="rtl"
-        className=" w-[199px] pr-[20px] pt-[35px]  h-[141px] z-40 bg-[#FFFFFF] border-[.5px] rounded-[10px] left-[1210px] 
-      sticky top-[310px] border-[#CACBCB] text-[#4D6982] "
+        className="w-[211px] pr-[20px] pt-[35px] mr-[30px] mt-[180px] z-40 bg-[#FFFFFF] rounded-[10px] 
+                  sticky top-[310px] left-[1200px] border-[#CACBCB] border-[0.5px] text-[#4D6982] "
       >
-        <div className=" border-r-[1px] border-[#EDEEEE] pr-[10px] font-iranYekan leading-[20px] text-[14px] ">
+        <div className=" border-r-[1.5px] border-[#EDEEEE] pr-[10px] font-iranYekan font-bold leading-[20px] text-[14px] ">
           <h4
-            onClick={() => goToWeAreMakeen()}
+            onClick={() => goToTitle("makeenTitle")}
             className={`hover:text-[#00213E] mb-[35px] cursor-pointer `}
           >
             ما مکین هستیم
           </h4>
           <h4
-            onClick={() => goToFeatureOfMakeen()}
+            onClick={() => goToTitle("futuresTitle")}
             className="hover:text-[#00213E] mb-[35px] cursor-pointer "
           >
-           ویژگی های آکادمی مکین
+            ویژگی های آکادمی مکین
           </h4>
         </div>
       </div>
     </>
   );
-};
-
-export default Navigator;
+}

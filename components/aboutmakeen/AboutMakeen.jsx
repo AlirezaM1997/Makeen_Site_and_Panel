@@ -3,26 +3,22 @@ import Highlights from "./Highlights";
 import Navigator from "./Navigator";
 import PartOne from "./PartOne";
 import PartTwo from "./PartTwo";
-
 const AboutMakeen = () => {
   return (
     <>
-      <section>
-        <div className="relative mx-[30px] h-[200px] mt-[80px] ">
+      <section className="mb-[80px]">
+        <div className="relative mx-[30px] h-[250px] mt-[71px] ">
           <Image
             layout="fill"
-            objectFit="fill"
             priority
             src={"/assets/aboutmakeen/aboutmakeen.png"}
-            alt="bootcamp image"
+            alt="aboutmakeen"
           />
         </div>
         <Navigator />
-
         <Highlights />
-
         <div
-          className="font-iranYekan pl-[120px] pr-[320px] mt-[-100px] mb-[100px]"
+          className="font-iranYekan pl-[120px] pr-[320px] mt-[-260px]"
           dir="rtl"
         >
           <PartOne />

@@ -1,5 +1,4 @@
 function Dots({ activeIndex, onclick, sliderImage, timer }) {
-  console.log('timer',timer);
   return (
     <>
       <div className="all-dots mt-[30px] flex justify-center">

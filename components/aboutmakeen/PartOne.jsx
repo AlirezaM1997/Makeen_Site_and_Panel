@@ -2,10 +2,12 @@ const PartOne = () => {
   return (
     <>
       <div className=" mt-[50px] ">
-        <h1 className=" text-[#00213E] mb-[20px] text-[24px] font-bold ">
-          ما مکین هستیم{" "}
+        <h1
+          className=" text-[#00213E] mb-[20px] text-[24px] font-bold "
+          id="makeenTitle"
+        >
+          ما مکین هستیم
         </h1>
-
         <p className=" leading-[40px] text-[#4D6982] font-bold text-[16px] ">
           امروزه با رشد چشم گیر فضای فناوری اطلاعات در کشور ، نیاز مبرم این صنعت
           به نیروهای متخصص و کاربلد ، روز به روز در حال افزایشه. از طرف دیگه اما
@@ -29,5 +31,4 @@ const PartOne = () => {
     </>
   );
 };
-
 export default PartOne;
