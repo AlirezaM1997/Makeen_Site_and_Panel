@@ -2,7 +2,10 @@ const PartThree = () => {
   return (
     <>
       <div className=" mt-[50px] ">
-        <h1 className=" text-[#00213E] mb-[20px] text-[24px] font-bold ">
+        <h1
+          className=" text-[#00213E] mb-[20px] text-[24px] font-bold "
+          id="differentTitle"
+        >
           فرق بوت کمپ با آموزشگاه
         </h1>
 

@@ -2,7 +2,10 @@ const PartFour = () => {
   return (
     <>
       <div className=" mt-[50px] ">
-        <h1 className=" text-[#00213E] mb-[20px] text-[24px] font-bold ">
+        <h1
+          className=" text-[#00213E] mb-[20px] text-[24px] font-bold "
+          id="projectTitle"
+        >
           دوره های بوت کمپ کاملا پروژه محوره ، یعنی چی؟{" "}
         </h1>
 

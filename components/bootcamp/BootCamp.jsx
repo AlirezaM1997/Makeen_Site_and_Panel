@@ -12,7 +12,6 @@ const BootCamp = () => {
       <section className="mb-[80px]">
         <div className="relative mx-[30px] h-[250px] mt-[71px] ">
           <Image
-            className=" "
             layout="fill"
             priority
             src={"/assets/bootcamp/bootcamp.png"}

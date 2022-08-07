@@ -2,7 +2,10 @@ const PartOne = () => {
   return (
     <>
       <div className="">
-        <h1 className=" text-[#00213E] mb-[40px] text-[24px] font-bold ">
+        <h1
+          className=" text-[#00213E] mb-[40px] text-[24px] font-bold "
+          id="makeenTitle"
+        >
           بوت کمپ مکین
         </h1>
         <p className=" leading-[42px] text-[#4D6982] font-bold text-[16px] ">
