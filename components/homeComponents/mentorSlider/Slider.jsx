@@ -4,13 +4,10 @@ import Dots from "./Dots";
 import sliderImage from "./sliderImage";
 
 const len = sliderImage.length - 1;
-
 const MentorSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [timer, setTimer] = useState(0);
-
   const i = 0;
-
   useEffect(() => {
     const slideInterval = setInterval(() => {
       setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);

@@ -5,18 +5,15 @@ import Arrows from "./Arrows";
 import sliderImage from "./sliderImage";
 
 const len = sliderImage.length - 1;
-
 const Slider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [timer, setTimer] = useState(0);
 
   const i = 0;
-
   useEffect(() => {
     const slideInterval = setInterval(() => {
       setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
     }, 5000);
-
     const interval = setInterval(() => {
       if (i === 100) {
         i = 0;
@@ -25,8 +22,8 @@ const Slider = () => {
       }
       setTimer(i);
     }, 50);
-
     return () => {
+      console.log('i',i);
       clearInterval(interval);
       clearInterval(slideInterval);
     };
