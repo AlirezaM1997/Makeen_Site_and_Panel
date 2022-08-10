@@ -20,12 +20,35 @@ export default function Magazines() {
         id="magazines"
       >
         <div className="flex items-center">
-          <div className="flex flex-row-reverse w-fit ml-[30px] justify-start cursor-pointer">
-            <h4 className="text-[#8094A6] peer font-iranYekan text-[16px]">
+          <div
+            dir="rtl"
+            className="flex items-center cursor-pointer relative w-fit ml-[30px] justify-start"
+            onClick={() => console.log("lol")}
+          >
+            <span className="text-[#8094A6] peer font-iranYekan text-[16px] pl-2 hover:text-[#00213E] transition-colors duration-300">
               مشاهده ی همه
-            </h4>
-            <div className="relative w-[5px] h-[10px]">{/*svg*/}</div>
+            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="5.041"
+              height="8.554"
+              viewBox="0 0 5.041 8.554"
+              className="peer-hover:-translate-x-[10px] transition-all duration-300 ease-out"
+            >
+              <path
+                id="Path_58"
+                dataname="Path 58"
+                d="M4.229,7.567,1,4.351l3.23-3.217"
+                transform="translate(-0.249 -0.073)"
+                fill="none"
+                stroke="#8094a6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+              />
+            </svg>
           </div>
+
           <h1 className="font-iranYekan text-[#00213E] text-[20px] font-extrabold	absolute right-[80px] top-0 ">
             جدیدترین مقالات و مطالب از مکین
           </h1>
@@ -49,7 +72,7 @@ export default function Magazines() {
         <div className="w-[183px] h-[193px] absolute bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-20 blur-[50px] bottom-[12px] left-0 rounded-full"></div>
         <Slider {...setting}>
           {magazines.map((item, index) => (
-            <BlogCard item={item} index={index} key={index}/>
+            <BlogCard item={item} index={index} key={index} />
           ))}
         </Slider>
       </div>

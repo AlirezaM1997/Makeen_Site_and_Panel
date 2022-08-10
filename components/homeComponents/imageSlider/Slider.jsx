@@ -3,11 +3,23 @@ import SliderContent from "./SliderContent";
 import Dots from "./Dots";
 import Arrows from "./Arrows";
 import sliderImage from "./sliderImage";
+import axios from "axios";
 
 const len = sliderImage.length - 1;
-const Slider = () => {
+export default function Slider({ slides }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [timer, setTimer] = useState(0);
+
+  useEffect(() => {
+    const myFunction = async () => {
+      const result = await fetch(
+        "https://salmankhosravi.pythonanywhere.com/firstpage/all_counter"
+      );
+      const data = result;
+      console.log("data", data);
+    };
+    myFunction();
+  }, []);
 
   const i = 0;
   useEffect(() => {
@@ -49,5 +61,20 @@ const Slider = () => {
       </div>
     </>
   );
-};
-export default Slider;
+}
+
+// export async function getStaticProps() {
+//   const endpoint = [
+//     "https://salmankhosravi.pythonanywhere.com/firstpage/all_sliders",
+//   ];
+//   try {
+//     const result = await axios.get(endpoint);
+//     const slides = result.data;
+
+//     return {
+//       props: { slides },
+//     };
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }

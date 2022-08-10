@@ -13,10 +13,21 @@ export default function AskedQuestion() {
   };
   return (
     <>
-      <div className="relative h-[629px] w-full bg-[#001d36] pt-[50px] mb-[142px] font-iranYekan">
-        {/* <div className="absolute bg-red-500">
-            <Image width={100} height={100} src={'/assets/images/orangeCircle.png'} alt="Orange Cirle" />
-          </div> */}
+      <div className="relative h-[629px] w-full bg-[#001d36] pt-[50px] mb-[142px] font-iranYekan overflow-hidden">
+        <div className="absolute -left-[290px] top-0 h-[390px] w-[390px] mix-blend-lighten">
+          <Image
+            layout="fill"
+            src={"/assets/images/course-left.png"}
+            alt="orangeCircle"
+          />
+        </div>
+        <div className="absolute -rotate-[160deg] -right-[190px] -bottom-[94px] h-[390px] w-[390px] mix-blend-lighten">
+          <Image
+            layout="fill"
+            src={"/assets/images/course-left.png"}
+            alt="orangeCircle"
+          />
+        </div>
         <h1 className="text-[#ECF9FD] flex justify-center mb-[57px] text-[20px] font-extrabold">
           سوالات متداول شما
         </h1>
