@@ -9,6 +9,7 @@ export default function Makeeniha() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    draggable:false,
   };
   return (
     <>
@@ -42,7 +43,7 @@ export default function Makeeniha() {
           <Slider {...setting}>
             {makeeniha.map((item, index) => (
               <div
-                className="flex flex-col hover:cursor-grab active:cursor-grabbing"
+                className="flex flex-col"
                 key={index}
               >
                 <div className="w-[420px] h-[300px] relative p-[55px]">

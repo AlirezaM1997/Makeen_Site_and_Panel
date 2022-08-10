@@ -9,6 +9,7 @@ export default function VideoSlider() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    draggable:false,
   };
 
   const slidesData = [

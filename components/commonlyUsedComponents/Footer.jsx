@@ -68,7 +68,6 @@ export default function Footer() {
                   <Image
                     src="/assets/images/google-maps-logo.png"
                     layout="fill"
-                    objectFit={"contain"}
                     alt="google-map"
                     className="self-center shadow-white"
                   />
@@ -84,7 +83,6 @@ export default function Footer() {
                   <Image
                     src="/assets/images/key.png"
                     layout="fill"
-                    objectFit={"contain"}
                     alt="key"
                   />
                 </div>
@@ -99,7 +97,6 @@ export default function Footer() {
                   <Image
                     src="/assets/images/phone.png"
                     layout="fill"
-                    objectFit={"contain"}
                     alt="phone"
                   />
                 </div>
@@ -114,7 +111,6 @@ export default function Footer() {
                   <Image
                     src="/assets/images/message.png"
                     layout="fill"
-                    objectFit={"contain"}
                     alt="message"
                   />
                 </div>
@@ -129,7 +125,6 @@ export default function Footer() {
                   <Image
                     src="/assets/images/instagram.png"
                     layout="fill"
-                    objectFit={"contain"}
                     alt="instagram"
                   />
                 </div>
