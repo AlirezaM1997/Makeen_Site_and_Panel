@@ -18,8 +18,8 @@ export default function ConsultationModal() {
     <>
       <div
         className={`${
-          modalMode ? "block" : "-top-full"
-        } fixed w-full h-full top-0 left-0 z-[1001] bg-[#4d698266] backdrop-blur-[10px] transition-top duration-500`}
+          modalMode ? "block opacity-100" : "-top-full opacity-0"
+        } fixed w-full h-full top-0 left-0 z-[1001] bg-[#4d698266] backdrop-blur-[10px] transition-topOpacity duration-500`}
         onClick={() => dispatch(_showHideModalAction(false))}
       >
         <section

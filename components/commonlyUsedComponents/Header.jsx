@@ -13,7 +13,7 @@ export default function Header() {
         <Image
           src="/assets/images/header.png"
           layout="fill"
-          className="absolute h-[100px] w-full text-white opacity-[97%]"
+          className="absolute h-[100px] w-full text-black opacity-[97%]"
           alt="header"
         />
         <div className="w-full absolute top-0 left-0 z-10 h-[30px] bg-gradient-[271deg] from-[#37BBEC] to-[#FF792C] bg-origin-padding blur-[30px] bg-no-repeat opacity-30"></div>
@@ -79,7 +79,7 @@ export default function Header() {
             >
               ثبت نام دوره
             </li>
-            <Link href={"/courses"}>
+            <Link href={"/cooperation"}>
               <li
                 className={`${
                   router.pathname === "/courses" ? "currentMenu" : ""

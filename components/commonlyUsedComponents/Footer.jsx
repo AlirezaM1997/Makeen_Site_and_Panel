@@ -1,29 +1,18 @@
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useDispatch } from "react-redux";
+import { showHideModalAction } from "../../slices/showRegistrationModalSlice";
 export default function Footer() {
-  const [instagram, setInstagram] = useState(false);
-  const [message, setMessage] = useState(false);
-  const [phone, setPhone] = useState(false);
-  const [key, setKey] = useState(false);
-  const [google, setGoogle] = useState(false);
-  const hoverLeave = () => {
-    setInstagram(false);
-    setMessage(false);
-    setPhone(false);
-    setKey(false);
-    setGoogle(false);
-  };
   const scrollClick = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
-
+  const dispatch = useDispatch();
   return (
     <>
-      <footer className="w-full px-[30px] relative">
+      <footer className="w-full px-[30px] relative font-iranYekan">
         <div className="flex justify-center relative overflow-hidden">
           <div className="absolute -left-[145px] -bottom-[345px] w-[625px] h-[625px] z-10 mix-blend-lighten">
             <Image
@@ -65,7 +54,7 @@ export default function Footer() {
               />
             </div>
           </div>
-          <p className="absolute opacity-70 leading-[35px] mt-[123px] text-[#ECF9FD] w-full flex justify-center h-fit px-[280px] text-[10px] lg:text-[14px] text-center font-iranYekan	">
+          <p className="absolute opacity-70 leading-[35px] mt-[123px] text-[#ECF9FD] w-full flex justify-center h-fit px-[280px] text-[10px] lg:text-[14px] text-center	">
             آکادمی مکین ، یه محیط صمیمی و تخصصیه که تمام تلاشش ایجاد فرصت های
             شغلی برای جوانان این سرزمینه. ما توی آکادمی مکین با استفاده از
             متدولوژی آموزشی منحصر به فرد ، کمک میکنیم تا آدم های با انگیزه بتونن
@@ -73,12 +62,8 @@ export default function Footer() {
             .بهشون آینده میدیم
           </p>
           <div className="absolute mt-[270px] flex justify-between px-[390px] w-full">
-            <div className="relative z-10">
-              <div
-                onMouseEnter={() => setGoogle(true)}
-                onMouseLeave={() => hoverLeave()}
-                className="w-[35px] h-[35px] hover:shadow-[0_3px_9px_0px] hover:shadow-[#fff] flex justify-items-center justify-center rounded-[50%] bg-gradient-[129deg] from-[#FFEEBB]  to-[#fac4bf]  bg-origin-padding bg-no-repeat cursor-pointer"
-              >
+            <div className="relative flex flex-col items-center z-10">
+              <div className="w-[35px] h-[35px] hover:shadow-[0_3px_9px_0px] hover:shadow-[#fff] peer flex justify-items-center justify-center rounded-[50%] bg-gradient-[129deg] from-[#FFEEBB]  to-[#fac4bf]  bg-origin-padding bg-no-repeat cursor-pointer">
                 <div className="w-[16px] h-[16px] self-center shadow-white relative">
                   <Image
                     src="/assets/images/google-maps-logo.png"
@@ -89,18 +74,12 @@ export default function Footer() {
                   />
                 </div>
               </div>
-              {google ? (
-                <p className="bg--500 text-[#ECF9FD] w-max absolute top-[50px] right-[-50px] font-iranYekan	 		">
-                  موقعیت ما بر روی نقشه
-                </p>
-              ) : null}
+              <p className="text-[#ECF9FD] w-max absolute top-[50px] hidden peer-hover:block">
+                موقعیت ما بر روی نقشه
+              </p>
             </div>
-            <div className="relative">
-              <div
-                onMouseEnter={() => setKey(true)}
-                onMouseLeave={() => hoverLeave()}
-                className="w-[35px] h-[35px]  hover:shadow-[0px_3px_9px_px] hover:shadow-[#fff] flex justify-items-center justify-center  rounded-[50%] bg-[#ebecec] cursor-pointer"
-              >
+            <div className="relative flex flex-col items-center">
+              <div className="w-[35px] h-[35px]  hover:shadow-[0px_3px_9px_px] peer hover:shadow-[#fff] flex justify-items-center justify-center rounded-[50%] bg-[#ebecec] cursor-pointer">
                 <div className="w-[16px] h-[16px] self-center relative">
                   <Image
                     src="/assets/images/key.png"
@@ -109,19 +88,13 @@ export default function Footer() {
                     alt="key"
                   />
                 </div>
-                {key ? (
-                  <p className="-red-500 text-[#ECF9FD] w-[250px] absolute top-[50px] text-center font-[14px] -[-40px] font-iranYekan">
-                    تهران، مترو علم و صنعت، خيابان فرجام، پلاک 495، طبقه پنجم
-                  </p>
-                ) : null}
               </div>
+              <p className="text-[#ECF9FD] text-center absolute top-[50px] hidden w-[190px] peer-hover:block">
+                تهران، مترو علم و صنعت، خيابان فرجام، پلاک 495، طبقه پنجم
+              </p>
             </div>
-            <div className="relative">
-              <div
-                onMouseEnter={() => setPhone(true)}
-                onMouseLeave={() => hoverLeave()}
-                className="w-[35px] h-[35px] hover:shadow-[0px_3px_9px_px] hover:shadow-[#fff] flex justify-items-center justify-center  rounded-[50%] bg-gradient-[132deg] from-[#ecf9fd] to-[#DAF2FB] bg-origin-padding bg-no-repeat cursor-pointer"
-              >
+            <div className="relative flex flex-col items-center">
+              <div className="w-[35px] h-[35px] hover:shadow-[0px_3px_9px_px] peer hover:shadow-[#fff] flex justify-items-center justify-center  rounded-[50%] bg-gradient-[132deg] from-[#ecf9fd] to-[#DAF2FB] bg-origin-padding bg-no-repeat cursor-pointer">
                 <div className="w-[16px] h-[16px] self-center relative">
                   <Image
                     src="/assets/images/phone.png"
@@ -131,18 +104,12 @@ export default function Footer() {
                   />
                 </div>
               </div>
-              {phone ? (
-                <p className="bg--500 text-[#ECF9FD] w-max absolute top-[50px] right-[-40px] font-iranYekan">
-                  021-77188185-6
-                </p>
-              ) : null}
+              <p className="bg--500 text-[#ECF9FD] w-max absolute top-[50px] hidden peer-hover:block">
+                021-77188185-6
+              </p>
             </div>
-            <div className="--400 relative">
-              <div
-                onMouseEnter={() => setMessage(true)}
-                onMouseLeave={() => hoverLeave()}
-                className="w-[35px] h-[35px] hover:shadow-[0px_3px_9px_px] hover:shadow-[#fff] flex justify-items-center justify-center rounded-[50%] bg-gradient-[132deg] from-[#FFF2EA] to-[#f8e1d4] bg-origin-padding bg-no-repeat cursor-pointer"
-              >
+            <div className="relative flex flex-col items-center">
+              <div className="w-[35px] h-[35px] hover:shadow-[0px_3px_9px_px] peer hover:shadow-[#fff] flex justify-items-center justify-center rounded-[50%] bg-gradient-[132deg] from-[#FFF2EA] to-[#f8e1d4] bg-origin-padding bg-no-repeat cursor-pointer">
                 <div className="w-[16px] h-[16px] self-center relative">
                   <Image
                     src="/assets/images/message.png"
@@ -152,18 +119,12 @@ export default function Footer() {
                   />
                 </div>
               </div>
-              {message ? (
-                <p className="bg--500 text-[#ECF9FD] w-fit absolute top-[50px] right-[-40px] font-iranYekan">
-                  Info@makeen.ir
-                </p>
-              ) : null}
+              <p className="text-[#ECF9FD] w-fit absolute top-[50px] hidden peer-hover:block">
+                Info@makeen.ir
+              </p>
             </div>
-            <div className="--400 w-[100px] relative">
-              <div
-                onMouseEnter={() => setInstagram(true)}
-                onMouseLeave={() => hoverLeave()}
-                className="w-[35px] h-[35px] relative hover:shadow-[0px_3px_9px_px] hover:shadow-[#fff] flex justify-items-center justify-center  rounded-[50%]  bg-gradient-[132deg] from-[#E6EAED] to-[#bcc2c7] bg-origin-padding bg-no-repeat cursor-pointer"
-              >
+            <div className="relative flex flex-col items-center">
+              <div className="w-[35px] h-[35px] relative hover:shadow-[0px_3px_9px_px] peer hover:shadow-[#fff] flex justify-items-center justify-center  rounded-[50%]  bg-gradient-[132deg] from-[#E6EAED] to-[#bcc2c7] bg-origin-padding bg-no-repeat cursor-pointer">
                 <div className="w-[16px] h-[16px] self-center relative">
                   <Image
                     src="/assets/images/instagram.png"
@@ -173,41 +134,40 @@ export default function Footer() {
                   />
                 </div>
               </div>
-              {instagram ? (
-                <p className="bg--500 text-[#ECF9FD] w-fit absolute right-[10px] top-[50px] font-iranYekan ">
-                  @makeenacademy
-                </p>
-              ) : null}
+              <p className="text-[#ECF9FD] w-fit absolute top-[50px] hidden peer-hover:block">
+                @makeenacademy
+              </p>
             </div>
           </div>
-          <ul className=" font-iranYekan mt-[340px] flex-row-reverse	px-[290px] pt-[60px] flex justify-evenly text-right w-full h-fit absolute text-[16px] ">
+          <ul className=" mt-[340px] flex-row-reverse z-10	px-[290px] pt-[60px] flex justify-evenly text-right w-full h-fit absolute text-[16px] ">
             <hr className="absolute w-[60%] px-[120px] border-[#294359] " />
-            <Link href="/">
+            <Link href="/cooperation">
               <li className=" flex justify-center text-[#768b9b] hover:text-white hover:cursor-pointer  pb-[17px]  mt-[35px] transition font-semibold leading-[25px]  opacity-50 relative  hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100 ease-in-out before:duration-300">
                 دوره ها
               </li>
             </Link>
-            <Link href="/">
-              <li className="flex justify-center text-[#768b9b] hover:text-white hover:cursor-pointer   pb-[17px]  mt-[35px] transition font-semibold leading-[25px]  opacity-50 relative  hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100 ease-in-out before:duration-300">
-                ثبت نام دوره
-              </li>
-            </Link>
-            <Link href="/">
+            <li
+              className="flex justify-center text-[#768b9b] hover:text-white hover:cursor-pointer pb-[17px]  mt-[35px] transition font-semibold leading-[25px]  opacity-50 relative  hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100 ease-in-out before:duration-300"
+              onClick={() => dispatch(showHideModalAction(true))}
+            >
+              ثبت نام دوره
+            </li>
+            <Link href="/cooperation">
               <li className="flex justify-center text-[#768b9b] hover:text-white hover:cursor-pointer   pb-[17px]  mt-[35px] transition font-semibold leading-[25px]  opacity-50 relative  hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100 ease-in-out before:duration-300">
                 درخواست همکاری
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/bootcamp">
               <li className="flex justify-center text-[#768b9b] hover:text-white hover:cursor-pointer   pb-[17px]  mt-[35px] transition font-semibold leading-[25px]  opacity-50 relative  hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100 ease-in-out before:duration-300 ">
                 بوت کمپ
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/aboutmakeen">
               <li className="flex justify-center text-[#768b9b] hover:text-white hover:cursor-pointer   pb-[17px]  mt-[35px] transition font-semibold leading-[25px]  opacity-50 relative  hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100 ease-in-out before:duration-300">
                 درباره مکین
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/blogs">
               <li className="flex justify-center text-[#768b9b] hover:text-white hover:cursor-pointer   pb-[17px]  mt-[35px] transition font-semibold leading-[25px]  opacity-50 relative  hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100 ease-in-out before:duration-300">
                 بلاگ
               </li>
