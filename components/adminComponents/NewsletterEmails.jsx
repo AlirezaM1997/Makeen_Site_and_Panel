@@ -22,7 +22,7 @@ export default function NewsletterEmails() {
             >
               <td className="flex items-center py-3 px-2">
                 <div className="relative w-4 h-4 mr-2">
-                  <Image src={"/assets/images/newsletters.png"} layout="fill" />
+                  <Image src={"/assets/images/panel/newsletters.png"} layout="fill" />
                 </div>
                 <div>{`Kimia.goudarzi.81@gmail.com`}</div>
               </td>

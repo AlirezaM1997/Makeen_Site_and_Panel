@@ -7,7 +7,7 @@ export default function RegistrationsTable() {
     <>
       <table dir="rtl" className="mx-auto relative overflow-hidden w-full">
         <thead>
-          <tr className="text-[12px] text-[#103F7B] leading-[21p] font-bold font-iranYekan text-center">
+          <tr className="text-[12px] text-[#103F7B] leading-[21px] font-bold font-iranYekan text-center">
             <td className="text-right max-w-[100px]">نام و نام خانوادگی</td>
             <td>دوره</td>
             <td>شماره تماس</td>
@@ -54,7 +54,7 @@ export default function RegistrationsTable() {
               <td className="px-4 py-4 relative">
                 <div className="relative w-4 h-4">
                   <Image
-                    src={"/assets/images/delete.png"}
+                    src={"/assets/images/panel/delete.png"}
                     layout="fill"
                     alt="delete"
                     className="cursor-pointer"

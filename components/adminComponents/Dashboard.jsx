@@ -14,7 +14,7 @@ export default function Dashboard() {
               <button className="flex items-center justify-center border-[1px] border-[#12B428] rounded-[10px] px-4 py-[10px]">
                 <div className="relative w-[14px] h-[16px]">
                   <Image
-                    src={"/assets/images/excel.png"}
+                    src={"/assets/images/panel/excel.png"}
                     layout="fill"
                     alt="logo"
                   />

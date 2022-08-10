@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { setCookies } from "cookies-next";
+import Image from "next/image";
 export default function Login() {
   const navToPanel = useRouter();
   const [currentAdmin, setCurrentAdmin] = useState({
@@ -57,13 +58,27 @@ export default function Login() {
   };
   return (
     <>
-      <section className="px-[406px] mt-[115px] font-iranYekan">
+      <section className="px-[406px] mt-[50px] font-iranYekan relative mb-16">
+        <div className="w-[554px] h-[647px] absolute -z-[1] -mt-[30px]">
+          <Image
+            src={"/assets/images/panel/loginBg.png"}
+            layout="fill"
+            alt="loginBg"
+          />
+        </div>
         <h1 className="text-[16px] text-[#00213E] leading-[28px] text-center font-bold relative before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-100_100 before:rounded-[10px] flex justify-center pb-[6px]">
           ورود
         </h1>
         <h1 className="text-[14px] text-[#00213E] leading-[25px] text-center font-bold mb-[32px] mt-[22px]">
           به پنل ادمین سایت مکین خوش آمدید
         </h1>
+        <div className="w-[155px] h-[152px] -z-[1] relative left-1/2 -translate-x-1/2">
+          <Image
+            src={"/assets/images/panel/loginPic.png"}
+            layout="fill"
+            alt="loginBg"
+          />
+        </div>
         <div className="px-[100px]" dir="rtl">
           <div className="flex flex-col mb-[30px]">
             <label className="text-[14px] text-[#00213E] leading-[25px] font-bold mb-2">
@@ -83,7 +98,7 @@ export default function Login() {
             <div
               className={`${
                 hintUsernameInput ? "" : "hidden"
-              } text-[10px] text-[#B80000] leading-[17px] font-bold mt-[10px]`}
+              } text-[10px] text-[#B80000] leading-[17px] font-bold mt-[7px] -mb-6`}
             >
               نام کاربری خود را وارد نمایید
             </div>
@@ -113,7 +128,7 @@ export default function Login() {
             <div
               className={`${
                 hintPasswordInput ? "" : "hidden"
-              } text-[10px] text-[#B80000] leading-[17px] font-bold mt-[10px]`}
+              } text-[10px] text-[#B80000] leading-[17px] font-bold mt-[7px] -mb-6`}
             >
               رمز عبور خود را وارد نمایید
             </div>

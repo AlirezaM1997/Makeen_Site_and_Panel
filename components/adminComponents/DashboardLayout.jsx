@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 export default function DashboardLayout({ children }) {
-  const router = useRouter()
+  const router = useRouter();
   // className="invert-[100%] sepia-[125%] saturate-[115%] hue-rotate-[178deg] brightness-[99%] contrast-[100%]"
   return (
     <>
@@ -164,30 +164,52 @@ export default function DashboardLayout({ children }) {
                     viewBox="0 0 24 24"
                   >
                     <g
-                      id="vuesax_outline_home-2"
-                      data-name="vuesax/outline/home-2"
-                      transform="translate(-620 -188)"
+                      id="vuesax_outline_task-square"
+                      data-name="vuesax/outline/task-square"
+                      transform="translate(-492 -316)"
                     >
-                      <g id="home-2" transform="translate(620 188)">
+                      <g id="task-square">
                         <path
                           id="Vector"
-                          d="M16.049,20.832H4.813A4.819,4.819,0,0,1,0,16.011V8.824A5.336,5.336,0,0,1,1.863,5.031L7.093.957A5.045,5.045,0,0,1,12.808.821l6,4.2a5.3,5.3,0,0,1,2.057,3.938v7.062A4.817,4.817,0,0,1,16.049,20.832ZM7.986,2.1,2.756,6.176a3.942,3.942,0,0,0-1.3,2.648v7.188a3.366,3.366,0,0,0,3.357,3.366H16.049a3.358,3.358,0,0,0,3.357-3.356V8.959A3.848,3.848,0,0,0,17.97,6.214l-6-4.2A3.613,3.613,0,0,0,7.986,2.1Z"
-                          transform="translate(1.569 1.599)"
+                          d="M6,1.5H.75A.755.755,0,0,1,0,.75.755.755,0,0,1,.75,0H6A.75.75,0,0,1,6,1.5Z"
+                          transform="translate(503.62 324.12)"
                           fill="#292d32"
                         />
                         <path
                           id="Vector-2"
                           data-name="Vector"
-                          d="M.941,5.649A.948.948,0,0,1,0,4.707V.941A.948.948,0,0,1,.941,0a.948.948,0,0,1,.941.941V4.707A.948.948,0,0,1,.941,5.649Z"
-                          transform="translate(11.059 13.41)"
+                          d="M1.5,3.748a.742.742,0,0,1-.53-.22l-.75-.75a.75.75,0,0,1,1.06-1.06l.22.22L3.217.218a.75.75,0,0,1,1.06,1.06l-2.25,2.25A.749.749,0,0,1,1.5,3.748Z"
+                          transform="translate(497.622 322.633)"
                           fill="#292d32"
                         />
                         <path
                           id="Vector-3"
                           data-name="Vector"
+                          d="M6,1.5H.75A.755.755,0,0,1,0,.75.755.755,0,0,1,.75,0H6A.75.75,0,0,1,6,1.5Z"
+                          transform="translate(503.62 331.12)"
+                          fill="#292d32"
+                        />
+                        <path
+                          id="Vector-4"
+                          data-name="Vector"
+                          d="M1.5,3.747a.742.742,0,0,1-.53-.22l-.75-.75a.75.75,0,0,1,1.06-1.06l.22.22L3.217.218a.75.75,0,0,1,1.06,1.06l-2.25,2.25A.749.749,0,0,1,1.5,3.747Z"
+                          transform="translate(497.622 329.633)"
+                          fill="#292d32"
+                        />
+                        <path
+                          id="Vector-5"
+                          data-name="Vector"
                           d="M0,0H24V24H0Z"
+                          transform="translate(492 316)"
                           fill="none"
                           opacity="0"
+                        />
+                        <path
+                          id="Vector-6"
+                          data-name="Vector"
+                          d="M13.75,21.5h-6C2.32,21.5,0,19.18,0,13.75v-6C0,2.32,2.32,0,7.75,0h6c5.43,0,7.75,2.32,7.75,7.75v6C21.5,19.18,19.18,21.5,13.75,21.5Zm-6-20C3.14,1.5,1.5,3.14,1.5,7.75v6C1.5,18.36,3.14,20,7.75,20h6C18.36,20,20,18.36,20,13.75v-6c0-4.61-1.64-6.25-6.25-6.25Z"
+                          transform="translate(493.25 317.25)"
+                          fill="#292d32"
                         />
                       </g>
                     </g>
@@ -204,30 +226,31 @@ export default function DashboardLayout({ children }) {
                     viewBox="0 0 24 24"
                   >
                     <g
-                      id="vuesax_outline_home-2"
-                      data-name="vuesax/outline/home-2"
-                      transform="translate(-620 -188)"
+                      id="vuesax_outline_frame"
+                      data-name="vuesax/outline/frame"
+                      transform="translate(-108 -252)"
                     >
-                      <g id="home-2" transform="translate(620 188)">
+                      <g id="frame">
                         <path
                           id="Vector"
-                          d="M16.049,20.832H4.813A4.819,4.819,0,0,1,0,16.011V8.824A5.336,5.336,0,0,1,1.863,5.031L7.093.957A5.045,5.045,0,0,1,12.808.821l6,4.2a5.3,5.3,0,0,1,2.057,3.938v7.062A4.817,4.817,0,0,1,16.049,20.832ZM7.986,2.1,2.756,6.176a3.942,3.942,0,0,0-1.3,2.648v7.188a3.366,3.366,0,0,0,3.357,3.366H16.049a3.358,3.358,0,0,0,3.357-3.356V8.959A3.848,3.848,0,0,0,17.97,6.214l-6-4.2A3.613,3.613,0,0,0,7.986,2.1Z"
-                          transform="translate(1.569 1.599)"
+                          d="M5.35,10.37H5.27a.543.543,0,0,0-.18,0,5.145,5.145,0,1,1,.29,0ZM5.19,1.5a3.686,3.686,0,0,0-.14,7.37,1.651,1.651,0,0,1,.32,0A3.687,3.687,0,0,0,5.19,1.5Z"
+                          transform="translate(114.81 253.25)"
                           fill="#292d32"
                         />
                         <path
                           id="Vector-2"
                           data-name="Vector"
-                          d="M.941,5.649A.948.948,0,0,1,0,4.707V.941A.948.948,0,0,1,.941,0a.948.948,0,0,1,.941.941V4.707A.948.948,0,0,1,.941,5.649Z"
-                          transform="translate(11.059 13.41)"
-                          fill="#292d32"
+                          d="M0,0H24V24H0Z"
+                          transform="translate(108 252)"
+                          fill="none"
+                          opacity="0"
                         />
                         <path
                           id="Vector-3"
                           data-name="Vector"
-                          d="M0,0H24V24H0Z"
-                          fill="none"
-                          opacity="0"
+                          d="M7.57,10.112a9.878,9.878,0,0,1-5.42-1.5A4.291,4.291,0,0,1,0,5.062a4.336,4.336,0,0,1,2.15-3.57,10.588,10.588,0,0,1,10.84,0,4.314,4.314,0,0,1,2.15,3.55,4.336,4.336,0,0,1-2.15,3.57A9.9,9.9,0,0,1,7.57,10.112ZM2.98,2.752A2.876,2.876,0,0,0,1.5,5.072a2.869,2.869,0,0,0,1.48,2.3,9.037,9.037,0,0,0,9.18,0,2.876,2.876,0,0,0,1.48-2.32,2.869,2.869,0,0,0-1.48-2.3A9.084,9.084,0,0,0,2.98,2.752Z"
+                          transform="translate(112.6 264.438)"
+                          fill="#292d32"
                         />
                       </g>
                     </g>
