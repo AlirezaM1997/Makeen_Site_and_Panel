@@ -93,7 +93,7 @@ export default function Login() {
               value={currentAdmin.username}
               onChange={inputHandler}
               autoComplete="off"
-              spellcheck="false"
+              spellCheck={false}
             />
             <div
               className={`${
@@ -123,7 +123,7 @@ export default function Login() {
               value={currentAdmin.password}
               onChange={inputHandler}
               autoComplete="off"
-              spellcheck="false"
+              spellCheck={false}
             />
             <div
               className={`${

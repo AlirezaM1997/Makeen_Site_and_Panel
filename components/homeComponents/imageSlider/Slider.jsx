@@ -13,9 +13,9 @@ export default function Slider({ slides }) {
   useEffect(() => {
     const myFunction = async () => {
       const result = await fetch(
-        "https://salmankhosravi.pythonanywhere.com/firstpage/all_counter"
+        "https://salmankhosravi.pythonanywhere.com/firstpage/show-methodology/"
       );
-      const data = result;
+      const data =  result;
       console.log("data", data);
     };
     myFunction();

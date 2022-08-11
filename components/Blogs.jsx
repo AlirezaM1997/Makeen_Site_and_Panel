@@ -87,6 +87,7 @@ export default function Blogs() {
               src={"/assets/images/lastBlog.png"}
               layout="fill"
               className="rounded-[20px]"
+              alt="lastBlog"
             />
           </div>
         </div>

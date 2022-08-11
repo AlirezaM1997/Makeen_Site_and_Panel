@@ -23,12 +23,10 @@ export default function Dashboard() {
                   خروجی اکسل
                 </span>
               </button>
-
               <div></div>
             </div>
           </div>
         </div>
-
     </>
   );
 }

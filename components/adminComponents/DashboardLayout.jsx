@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 export default function DashboardLayout({ children }) {
   const router = useRouter();
-  // className="invert-[100%] sepia-[125%] saturate-[115%] hue-rotate-[178deg] brightness-[99%] contrast-[100%]"
   return (
     <>
       <section className="px-[30px] py-4 relative">
@@ -20,7 +19,13 @@ export default function DashboardLayout({ children }) {
           <div className="flex flex-col justify-between items-center relative">
             <div className="flex flex-col mt-[51px] text-[#292D32] text-[12px] leading-[21px] font-medium font-iranYekan">
               <Link href={"/admin/dashboard"}>
-                <a className="flex flex-col items-center mb-6">
+                <a
+                  className={`${
+                    router.pathname === "/admin/dashboard"
+                      ? "currentAdminMenu"
+                      : ""
+                  } flex flex-col items-center mb-6`}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -60,7 +65,13 @@ export default function DashboardLayout({ children }) {
                 </a>
               </Link>
               <Link href={"/admin/setting"}>
-                <a className="flex flex-col items-center mb-6">
+                <a
+                  className={`${
+                    router.pathname === "/admin/setting"
+                      ? "currentAdminMenu"
+                      : ""
+                  } flex flex-col items-center mb-6`}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -101,7 +112,13 @@ export default function DashboardLayout({ children }) {
                 </a>
               </Link>
               <Link href={"/admin/registeration"}>
-                <a className="flex flex-col items-center mb-6">
+                <a
+                  className={`${
+                    router.pathname === "/admin/registeration"
+                      ? "currentAdminMenu"
+                      : ""
+                  } flex flex-col items-center mb-6`}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -155,8 +172,14 @@ export default function DashboardLayout({ children }) {
                   <span>ثبت نام</span>
                 </a>
               </Link>
-              <Link href={"#"}>
-                <a className="flex flex-col items-center mb-6">
+              <Link href={"/admin/collaboration"}>
+                <a
+                  className={`${
+                    router.pathname === "/admin/collaboration"
+                      ? "currentAdminMenu"
+                      : ""
+                  } flex flex-col items-center mb-6`}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -217,8 +240,14 @@ export default function DashboardLayout({ children }) {
                   <span>همکاری</span>
                 </a>
               </Link>
-              <Link href={"#"}>
-                <a className="flex flex-col items-center mb-6">
+              <Link href={"/admin/admin"}>
+                <a
+                  className={`${
+                    router.pathname === "/admin/admin"
+                      ? "currentAdminMenu"
+                      : ""
+                  } flex flex-col items-center mb-6`}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -270,6 +299,13 @@ export default function DashboardLayout({ children }) {
         </aside>
         {children}
       </section>
+      <style>
+        {`
+          .currentAdminMenu{
+            filter: invert(79%) sepia(71%) saturate(2467%) hue-rotate(166deg) brightness(97%) contrast(92%);
+          }
+          `}
+      </style>
     </>
   );
 }

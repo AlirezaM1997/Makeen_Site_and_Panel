@@ -1,14 +1,14 @@
 import Head from "next/head";
+import Admin from "../../components/adminComponents/Admin";
 import DashboardLayout from "../../components/adminComponents/DashboardLayout";
-import Setting from "../../components/adminComponents/Setting";
-export default function setting() {
+export default function admin() {
   return (
     <>
       <Head>
-        <title>تنظیمات</title>
+        <title>ادمین</title>
       </Head>
       <DashboardLayout>
-        <Setting />
+        <Admin />
       </DashboardLayout>
     </>
   );
