@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useDispatch } from "react-redux";
-import { showHideModalAction } from "../../slices/showRegistrationModalSlice";
+import { showHideModalAction } from "../../../slices/showRegistrationModalSlice";
 export const CourseCard = () => {
   const dispatch = useDispatch();
   return (

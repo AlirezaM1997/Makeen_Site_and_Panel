@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Admin from "../../components/adminComponents/Admin";
-import DashboardLayout from "../../components/adminComponents/DashboardLayout";
+import Admin from "../../components/panelComponents/Admin";
+import DashboardLayout from "../../components/panelComponents/DashboardLayout";
 export default function admin() {
   return (
     <>

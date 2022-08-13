@@ -1,6 +1,6 @@
 import Head from "next/head";
-import DashboardLayout from "../../../components/adminComponents/DashboardLayout";
-import Slider from "../../../components/adminComponents/settingOptions/Slider";
+import DashboardLayout from "../../../components/panelComponents/DashboardLayout";
+import Slider from "../../../components/panelComponents/settingOptions/Slider";
 export default function setting() {
   return (
     <>

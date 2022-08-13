@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useDispatch } from "react-redux";
-import { showHideModalAction } from "../../slices/showRegistrationModalSlice";
-import { _showHideModalAction } from "../../slices/showConsultationModal";
+import { showHideModalAction } from "../../../slices/showRegistrationModalSlice";
+import { _showHideModalAction } from "../../../slices/showConsultationModal";
 export default function Header() {
   const dispatch = useDispatch();
   const router = useRouter();

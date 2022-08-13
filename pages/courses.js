@@ -1,5 +1,5 @@
 import Head from "next/head";
-import CoursesPage from "../components/courses/CoursesPage";
+import CoursesPage from "../components/webComponents/courses/CoursesPage";
 export default function cooperation() {
   return (
     <>

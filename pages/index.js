@@ -1,18 +1,18 @@
 import Head from "next/head";
-import Slider from "../components/homeComponents/imageSlider/Slider";
-import Statistics from "../components/homeComponents/Statistics";
-import Bootcamp from "../components/homeComponents/Bootcamp";
-import Features from "../components/homeComponents/Features";
-import Courses from "../components/homeComponents/Courses";
-import EstelamVaHamrahsho from "../components/homeComponents/EstelamVaHamrahSho";
-import AskedQuestion from "../components/homeComponents/AskedQuestion";
-import Magazines from "../components/homeComponents/Magazines";
-import Methdology from "../components/homeComponents/Methodology";
-import WhyBootcamp from "../components/homeComponents/WhyBootcamp";
-import OurMentors from "../components/homeComponents/OurMentors";
-import Makeeniha from "../components/homeComponents/Makeeniha";
-import InstallmentPayment from "../components/homeComponents/InstallmentPayment";
-import RegisterationModal from "../components/homeComponents/RegisterationModal";
+import Slider from "../components/webComponents/homeComponents/imageSlider/Slider";
+import Statistics from "../components/webComponents/homeComponents/Statistics";
+import Bootcamp from "../components/webComponents/homeComponents/Bootcamp";
+import Features from "../components/webComponents/homeComponents/Features";
+import Courses from "../components/webComponents/homeComponents/Courses";
+import EstelamVaHamrahsho from "../components/webComponents/homeComponents/EstelamVaHamrahSho";
+import AskedQuestion from "../components/webComponents/homeComponents/AskedQuestion";
+import Magazines from "../components/webComponents/homeComponents/Magazines";
+import Methdology from "../components/webComponents/homeComponents/Methodology";
+import WhyBootcamp from "../components/webComponents/homeComponents/WhyBootcamp";
+import OurMentors from "../components/webComponents/homeComponents/OurMentors";
+import Makeeniha from "../components/webComponents/homeComponents/Makeeniha";
+import InstallmentPayment from "../components/webComponents/homeComponents/InstallmentPayment";
+import RegisterationModal from "../components/webComponents/homeComponents/RegisterationModal";
 export default function home() {
   return (
     <>

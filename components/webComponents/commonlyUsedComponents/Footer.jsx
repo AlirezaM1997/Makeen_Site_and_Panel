@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useDispatch } from "react-redux";
-import { showHideModalAction } from "../../slices/showRegistrationModalSlice";
+import { showHideModalAction } from "../../../slices/showRegistrationModalSlice";
 export default function Footer() {
   const scrollClick = () => {
     window.scrollTo({

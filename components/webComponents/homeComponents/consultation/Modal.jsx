@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import Image from "next/image";
-import { _showHideModalAction } from "../../../slices/showConsultationModal";
+import { _showHideModalAction } from "../../../../slices/showConsultationModal";
 import dynamic from "next/dynamic";
 import { useEffect } from "react";
 export default function ConsultationModal() {

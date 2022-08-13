@@ -1,6 +1,5 @@
 import Image from "next/image";
 import RegistrationsTable from "./RegistrationsTable";
-
 export default function Registeration() {
   return (
     <>

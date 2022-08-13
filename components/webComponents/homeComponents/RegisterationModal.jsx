@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { showHideModalAction } from "../../slices/showRegistrationModalSlice";
+import { showHideModalAction } from "../../../slices/showRegistrationModalSlice";
 import Image from "next/image";
 import Select from "react-select";
 import { useForm, Controller } from "react-hook-form";

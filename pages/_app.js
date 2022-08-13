@@ -1,14 +1,14 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
 import "../styles/globals.css";
 import "../styles/slickSlider.css";
-const Header = dynamic(() => import("../components/commonlyUsedComponents/Header"), { ssr: false });
-import Footer from "../components/commonlyUsedComponents/Footer";
-import { useRouter } from "next/router";
 import { Provider } from "react-redux";
 import { store } from "../store/store";
-import RegisterationModal from "../components/homeComponents/RegisterationModal";
-import ConsultationModal from "../components/homeComponents/consultation/Modal";
+const Header = dynamic(() => import("../components/webComponents/commonlyUsedComponents/Header"), { ssr: false });
+import Footer from "../components/webComponents/commonlyUsedComponents/Footer";
+import RegisterationModal from "../components/webComponents/homeComponents/RegisterationModal";
+import ConsultationModal from "../components/webComponents/homeComponents/consultation/Modal";
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (

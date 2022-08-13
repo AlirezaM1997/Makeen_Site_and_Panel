@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Blogs from "../../components/Blogs";
+import Blogs from "../../components/webComponents/Blogs";
 export default function blogs() {
   return (
     <>
