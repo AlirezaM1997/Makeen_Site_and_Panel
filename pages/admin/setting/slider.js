@@ -1,7 +1,6 @@
 import Head from "next/head";
 import DashboardLayout from "../../../components/adminComponents/DashboardLayout";
 import Slider from "../../../components/adminComponents/settingOptions/Slider";
-
 export default function setting() {
   return (
     <>
@@ -9,7 +8,7 @@ export default function setting() {
         <title>اسلایدر</title>
       </Head>
       <DashboardLayout>
-       <Slider/>
+        <Slider />
       </DashboardLayout>
     </>
   );

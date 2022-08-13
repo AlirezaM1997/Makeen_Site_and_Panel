@@ -10,7 +10,7 @@ export default function Setting() {
             dir="rtl"
           >
             <Link href={"/admin/setting/slider"} >
-              <div className="flex items-center justify-start border-[1px] border-[#37BBEC] rounded-[10px] w-full h-6 py-6 pr-4 cursor-pointer">
+              <a className="flex items-center justify-start border-[1px] border-[#37BBEC] rounded-[10px] w-full h-6 py-6 pr-4 cursor-pointer">
                 <div className="relative w-[16px] h-[16px] ml-2">
                   <Image
                     src={"/assets/images/panel/folder.png"}
@@ -21,7 +21,7 @@ export default function Setting() {
                 <span className="text-[13px] text-[#292D32] leading-[22px] font-bold">
                   اسلایدر
                 </span>
-              </div>
+              </a>
             </Link>
             <div className="flex items-center justify-start border-[1px] border-[#37BBEC] rounded-[10px] w-full h-6 py-6 pr-4 cursor-pointer">
               <div className="relative w-[16px] h-[16px] ml-2">

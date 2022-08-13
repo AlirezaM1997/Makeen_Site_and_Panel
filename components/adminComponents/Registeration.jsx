@@ -16,9 +16,9 @@ export default function Registeration() {
                   alt="logo"
                 />
               </div>
-              <span className="text-[#292D32] text-[12px] leading-[21px] font-medium font-iranYekan ml-2">
+              <button className="text-[#292D32] text-[12px] leading-[21px] font-medium font-iranYekan ml-2">
                 خروجی اکسل
-              </span>
+              </button>
             </button>
 
             <div></div>

@@ -30,7 +30,7 @@ export default function Login() {
     if (currentAdmin.username !== "" && currentAdmin.password !== "") {
       const getToken = async () => {
         setIsLoaded(true);
-        fetch("http://localhost:4000/user/login", {
+        fetch(`${process.env.domainKey}/accounts/login`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
