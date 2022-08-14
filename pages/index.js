@@ -13,26 +13,30 @@ import OurMentors from "../components/webComponents/homeComponents/OurMentors";
 import Makeeniha from "../components/webComponents/homeComponents/Makeeniha";
 import InstallmentPayment from "../components/webComponents/homeComponents/InstallmentPayment";
 import RegisterationModal from "../components/webComponents/homeComponents/RegisterationModal";
+import { QueryClient, QueryClientProvider } from "react-query";
+const queryClient = new QueryClient();
 export default function home() {
   return (
     <>
-      <Head>
-        <title>آکادمی مکین</title>
-      </Head>
-      <RegisterationModal/>
-      <Slider />
-      <Statistics />
-      <Bootcamp />
-      <Features />
-      <Courses />
-      <WhyBootcamp />
-      <OurMentors />
-      <InstallmentPayment />
-      <Makeeniha />
-      <Methdology />
-      <AskedQuestion />
-      <Magazines />
-      <EstelamVaHamrahsho />
+      <QueryClientProvider client={queryClient}>
+        <Head>
+          <title>آکادمی مکین</title>
+        </Head>
+        <RegisterationModal />
+        <Slider />
+        <Statistics />
+        <Bootcamp />
+        <Features />
+        <Courses />
+        <WhyBootcamp />
+        <OurMentors />
+        <InstallmentPayment />
+        <Makeeniha />
+        <Methdology />
+        <AskedQuestion />
+        <Magazines />
+        <EstelamVaHamrahsho />
+      </QueryClientProvider>
     </>
   );
 }

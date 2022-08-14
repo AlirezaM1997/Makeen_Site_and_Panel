@@ -28,30 +28,30 @@ export default function Login() {
       setHintPasswordInput(false);
     }
     if (currentAdmin.username !== "" && currentAdmin.password !== "") {
-      const getToken = async () => {
+      const getToken = () => {
         setIsLoaded(true);
-        fetch(`${process.env.domainKey}/accounts/login`, {
+        fetch(`${process.env.domain}/accounts/login`, {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
+          headers:{},
           body: JSON.stringify({
             username: currentAdmin.username,
             password: currentAdmin.password,
           }),
         })
           .then((data) => {
-            if (data.status === 200) {
-              navToPanel.push("/admin/dashboard");
-            } else {
-              setHintInfoWrong(true);
-              setIsLoaded(false);
-            }
-            return data.json();
+            console.log(data);
+            // if (data.status === 200) {
+            //   // navToPanel.push("/admin/dashboard");
+            //   console.log(data);
+            // } else {
+            //   // setHintInfoWrong(true);
+            //   setIsLoaded(false);
+            // }
+            // return data.json();
           })
-          .then(({ token }) => {
-            setCookies("token", token);
-          });
+          // .then(({ token }) => {
+          //   setCookies("token", token);
+          // });
       };
       getToken();
     }

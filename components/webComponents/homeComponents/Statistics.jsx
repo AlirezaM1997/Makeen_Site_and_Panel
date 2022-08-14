@@ -1,5 +1,7 @@
 import Image from "next/image";
+import { useGetCounter } from "../../../hooks/homeHooks";
 const Statistics = () => {
+  const { data: counter } = useGetCounter();
   return (
     <>
       <div className="pt-[90px] pb-[56px] px-[50px] relative">
@@ -9,7 +11,9 @@ const Statistics = () => {
         <div className="grid lg:grid-cols-4 grid-cols-2 font-iranYekan">
           <div className="flex items-center justify-center">
             <div className="flex flex-col items-end pr-3">
-              <span className="text-[#4D5051] text-[30px]">6</span>
+              <span className="text-[#4D5051] text-[30px]">
+                {counter.filter((i) => i.obj === "N").map((i) => i.value)}
+              </span>
               <span className="text-[16px] text-[#454849] leading-[34px]">
                 دوره پرطرفدار و به روز
               </span>
@@ -25,10 +29,11 @@ const Statistics = () => {
               </div>
             </div>
           </div>
-
           <div className="flex items-center justify-center">
             <div className="flex flex-col items-end pr-3">
-              <span className="text-[#3086A6] text-[30px]">10</span>
+              <span className="text-[#3086A6] text-[30px]">
+                {counter.filter((i) => i.obj === "T").map((i) => i.value)}
+              </span>
               <span className="text-[16px] text-[#454849] leading-[34px]">
                 استاد برجسته و ماهر
               </span>
@@ -44,10 +49,11 @@ const Statistics = () => {
               </div>
             </div>
           </div>
-
           <div className="flex items-center justify-center">
             <div className="flex flex-col items-end pr-3">
-              <span className="text-[#CC6123] text-[30px]">1000</span>
+              <span className="text-[#CC6123] text-[30px]">
+              {counter.filter((i) => i.obj === "S").map((i) => i.value)}
+              </span>
               <span className="text-[16px] text-[#454849] leading-[34px] text-right">
                 ساعت دوره آموزشی حضوری
               </span>
@@ -65,7 +71,9 @@ const Statistics = () => {
           </div>
           <div className="flex items-center justify-center">
             <div className="flex flex-col items-end pr-3">
-              <span className="text-[#335471] text-[30px]">500</span>
+              <span className="text-[#335471] text-[30px]">
+              {counter.filter((i) => i.obj === "F").map((i) => i.value)}
+              </span>
               <span className="text-[16px] text-[#454849] leading-[34px] text-right">
                 فارغ التحصیل مشغول به کار
               </span>

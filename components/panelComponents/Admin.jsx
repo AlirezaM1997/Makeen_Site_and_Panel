@@ -58,18 +58,17 @@ export default function Admin() {
       newAdmin.name !== "" &&
       newAdmin.email !== ""
     ) {
-      const getToken = async () => {
+      const addNewAdmin = () => {
         setIsLoaded(true);
         fetch(`${process.env.domain}/accounts/register`, {
           method: "POST",
-          headers: {
-            // "Content-Type": "application/json",
-          },
           body: JSON.stringify({
             username: newAdmin.username,
             password: newAdmin.password,
+            password2: newAdmin.password,
             name: newAdmin.name,
             email: newAdmin.email,
+            phone: "09385277300",
           }),
         })
           .then((data) => {
@@ -87,7 +86,7 @@ export default function Admin() {
           // });
         setIsLoaded(false);
       };
-      getToken();
+      addNewAdmin();
     }
   };
   return (
