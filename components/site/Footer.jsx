@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useDispatch } from "react-redux";
-import { showHideModalAction } from "../../../slices/showRegistrationModalSlice";
+import { showHideModalAction } from "../../slices/showRegistrationModalSlice";
 export default function Footer() {
   const scrollClick = () => {
     window.scrollTo({
@@ -157,7 +157,7 @@ export default function Footer() {
                 بوت کمپ
               </li>
             </Link>
-            <Link href="/aboutmakeen">
+            <Link href="/about">
               <li className="flex justify-center text-[#768b9b] hover:text-white hover:cursor-pointer   pb-[17px]  mt-[35px] transition font-semibold leading-[25px]  opacity-50 relative  hover:opacity-100 cursor-pointer before:content-[''] before:absolute before:h-1 before:w-[80px] before:top-full before:bg-menu_item before:bg-50_50 before:bg-no-repeat before:bg-0_100 before:rounded-[10px] before:transition-menu_item_transition hover:before:bg-100_100 ease-in-out before:duration-300">
                 درباره مکین
               </li>

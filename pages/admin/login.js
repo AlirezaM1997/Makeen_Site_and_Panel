@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Login from "../../components/panelComponents/Login";
+import Login from "../../components/panel/Login";
 
 export default function login() {
   return (

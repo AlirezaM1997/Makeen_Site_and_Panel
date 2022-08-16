@@ -2,7 +2,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import BlogCard from "../commonlyUsedComponents/BlogCard";
+import BlogCard from "../BlogCard";
 export default function Magazines() {
   const magazines = [1, 2, 3, 4, 5, 6];
   const setting = {

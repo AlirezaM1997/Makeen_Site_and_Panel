@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Collaboration from "../../components/panelComponents/Collaboration";
-import DashboardLayout from "../../components/panelComponents/DashboardLayout";
+import Collaboration from "../../components/panel/Collaboration";
+import DashboardLayout from "../../components/panel/DashboardLayout";
 export default function collaboration() {
   return (
     <>

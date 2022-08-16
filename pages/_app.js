@@ -5,11 +5,22 @@ import "../styles/globals.css";
 import "../styles/slickSlider.css";
 import { Provider } from "react-redux";
 import { store } from "../store/store";
-const Header = dynamic(() => import("../components/webComponents/commonlyUsedComponents/Header"), { ssr: false });
-import Footer from "../components/webComponents/commonlyUsedComponents/Footer";
-import RegisterationModal from "../components/webComponents/homeComponents/RegisterationModal";
-import ConsultationModal from "../components/webComponents/homeComponents/consultation/Modal";
+const Header = dynamic(
+  () => import("../components/site/Header"),
+  { ssr: false }
+);
+import Footer from "../components/site/Footer";
+import RegisterationModal from "../components/site/home/RegisterationModal";
+import ConsultationModal from "../components/site/home/consultation/Modal";
+import {
+  Hydrate,
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query";
+import { useState } from "react";
+
 export default function MyApp({ Component, pageProps }) {
+  const [queryClient] = useState(() => new QueryClient());
   const router = useRouter();
   return (
     <>
@@ -36,18 +47,22 @@ export default function MyApp({ Component, pageProps }) {
         router.pathname === "/courses" ||
         router.pathname === "/bootcamp" ||
         router.pathname === "/blogs" ||
-        router.pathname === "/aboutmakeen" ? (
+        router.pathname === "/about" ? (
           <Header />
         ) : null}
-        <RegisterationModal/>
-        <ConsultationModal/>
-        <Component {...pageProps} />
+        <RegisterationModal />
+        <ConsultationModal />
+        <QueryClientProvider client={queryClient}>
+          <Hydrate state={pageProps.dehydratedState}>
+            <Component {...pageProps} />
+          </Hydrate>
+        </QueryClientProvider>
         {router.pathname === "/" ||
         router.pathname === "/cooperation" ||
         router.pathname === "/courses" ||
         router.pathname === "/bootcamp" ||
         router.pathname === "/blogs" ||
-        router.pathname === "/aboutmakeen" ? (
+        router.pathname === "/about" ? (
           <Footer />
         ) : null}
       </Provider>

@@ -1,42 +1,61 @@
 import Head from "next/head";
-import Slider from "../components/webComponents/homeComponents/imageSlider/Slider";
-import Statistics from "../components/webComponents/homeComponents/Statistics";
-import Bootcamp from "../components/webComponents/homeComponents/Bootcamp";
-import Features from "../components/webComponents/homeComponents/Features";
-import Courses from "../components/webComponents/homeComponents/Courses";
-import EstelamVaHamrahsho from "../components/webComponents/homeComponents/EstelamVaHamrahSho";
-import AskedQuestion from "../components/webComponents/homeComponents/AskedQuestion";
-import Magazines from "../components/webComponents/homeComponents/Magazines";
-import Methdology from "../components/webComponents/homeComponents/Methodology";
-import WhyBootcamp from "../components/webComponents/homeComponents/WhyBootcamp";
-import OurMentors from "../components/webComponents/homeComponents/OurMentors";
-import Makeeniha from "../components/webComponents/homeComponents/Makeeniha";
-import InstallmentPayment from "../components/webComponents/homeComponents/InstallmentPayment";
-import RegisterationModal from "../components/webComponents/homeComponents/RegisterationModal";
-import { QueryClient, QueryClientProvider } from "react-query";
-const queryClient = new QueryClient();
+import Slider from "../components/site/home/imageSlider/Slider";
+import Statistics from "../components/site/home/Statistics";
+import Bootcamp from "../components/site/home/Bootcamp";
+import Features from "../components/site/home/Features";
+import Courses from "../components/site/home/Courses";
+import EstelamVaHamrahsho from "../components/site/home/EstelamVaHamrahSho";
+import AskedQuestion from "../components/site/home/AskedQuestion";
+import Magazines from "../components/site/home/Magazines";
+import Methdology from "../components/site/home/Methodology";
+import WhyBootcamp from "../components/site/home/WhyBootcamp";
+import OurMentors from "../components/site/home/OurMentors";
+import Makeeniha from "../components/site/home/Makeeniha";
+import InstallmentPayment from "../components/site/home/InstallmentPayment";
+import RegisterationModal from "../components/site/home/RegisterationModal";
+import { dehydrate, QueryClient ,useQueries} from '@tanstack/react-query';
+import { getCounter, getImageSlider } from "../API/homeAPI";
+
 export default function home() {
+  const results = useQueries({
+    queries: [
+      { queryKey: ['imageSlider', 1], queryFn: getImageSlider, staleTime: Infinity},
+      { queryKey: ['counter', 2], queryFn: getCounter, staleTime: Infinity},
+    ]
+  })
+  if (results.some(r => r.isLoading)) return <h1>isLoading........</h1>
   return (
     <>
-      <QueryClientProvider client={queryClient}>
-        <Head>
-          <title>آکادمی مکین</title>
-        </Head>
-        <RegisterationModal />
-        <Slider />
-        <Statistics />
-        <Bootcamp />
-        <Features />
-        <Courses />
-        <WhyBootcamp />
-        <OurMentors />
-        <InstallmentPayment />
-        <Makeeniha />
-        <Methdology />
-        <AskedQuestion />
-        <Magazines />
-        <EstelamVaHamrahsho />
-      </QueryClientProvider>
+      <Head>
+        <title>آکادمی مکین</title>
+      </Head>
+      <RegisterationModal />
+      <Slider imageSlider={results[0].data}/>
+      <Statistics />
+      <Bootcamp />
+      <Features />
+      <Courses />
+      <WhyBootcamp />
+      <OurMentors />
+      <InstallmentPayment />
+      <Makeeniha />
+      <Methdology />
+      <AskedQuestion />
+      <Magazines />
+      <EstelamVaHamrahsho />
     </>
   );
+}
+
+export async function getStaticProps() {
+  const queryClient = new QueryClient()
+
+  await queryClient.prefetchQuery(['counter'], getCounter)
+  await queryClient.prefetchQuery(['imageSlider'], getImageSlider)
+
+  return {
+    props: {
+      dehydratedState: dehydrate(queryClient),
+    },
+  }
 }

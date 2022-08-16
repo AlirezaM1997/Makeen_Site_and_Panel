@@ -1,5 +1,5 @@
 import Head from "next/head";
-import BootCamp from "../components/webComponents/bootcamp/BootCamp";
+import BootCamp from "../components/site/bootcamp/BootCamp";
 
 export default function bootcamp() {
   return (

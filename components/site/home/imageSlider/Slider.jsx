@@ -3,24 +3,12 @@ import SliderContent from "./SliderContent";
 import Dots from "./Dots";
 import Arrows from "./Arrows";
 import sliderImage from "./sliderImage";
-import axios from "axios";
 
 const len = sliderImage.length - 1;
-export default function Slider({ slides }) {
+export default function Slider({ imageSlider }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [timer, setTimer] = useState(0);
-
-  useEffect(() => {
-    const myFunction = async () => {
-      const result = await fetch(
-        "https://salmankhosravi.pythonanywhere.com/firstpage/show-methodology/"
-      );
-      const data =  result;
-      console.log("data", data);
-    };
-    myFunction();
-  }, []);
-
+console.log('imageSlider',imageSlider);
   const i = 0;
   useEffect(() => {
     const slideInterval = setInterval(() => {
@@ -62,19 +50,3 @@ export default function Slider({ slides }) {
     </>
   );
 }
-
-// export async function getStaticProps() {
-//   const endpoint = [
-//     "https://salmankhosravi.pythonanywhere.com/firstpage/all_sliders",
-//   ];
-//   try {
-//     const result = await axios.get(endpoint);
-//     const slides = result.data;
-
-//     return {
-//       props: { slides },
-//     };
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }

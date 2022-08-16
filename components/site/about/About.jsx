@@ -3,7 +3,7 @@ import Highlights from "./Highlights";
 import Navigator from "./Navigator";
 import PartOne from "./PartOne";
 import PartTwo from "./PartTwo";
-const AboutMakeen = () => {
+const About = () => {
   return (
     <>
       <section className="mb-[80px]">
@@ -28,5 +28,4 @@ const AboutMakeen = () => {
     </>
   );
 };
-
-export default AboutMakeen;
+export default About;

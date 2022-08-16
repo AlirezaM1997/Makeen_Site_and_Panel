@@ -1,6 +1,6 @@
 import Head from "next/head";
-import DashboardLayout from "../../components/panelComponents/DashboardLayout";
-import Registeration from "../../components/panelComponents/Registeration";
+import DashboardLayout from "../../components/panel/DashboardLayout";
+import Registeration from "../../components/panel/Registeration";
 export default function setting() {
   return (
     <>

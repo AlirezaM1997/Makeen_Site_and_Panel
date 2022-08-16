@@ -1,11 +1,12 @@
 import * as api from "../API/homeAPI";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 
 const useGetCounter = () => {
-  return useQuery("counter", api.getCounter);
+  return useQuery("home",()=> api.getCounter());
 };
 
+const useGetImageSlider = () => {
+  return useQuery("imageSlider", api.getImageSlider);
+};
 
-export {
-    useGetCounter,
-}
+export { useGetCounter, useGetImageSlider };

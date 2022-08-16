@@ -30,12 +30,13 @@ export default function Login() {
     if (currentAdmin.username !== "" && currentAdmin.password !== "") {
       const getToken = () => {
         setIsLoaded(true);
-        fetch(`${process.env.domain}/accounts/login`, {
+        console.log(currentAdmin);
+        fetch(`${process.env.domain}/accounts/login/`, {
           method: "POST",
           headers:{},
           body: JSON.stringify({
-            username: currentAdmin.username,
-            password: currentAdmin.password,
+            "username": currentAdmin.username,
+            "password": currentAdmin.password,
           }),
         })
           .then((data) => {

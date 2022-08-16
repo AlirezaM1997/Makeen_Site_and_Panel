@@ -1,6 +1,6 @@
 import Head from "next/head";
-import CoursesPage from "../components/webComponents/courses/CoursesPage";
-export default function cooperation() {
+import CoursesPage from "../components/site/courses/CoursesPage";
+export default function coursesPage() {
   return (
     <>
       <Head>
