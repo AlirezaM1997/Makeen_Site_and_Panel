@@ -13,6 +13,7 @@ import OurMentors from "../components/site/home/OurMentors";
 import Makeeniha from "../components/site/home/Makeeniha";
 import InstallmentPayment from "../components/site/home/InstallmentPayment";
 import RegisterationModal from "../components/site/home/RegisterationModal";
+import Loading from "../components/site/Loading";
 import { dehydrate, QueryClient ,useQueries} from '@tanstack/react-query';
 import { getCounter, getImageSlider } from "../API/homeAPI";
 
@@ -23,7 +24,7 @@ export default function home() {
       { queryKey: ['counter', 2], queryFn: getCounter, staleTime: Infinity},
     ]
   })
-  if (results.some(r => r.isLoading)) return <h1>isLoading........</h1>
+  if (results.some(r => r.isLoading)) return <Loading/>
   return (
     <>
       <Head>

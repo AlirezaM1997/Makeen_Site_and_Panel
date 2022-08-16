@@ -25,11 +25,16 @@ module.exports = {
           "0%": { bottom: "100%", right: "50%" },
           "100%": { bottom: "50%", right: "50%" },
         },
+        loadingKeyFrame: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         mouseInPaint: "growScale 0.3s ease-out",
         mouseOutPaint: "shrinkScale 0.3s ease-out",
         comeFromUp: "upToDown 0.5s ease-in-out",
+        loading: "loadingKeyFrame 1.5s linear infinite",
       },
       backgroundImage: {
         menu_item: "linear-gradient(#37BBEC, #37BBEC)",
