@@ -13,7 +13,7 @@ import OurMentors from "../components/site/home/OurMentors";
 import Makeeniha from "../components/site/home/Makeeniha";
 import InstallmentPayment from "../components/site/home/InstallmentPayment";
 import RegisterationModal from "../components/site/home/RegisterationModal";
-import Loading from "../components/site/Loading";
+import Loading from "../components/Loading";
 import { dehydrate, QueryClient ,useQueries} from '@tanstack/react-query';
 import { getCounter, getSliderImages } from "../API/globalAPI";
 

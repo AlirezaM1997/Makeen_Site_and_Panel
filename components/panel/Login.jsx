@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { setCookies } from "cookies-next";
 import Image from "next/image";
 import { getLogin } from "../../API/API";
-import Loading from "../site/Loading";
+import Loading from "../Loading";
 export default function Login() {
   const navToPanel = useRouter();
   const [currentAdmin, setCurrentAdmin] = useState({
@@ -30,7 +30,7 @@ export default function Login() {
       setHintPasswordInput(false);
     }
     if (currentAdmin.username !== "" && currentAdmin.password !== "") {
-      const getToken = async () => {
+      const getToken = () => {
         setIsLoaded(true);
         // const data = await getLogin(currentAdmin.username, currentAdmin.password);
         fetch(`${process.env.domain}/accounts/login/`, {
@@ -50,9 +50,9 @@ export default function Login() {
             }
             return data.json();
           })
-          .then(({ token }) => {
-            setCookies("token", token.access);
-          });
+          // .then(({ token }) => {
+          //   setCookies("token", token.access);
+          // });
       };
       getToken();
     }

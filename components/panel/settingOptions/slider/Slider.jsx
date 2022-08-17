@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { useGetSliderImages } from "../../../../hooks/panelHooks";
-import Loading from "../../../site/Loading";
+import Loading from "../../../Loading";
 import SlideItem from "./SlideItem";
 export default function Slider() {
   const {data,isLoading} = useGetSliderImages()
@@ -10,12 +11,14 @@ export default function Slider() {
         <div className="shadow-[0px_0px_5px_#00000017] rounded-[14px] p-6 relative ml-[15px]">
           <header>
             <div>
-              <button className="flex items-center justify-center text-[#37BBEC] border-[1px] border-[#12B428] rounded-[10px] px-4 py-[10px]">
-                <span>+</span>
-                <span className="text-[12px] leading-[21px] font-medium font-iranYekan ml-2">
-                  افزودن عکس
-                </span>
-              </button>
+              <Link href={'/admin/setting/slider/addslide'} >
+                <div className="flex items-center justify-center w-fit text-[#37BBEC] border-[1px] border-[#12B428] rounded-[10px] px-4 py-[10px] cursor-pointer">
+                  <span>+</span>
+                  <span className="text-[12px] leading-[21px] font-medium font-iranYekan ml-2">
+                    افزودن عکس
+                  </span>
+                </div>
+              </Link>
             </div>
             <div></div>
             <hr className="mt-2 bg-[#103F7B] h-[1.5px]" />
