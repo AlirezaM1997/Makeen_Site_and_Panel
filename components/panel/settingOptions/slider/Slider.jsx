@@ -2,10 +2,8 @@ import { useGetSliderImages } from "../../../../hooks/panelHooks";
 import Loading from "../../../site/Loading";
 import SlideItem from "./SlideItem";
 export default function Slider() {
-  const allSlides = [1, 2];
   const {data,isLoading} = useGetSliderImages()
   if (isLoading) return <Loading/>
-  console.log(data);
   return (
     <>
       <div className="mr-[108px] mt-4 ">

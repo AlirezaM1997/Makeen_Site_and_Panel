@@ -1,6 +1,11 @@
+import { useMutation } from "@tanstack/react-query";
 import Image from "next/image";
+import { deleteSliderImage } from "../../../../API/API";
 import { parsIsoDate } from "../../../../features/usefullFunctions";
-export default function SlideItem({item}) {
+export default function SlideItem({ item }) {
+  const deleteImage = useMutation((id) => {
+    deleteSliderImage(id);
+  });
   return (
     <>
       <div className="py-4 px-[10px] border-[1px] border-[#37BBEC] rounded-[10px] flex items-center">
@@ -21,7 +26,10 @@ export default function SlideItem({item}) {
             {/* <div>{"name"}</div> */}
           </div>
           <div>
-            <div className="relative w-4 h-4">
+            <div
+              className="relative w-4 h-4"
+              onClick={() => deleteImage.mutate(item.id)}
+            >
               <Image
                 src={"/assets/images/panel/delete.png"}
                 layout="fill"

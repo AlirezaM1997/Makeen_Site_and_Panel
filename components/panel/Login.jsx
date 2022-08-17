@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { setCookies } from "cookies-next";
 import Image from "next/image";
+import { getLogin } from "../../API/API";
+import Loading from "../site/Loading";
 export default function Login() {
   const navToPanel = useRouter();
   const [currentAdmin, setCurrentAdmin] = useState({
@@ -28,35 +30,34 @@ export default function Login() {
       setHintPasswordInput(false);
     }
     if (currentAdmin.username !== "" && currentAdmin.password !== "") {
-      const getToken = () => {
+      const getToken = async () => {
         setIsLoaded(true);
-        console.log(currentAdmin);
+        // const data = await getLogin(currentAdmin.username, currentAdmin.password);
         fetch(`${process.env.domain}/accounts/login/`, {
           method: "POST",
-          headers:{},
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            "username": currentAdmin.username,
-            "password": currentAdmin.password,
+            username: currentAdmin.username,
+            password: currentAdmin.password,
           }),
         })
           .then((data) => {
-            console.log(data);
-            // if (data.status === 200) {
-            //   // navToPanel.push("/admin/dashboard");
-            //   console.log(data);
-            // } else {
-            //   // setHintInfoWrong(true);
-            //   setIsLoaded(false);
-            // }
-            // return data.json();
+            if (data.status === 200) {
+              navToPanel.push("/admin/dashboard");
+            } else {
+              setHintInfoWrong(true);
+              setIsLoaded(false);
+            }
+            return data.json();
           })
-          // .then(({ token }) => {
-          //   setCookies("token", token);
-          // });
+          .then(({ token }) => {
+            setCookies("token", token.access);
+          });
       };
       getToken();
     }
   };
+  if (isLoaded) return <Loading/>
   return (
     <>
       <section className="px-[406px] mt-[50px] font-iranYekan relative mb-16">
