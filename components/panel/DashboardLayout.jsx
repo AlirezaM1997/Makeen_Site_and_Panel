@@ -67,7 +67,7 @@ export default function DashboardLayout({ children }) {
               <Link href={"/admin/setting"}>
                 <a
                   className={`${
-                    router.pathname === "/admin/setting"
+                    String(router.pathname).includes("setting")
                       ? "currentAdminMenu"
                       : ""
                   } flex flex-col items-center mb-6`}

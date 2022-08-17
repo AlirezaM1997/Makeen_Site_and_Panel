@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-export default function Admin() {
+export default function Admins() {
   const [hintUsernameInput, setHintUsernameInput] = useState(false);
   const [hintPasswordInput, setHintPasswordInput] = useState(false);
   const [hintRepeatPasswordInput, setHintRepeatPasswordInput] = useState(false);

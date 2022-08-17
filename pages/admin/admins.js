@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Admin from "../../components/panel/Admin";
+import Admins from "../../components/panel/Admins";
 import DashboardLayout from "../../components/panel/DashboardLayout";
 export default function admin() {
   return (
@@ -8,7 +8,7 @@ export default function admin() {
         <title>ادمین</title>
       </Head>
       <DashboardLayout>
-        <Admin />
+        <Admins/>
       </DashboardLayout>
     </>
   );

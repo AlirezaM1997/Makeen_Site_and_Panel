@@ -1,5 +1,5 @@
 import Image from "next/image";
-function SliderContent({ activeIndex, sliderImage }) {
+export default function SliderContent({ activeIndex, sliderImage }) {
   return (
     <section>
       {sliderImage.map((slide, index) => (
@@ -12,7 +12,7 @@ function SliderContent({ activeIndex, sliderImage }) {
           }
         >
           <Image
-            src={slide.urls}
+            src={slide.cover}
             alt="slide"
             layout="fill"
             className="w-full h-full absolute object-cover rounded-[20px]"
@@ -22,5 +22,3 @@ function SliderContent({ activeIndex, sliderImage }) {
     </section>
   );
 }
-
-export default SliderContent;

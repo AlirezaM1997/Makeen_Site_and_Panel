@@ -15,12 +15,12 @@ import InstallmentPayment from "../components/site/home/InstallmentPayment";
 import RegisterationModal from "../components/site/home/RegisterationModal";
 import Loading from "../components/site/Loading";
 import { dehydrate, QueryClient ,useQueries} from '@tanstack/react-query';
-import { getCounter, getImageSlider } from "../API/homeAPI";
+import { getCounter, getSliderImages } from "../API/globalAPI";
 
 export default function home() {
   const results = useQueries({
     queries: [
-      { queryKey: ['imageSlider', 1], queryFn: getImageSlider, staleTime: Infinity},
+      { queryKey: ['sliderImages', 1], queryFn: getSliderImages, staleTime: Infinity},
       { queryKey: ['counter', 2], queryFn: getCounter, staleTime: Infinity},
     ]
   })
@@ -31,8 +31,8 @@ export default function home() {
         <title>آکادمی مکین</title>
       </Head>
       <RegisterationModal />
-      <Slider imageSlider={results[0].data}/>
-      <Statistics />
+      <Slider sliderImage={results[0].data}/>
+      <Statistics counter={results[1].data}/>
       <Bootcamp />
       <Features />
       <Courses />
@@ -47,13 +47,10 @@ export default function home() {
     </>
   );
 }
-
 export async function getStaticProps() {
   const queryClient = new QueryClient()
-
   await queryClient.prefetchQuery(['counter'], getCounter)
   await queryClient.prefetchQuery(['imageSlider'], getImageSlider)
-
   return {
     props: {
       dehydratedState: dehydrate(queryClient),

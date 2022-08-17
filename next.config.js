@@ -2,10 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['makeen.ir/'],
+    domains: ["makeen.ir/", "salmankhosravi.pythonanywhere.com"],
   },
   env: {
     domain: "https://salmankhosravi.pythonanywhere.com",
   },
-}
-module.exports = nextConfig
+};
+module.exports = nextConfig;

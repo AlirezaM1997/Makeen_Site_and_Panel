@@ -2,13 +2,10 @@ import { useEffect, useState } from "react";
 import SliderContent from "./SliderContent";
 import Dots from "./Dots";
 import Arrows from "./Arrows";
-import sliderImage from "./sliderImage";
-
-const len = sliderImage.length - 1;
-export default function Slider({ imageSlider }) {
+export default function Slider({ sliderImage }) {
+  const len = sliderImage.length - 1;
   const [activeIndex, setActiveIndex] = useState(0);
   const [timer, setTimer] = useState(0);
-console.log('imageSlider',imageSlider);
   const i = 0;
   useEffect(() => {
     const slideInterval = setInterval(() => {
@@ -27,7 +24,6 @@ console.log('imageSlider',imageSlider);
       clearInterval(slideInterval);
     };
   }, [activeIndex]);
-
   return (
     <>
       <div className="w-full mt-[71px] pr-[30px] pl-[30px]">

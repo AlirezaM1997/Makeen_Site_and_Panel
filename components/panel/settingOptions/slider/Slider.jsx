@@ -1,7 +1,11 @@
-import Image from "next/image";
-
+import { useGetSliderImages } from "../../../../hooks/panelHooks";
+import Loading from "../../../site/Loading";
+import SlideItem from "./SlideItem";
 export default function Slider() {
   const allSlides = [1, 2];
+  const {data,isLoading} = useGetSliderImages()
+  if (isLoading) return <Loading/>
+  console.log(data);
   return (
     <>
       <div className="mr-[108px] mt-4 ">
@@ -19,21 +23,8 @@ export default function Slider() {
             <hr className="mt-2 bg-[#103F7B] h-[1.5px]" />
           </header>
           <section className="grid grid-cols-3 gap-[30px] mt-8" dir="rtl">
-            {allSlides.map((item, index) => (
-              <div className="py-4 px-[10px] border-[1px] border-[#37BBEC] rounded-[10px] flex items-center">
-                <div className="w-[35%] h-full">
-                  <div className="relative w-full h-[92px]">
-                    <Image
-                      src={"/assets/images/slide1.png"}
-                      layout="fill"
-                      objectFit="cover"
-                      alt="slide"
-                      className="rounded-[10px]"
-                    />
-                  </div>
-                </div>
-                <div className="w-[65%] flex"></div>
-              </div>
+            {data.map((item, index) => (
+              <SlideItem item={item} key={index} />
             ))}
           </section>
         </div>

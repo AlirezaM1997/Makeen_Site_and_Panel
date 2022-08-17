@@ -1,8 +1,5 @@
 import Image from "next/image";
-import { useGetCounter } from "../../../hooks/homeHooks";
-export default function Statistics(props) {
-  // const { data: counter } = useGetCounter();
-  console.log('props',props);
+export default function Statistics({counter}) {
   return (
     <>
       <div className="pt-[90px] pb-[56px] px-[50px] relative">
@@ -13,7 +10,7 @@ export default function Statistics(props) {
           <div className="flex items-center justify-center">
             <div className="flex flex-col items-end pr-3">
               <span className="text-[#4D5051] text-[30px]">
-                {/* {counter.filter((i) => i.obj === "N").map((i) => i.value)} */}
+                {counter.filter((i) => i.obj === "N").map((i) => i.value)}
               </span>
               <span className="text-[16px] text-[#454849] leading-[34px]">
                 دوره پرطرفدار و به روز
@@ -33,7 +30,7 @@ export default function Statistics(props) {
           <div className="flex items-center justify-center">
             <div className="flex flex-col items-end pr-3">
               <span className="text-[#3086A6] text-[30px]">
-                {/* {counter.filter((i) => i.obj === "T").map((i) => i.value)} */}
+                {counter.filter((i) => i.obj === "T").map((i) => i.value)}
               </span>
               <span className="text-[16px] text-[#454849] leading-[34px]">
                 استاد برجسته و ماهر
@@ -53,7 +50,7 @@ export default function Statistics(props) {
           <div className="flex items-center justify-center">
             <div className="flex flex-col items-end pr-3">
               <span className="text-[#CC6123] text-[30px]">
-                {/* {counter.filter((i) => i.obj === "S").map((i) => i.value)} */}
+                {counter.filter((i) => i.obj === "S").map((i) => i.value)}
               </span>
               <span className="text-[16px] text-[#454849] leading-[34px] text-right">
                 ساعت دوره آموزشی حضوری
@@ -73,7 +70,7 @@ export default function Statistics(props) {
           <div className="flex items-center justify-center">
             <div className="flex flex-col items-end pr-3">
               <span className="text-[#335471] text-[30px]">
-                {/* {counter.filter((i) => i.obj === "F").map((i) => i.value)} */}
+                {counter.filter((i) => i.obj === "F").map((i) => i.value)}
               </span>
               <span className="text-[16px] text-[#454849] leading-[34px] text-right">
                 فارغ التحصیل مشغول به کار
