@@ -6,7 +6,7 @@ export const CourseCard = () => {
   const dispatch = useDispatch();
   return (
     <>
-      <div className="pt-[30px] pb-[25px] px-[30px] flex flex-col w-full h-full items-center shadow-[10px_10px_20px_#00000014] rounded-[20px] border-[0.5px] border-[#00000014]">
+      <div className="group pt-[30px] pb-[25px] px-[30px] flex flex-col w-full h-full items-center shadow-[10px_10px_20px_#00000014] rounded-[20px] border-[0.5px] border-[#00000014]">
         <div className="relative w-[100px] h-[115px] top-0 group-hover:-top-[20px] transition-top duration-300 ease-out">
           <Image
             src="/assets/images/course-ui.png"
@@ -18,7 +18,7 @@ export const CourseCard = () => {
         <div className="text-[#4D6982] text-[14px] leading-[36px] font-medium mb-[11px]">{`امیرحسین آل احمد`}</div>
         <span className="text-center text-[#025D7E] text-[14px] w-[130px] leading-[25px] bg-[#E4F6FC] rounded-[6px] px-[10px] py-1">{`بزودی`}</span>
         <hr className="my-[30px] w-full" />
-        <div className="flex justify-center">
+        <div className="flex justify-center group-active:hidden">
           <Link href={"#"}>
             <a className="text-[#8094A6] text-[16px] leading-[28px] font-bold ml-[40px] hover:text-[#00213E] transition-colors duration-300 ease-in-out">
               اطلاعات بیشتر
@@ -53,6 +53,29 @@ export const CourseCard = () => {
               />
             </svg>
           </div>
+        </div>
+
+        <div className="hidden group-active:block">
+          <div className="bg-[#EDEEEE] rounded-[10px] flex items-center">
+            <div className="flex items-center">
+              <div className="relative w-[18px] h-[18px]">
+                <Image
+                  src="/assets/images/courses/Courselength.png"
+                  layout="fill"
+                  alt="course"
+                />
+              </div>
+              <span className="text-[#00213E] text-[14px] leading-[30px] font-bold">
+                طول دوره
+              </span>
+            </div>
+            <span className="text-[#00213E] text-[14px] leading-[30px] font-bold">
+              طول دوره
+            </span>
+          </div>
+
+          <div></div>
+          <div></div>
         </div>
       </div>
     </>

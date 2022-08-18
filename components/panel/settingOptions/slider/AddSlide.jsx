@@ -5,14 +5,15 @@ export default function AddSlide() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [file, setFile] = useState(null);
   const submitSlide = async () => {
-    setIsLoaded(true);
     try {
       if (!file) return;
+      setIsLoaded(true);
       const formData = new FormData();
+      console.log(formData);
       formData.append("slide", file);
       fetch(`${process.env.domain}/firstpage/add_sliders`, {
         method: "POST",
-        body: formData,
+        body: {cover :formData , select : true},
       })
         .then((response) => {
           console.log(response);
@@ -36,7 +37,7 @@ export default function AddSlide() {
             <div></div>
             <hr className="mt-2 bg-[#103F7B] h-[1.5px]" />
           </header>
-          <div className="flex flex-col w-1/3">
+          <div className="flex flex-col w-1/2">
             <label
               htmlFor="files"
               className="text-[14px] text-[#00213E] leading-[25px] font-bold my-4"
@@ -45,7 +46,7 @@ export default function AddSlide() {
             </label>
             <div className="flex items-center">
               <input
-                className="bg-[#F6F6F6] py-4 pr-2 cursor-pointer w-full"
+                className="bg-[#F6F6F6] py-4 pr-2 cursor-pointer w-full pl-6"
                 placeholder="فایلی انتخاب نشده"
                 id="files"
                 type={"file"}

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { CourseCard } from "./CourseCard";
-
 export default function CoursesPage() {
   const a = [1, 2, 3, 4, 5];
   return (

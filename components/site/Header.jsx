@@ -79,7 +79,7 @@ export default function Header() {
             >
               ثبت نام دوره
             </li>
-            <Link href={"/cooperation"}>
+            <Link href={"/courses"}>
               <li
                 className={`${
                   router.pathname === "/courses" ? "currentMenu" : ""
