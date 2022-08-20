@@ -1,17 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
 import { CourseCard } from "./CourseCard";
-export default function CoursesPage() {
-  const a = [1, 2, 3, 4, 5];
-  const [showAndHideCourse, setShowAndHideCourse] = useState(null);
-  const showAndHideToggle = (index) => {
-    if (showAndHideCourse !== null) {
-      setShowAndHideCourse(null);
-    } else {
-      setShowAndHideCourse(index);
-    }
-  };
+export default function CoursesPage({courses}) {
   return (
     <>
       <section className="pt-[140px] px-[50px] font-iranYekan mb-[460px]">
@@ -22,14 +11,14 @@ export default function CoursesPage() {
           همه ی دوره هایی که در حال حاضر مکین برگزار می کنه
         </h4>
         <ul
-          className="grid grid-cols-3 gap-[30px] w-full px-[30px] relative mt-[40px]"
+          className="grid lg:grid-cols-3 grid-cols-1 gap-[30px] w-full px-[30px] relative mt-[40px]"
           dir="rtl"
         >
-          {a.map((item, index) => (
-            <CourseCard index={index} />
+          {courses.map((item, index) => (
+            <CourseCard item={item} index={index} key={index}/>
           ))}
           <div>
-            <li className="flex flex-col items-center justify-center rounded-[10px] bg-gradient-[134deg] from-[#E6EAED] to-[#8094A6] w-full h-full">
+            <li className="flex flex-col items-center justify-center rounded-[10px] bg-gradient-[134deg] from-[#E6EAED] to-[#8094A6] w-full h-[395px]">
               <div className="relative w-[35px] h-[44px]">
                 <Image
                   src="/assets/images/new_course_is_coming.png"
