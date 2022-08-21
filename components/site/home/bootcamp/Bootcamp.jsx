@@ -1,6 +1,5 @@
 import VideoSlider from "./VideoSlider";
-
-const Bootcamp = () => {
+export default function Bootcamp  ()  {
   return (
     <>
       <div className="pt-[115px] px-[30px] mt-[100px]">
@@ -67,4 +66,3 @@ const Bootcamp = () => {
   );
 };
 
-export default Bootcamp;

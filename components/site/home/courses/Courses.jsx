@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { CourseItem } from "./CourseItem";
-
-const Courses = () => {
+import Link from "next/link";
+export default function Courses() {
   const slidesData = [1, 2, 3, 4, 5, 6, 7, 8];
   const setting = {
     infinite: true,
@@ -48,14 +48,15 @@ const Courses = () => {
                 alt="arrow_course"
               />
             </div>
-            <div className="z-[1]">
-              <button className="text-[#00213E] text-[16px] leading-[28px] font-bold px-[21px] py-[14px] bg-[#7DD3F2] rounded-[10px] hover:-translate-y-[6px] transition-all duration-300 hover:ease-out">
-                دوره های آکادمی مکین
-              </button>
+            <div className="z-[1] hover:-translate-y-[6px] transition-all duration-300 ease-out">
+              <Link href={"/courses"}>
+                <a className="text-[#00213E] text-[16px] leading-[28px] font-bold px-[21px] py-[14px] bg-[#7DD3F2] rounded-[10px] ">
+                  دوره های آکادمی مکین
+                </a>
+              </Link>
             </div>
           </div>
         </div>
-        q
         <div id="courseSlider" className="-mt-[320px]">
           <Slider {...setting}>
             {slidesData.map((slide, index) => (
@@ -66,5 +67,4 @@ const Courses = () => {
       </div>
     </>
   );
-};
-export default Courses;
+}

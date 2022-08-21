@@ -1,12 +1,12 @@
-import React from 'react'
 
-function CoursePage({course}) {
-    console.log(course);
+export default function CoursePage({course}) {
+
   return (
-    <div>
-      
-    </div>
+    <>
+      <section className='mt-[140px] relative'>
+
+      </section>
+    </>
   )
 }
 
-export default CoursePage

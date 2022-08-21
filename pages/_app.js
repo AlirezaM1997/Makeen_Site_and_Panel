@@ -5,10 +5,9 @@ import "../styles/globals.css";
 import "../styles/slickSlider.css";
 import { Provider } from "react-redux";
 import { store } from "../store/store";
-const Header = dynamic(
-  () => import("../components/site/Header"),
-  { ssr: false }
-);
+const Header = dynamic(() => import("../components/site/Header"), {
+  ssr: false,
+});
 import Footer from "../components/site/Footer";
 import RegisterationModal from "../components/site/home/RegisterationModal";
 import ConsultationModal from "../components/site/home/consultation/Modal";
@@ -44,7 +43,7 @@ export default function MyApp({ Component, pageProps }) {
       <Provider store={store}>
         {router.pathname === "/" ||
         router.pathname === "/cooperation" ||
-        router.pathname === "/courses" ||
+        String(router.pathname).includes("courses") ||
         router.pathname === "/bootcamp" ||
         router.pathname === "/blogs" ||
         router.pathname === "/about" ? (
@@ -59,7 +58,7 @@ export default function MyApp({ Component, pageProps }) {
         </QueryClientProvider>
         {router.pathname === "/" ||
         router.pathname === "/cooperation" ||
-        router.pathname === "/courses" ||
+        String(router.pathname).includes("courses") ||
         router.pathname === "/bootcamp" ||
         router.pathname === "/blogs" ||
         router.pathname === "/about" ? (

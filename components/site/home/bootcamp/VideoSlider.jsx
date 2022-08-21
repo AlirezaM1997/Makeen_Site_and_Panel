@@ -10,6 +10,7 @@ export default function VideoSlider() {
     slidesToShow: 3,
     slidesToScroll: 1,
     draggable:false,
+    autoplay:true,
   };
 
   const slidesData = [
