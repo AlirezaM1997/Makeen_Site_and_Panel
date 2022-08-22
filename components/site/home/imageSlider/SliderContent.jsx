@@ -7,7 +7,7 @@ export default function SliderContent({ activeIndex, sliderImage }) {
           key={index}
           className={
             index === activeIndex
-              ? "h-[500px] w-full relative inline-block"
+              ? "xl:h-[500px] h-[210px] w-full relative inline-block"
               : "hidden"
           }
         >

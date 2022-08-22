@@ -7,8 +7,8 @@ function Dots({ activeIndex, onclick, sliderImage, timer }) {
             key={index}
             className={`${
               activeIndex === index
-                ? "_active-dot h-[12px] w-[12px] cursor-pointer mx-[5px] rounded-full inline-block"
-                : "h-[12px] w-[12px] cursor-pointer mx-[5px] bg-[#CACBCB] rounded-full inline-block"
+                ? "_active-dot xl:h-3 xl:w-3 h-2 w-2 cursor-pointer mx-[5px] rounded-full inline-block"
+                : "xl:h-3 xl:w-3 h-2 w-2 cursor-pointer mx-[5px] bg-[#CACBCB] rounded-full inline-block"
             }`}
             onClick={() => onclick(index)}
           ></span>

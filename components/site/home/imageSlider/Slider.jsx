@@ -26,7 +26,7 @@ export default function Slider({ sliderImage }) {
   }, [activeIndex]);
   return (
     <>
-      <div className="w-full mt-[71px] pr-[30px] pl-[30px]">
+      <div className="w-full xl:mt-[71px] mt-[56px] pr-[30px] pl-[30px]">
         <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
         <Arrows
           prevSlide={() =>

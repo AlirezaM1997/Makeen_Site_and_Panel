@@ -17,6 +17,7 @@ import {
   QueryClientProvider,
 } from "@tanstack/react-query";
 import { useState } from "react";
+import HeaderMobile from "../components/site/HeaderMobile";
 
 export default function MyApp({ Component, pageProps }) {
   const [queryClient] = useState(() => new QueryClient());
@@ -47,7 +48,10 @@ export default function MyApp({ Component, pageProps }) {
         router.pathname === "/bootcamp" ||
         router.pathname === "/blogs" ||
         router.pathname === "/about" ? (
-          <Header />
+          <>
+            <Header />
+            <HeaderMobile />
+          </>
         ) : null}
         <RegisterationModal />
         <ConsultationModal />

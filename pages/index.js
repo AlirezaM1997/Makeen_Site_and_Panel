@@ -16,7 +16,6 @@ import RegisterationModal from "../components/site/home/RegisterationModal";
 import Loading from "../components/Loading";
 import { dehydrate, QueryClient ,useQueries} from '@tanstack/react-query';
 import { getBootcampSlider, getCounter, getFeatures, getInstallmentPayment, getSliderImages,getCourses } from "../API/API";
-
 export default function home() {
   const results = useQueries({
     queries: [
@@ -39,7 +38,7 @@ export default function home() {
       <Statistics counter={results[1].data}/>
       <Bootcamp bootcampSlider={results[2].data}/>
       <Features features={results[3].data}/>
-      <Courses />
+      <Courses courses={results[4].data}/>
       <WhyBootcamp />
       <OurMentors />
       <InstallmentPayment />

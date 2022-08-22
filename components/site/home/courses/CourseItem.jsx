@@ -1,23 +1,35 @@
 import Link from "next/link";
 import Image from "next/image";
-export const CourseItem = () => {
+export const CourseItem = ({ item }) => {
   return (
-    <div className="group rounded-b-[10px] rounded-t-[10px] p-[20px] pt-[7px] w-[220px] relative shadow-[0px_0px_10px_#00000014] bg-[#FFFFFF] transition-all border-[0.5px] border-[#CACBCB] duration-300 font-iranYekan hover:cursor-grab active:cursor-grabbing hover:-mt-[10px]">
-      <div className="flex flex-col justify-center items-center ">
-        <div className="relative w-[100px] h-[115px] top-0 group-hover:-top-[20px] transition-top duration-300 ease-out">
-          <Image
-            src="/assets/images/course-ui.png"
-            layout="fill"
-            alt="course"
-          />
-        </div>
-        <div className="text-[#00213E] text-[18px] leading-[36px] font-bold mb-2">{`UI/UX دوره`}</div>
-        <div className="text-center text-[#4D6982] text-[14px] leading-[25px] mb-2">{`یه دوره حرفه ای و کاربردی برای یادگیری هر چیزی که در طراحی رابط و تجربه کاربری نیاز دارید`}</div>
-        <span className="text-center text-[#025D7E] text-[14px] leading-[25px] bg-[#E4F6FC] rounded-[6px] px-[10px] py-1">{`بزودی`}</span>
-        <div className="flex justify-center h-0 group-hover:h-4 opacity-0 group-hover:opacity-100 group-hover:mt-4 transition-height duration-300 ease-out hover:text-[#00213E] cursor-pointer">
-          <Link href={"#"}>
-            <div className=" relative">
-              <a className="">
+    <>
+      <div className="group rounded-b-[10px] rounded-t-[10px] p-[20px] pt-[7px] w-[220px] relative shadow-[0px_0px_10px_#00000014] bg-[#FFFFFF] transition-all border-[0.5px] border-[#CACBCB] duration-300 font-iranYekan cursor-grab hover:-mt-[10px]">
+        <div className="flex flex-col justify-center items-center ">
+          <div className="px-6 w-full">
+            <div className="relative min-w-[100px] w-full h-[115px] top-0 group-hover:-top-[20px] transition-top duration-300 ease-out">
+              <Image src={item.courses_cover} layout="fill" alt="course" />
+            </div>
+          </div>
+          <div className="text-[#00213E] text-[18px] leading-[36px] font-bold my-2">{`${item.title} دوره`}</div>
+          <p dir="rtl" className="aboutCourse overflow-hidden text-ellipsis text-center text-[#4D6982] text-[14px] leading-[25px] mb-2 h-[75px]">
+            {item.about}
+          </p>
+          <span
+            className={`${
+              item.status === "T"
+                ? "text-[#AC0000] bg-[#FFE8E8]"
+                : "text-[#025D7E] bg-[#E4F6FC]"
+            } text-center text-[14px] leading-[25px] rounded-[6px] px-[10px] py-1`}
+          >
+            {item.status === "B"
+              ? "بزودی"
+              : item.status === "D"
+              ? "در حال ثبت نام"
+              : "تکمیل ظرفیت"}
+          </span>
+          <div className="flex justify-center h-0 group-hover:h-4 opacity-0 group-hover:opacity-100 group-hover:mt-4 transition-height duration-300 ease-out hover:text-[#00213E] cursor-pointer">
+            <Link href={`/courses/${item.id}`}>
+              <a className="relative">
                 <div dir="rtl" className="flex justify-center items-center">
                   <span className="text-[#8094A6] peer text-[14px] leading-[25px] hover:text-[#00213E] transition-spacing duration-[0.4s] ease-in-out hover:pl-4 pl-1">
                     بیشتر بدانید
@@ -43,10 +55,20 @@ export const CourseItem = () => {
                   </svg>
                 </div>
               </a>
-            </div>
-          </Link>
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+      <style>
+        {`
+        .aboutCourse{
+          display: -webkit-box !important;
+          -webkit-line-clamp: 3 !important;
+          line-clamp: 3 !important;
+          -webkit-box-orient: vertical !important;
+        }
+        `}
+      </style>
+    </>
   );
 };

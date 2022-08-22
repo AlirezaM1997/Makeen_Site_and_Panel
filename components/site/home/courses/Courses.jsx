@@ -1,18 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { CourseItem } from "./CourseItem";
-import Link from "next/link";
-export default function Courses() {
-  const slidesData = [1, 2, 3, 4, 5, 6, 7, 8];
+export default function Courses({courses}) {
   const setting = {
-    infinite: true,
     arrows: false,
     speed: 300,
-    slidesToShow: 5.5,
+    slidesToShow: 6,
     slidesToScroll: 2,
     touchThreshold: 6,
+    infinite: false,
   };
   return (
     <>
@@ -59,8 +58,8 @@ export default function Courses() {
         </div>
         <div id="courseSlider" className="-mt-[320px]">
           <Slider {...setting}>
-            {slidesData.map((slide, index) => (
-              <CourseItem key={index} />
+            {courses.map((item, index) => (
+              <CourseItem item={item} key={index} />
             ))}
           </Slider>
         </div>

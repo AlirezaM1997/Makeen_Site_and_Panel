@@ -11,8 +11,8 @@ export default function VideoSlider() {
     slidesToScroll: 1,
     draggable:false,
     autoplay:true,
+    autoplaySpeed:6000,
   };
-
   const slidesData = [
     {
       img: "/assets/images/videoSlide1.png",

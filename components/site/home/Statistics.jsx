@@ -6,13 +6,13 @@ export default function Statistics({counter}) {
         <div className="absolute h-full w-[180px] top-0 right-0 bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-20 blur-[50px]"></div>
         <div className="absolute h-[107px] w-[59px] top-0 right-0 bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-40 blur-[50px]"></div>
         <div className="absolute h-[137px] w-[69px] top-0 left-0 bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-30 blur-[50px]"></div>
-        <div className="grid lg:grid-cols-4 grid-cols-2 font-iranYekan">
-          <div className="flex items-center justify-center">
-            <div className="flex flex-col items-end pr-3">
+        <div className="grid lg:grid-cols-4 grid-cols-2 font-iranYekan gap-x-9 gap-y-[50px] lg:gap-x-[unset] lg:gap-y-[unset]">
+          <div className="flex flex-col-reverse xl:flex-row items-center justify-center">
+            <div className="flex flex-col xl:items-end items-center xl:pr-3 mt-[6px] lg:mt-0">
               <span className="text-[#4D5051] text-[30px]">
                 {counter.filter((i) => i.obj === "N").map((i) => i.value)}
               </span>
-              <span className="text-[16px] text-[#454849] leading-[34px]">
+              <span className="xl:text-[16px] text-[12px] text-[#454849] leading-[34px]">
                 دوره پرطرفدار و به روز
               </span>
             </div>
@@ -27,12 +27,12 @@ export default function Statistics({counter}) {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center">
-            <div className="flex flex-col items-end pr-3">
+          <div className="flex flex-col-reverse xl:flex-row items-center justify-center">
+            <div className="flex flex-col xl:items-end items-center xl:pr-3 mt-[6px] lg:mt-0">
               <span className="text-[#3086A6] text-[30px]">
                 {counter.filter((i) => i.obj === "T").map((i) => i.value)}
               </span>
-              <span className="text-[16px] text-[#454849] leading-[34px]">
+              <span className="xl:text-[16px] text-[12px] text-[#454849] leading-[34px]">
                 استاد برجسته و ماهر
               </span>
             </div>
@@ -47,12 +47,12 @@ export default function Statistics({counter}) {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center">
-            <div className="flex flex-col items-end pr-3">
+          <div className="flex flex-col-reverse xl:flex-row items-center justify-center">
+            <div className="flex flex-col xl:items-end items-center xl:pr-3 mt-[6px] lg:mt-0">
               <span className="text-[#CC6123] text-[30px]">
                 {counter.filter((i) => i.obj === "S").map((i) => i.value)}
               </span>
-              <span className="text-[16px] text-[#454849] leading-[34px] text-right">
+              <span className="xl:text-[16px] text-[12px] text-[#454849] leading-[34px] text-right">
                 ساعت دوره آموزشی حضوری
               </span>
             </div>
@@ -67,12 +67,12 @@ export default function Statistics({counter}) {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center">
-            <div className="flex flex-col items-end pr-3">
+          <div className="flex flex-col-reverse xl:flex-row items-center justify-center">
+            <div className="flex flex-col xl:items-end items-center xl:pr-3 mt-[6px] lg:mt-0">
               <span className="text-[#335471] text-[30px]">
                 {counter.filter((i) => i.obj === "F").map((i) => i.value)}
               </span>
-              <span className="text-[16px] text-[#454849] leading-[34px] text-right">
+              <span className="xl:text-[16px] text-[12px] text-[#454849] leading-[34px] text-right">
                 فارغ التحصیل مشغول به کار
               </span>
             </div>
