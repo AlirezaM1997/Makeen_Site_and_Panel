@@ -2,14 +2,14 @@ import VideoSlider from "./VideoSlider";
 export default function Bootcamp  ()  {
   return (
     <>
-      <div className="pt-[115px] px-[30px] mt-[100px]">
-        <div className="bg-[#FFF2EA] flex rounded-[20px]">
-          <div className="w-1/2 pl-[95px] pr-[80px] ">
-            <div className="w-[494px] absolute">
+      <div className="xl:pt-[115px] px-[30px] xl:mt-[100px] mt-[52px]">
+        <div className="bg-[#FFF2EA] xl:pt-0 pt-[30px] flex xl:flex-row flex-col-reverse rounded-[20px]">
+          <div className="xl:w-1/2 w-full xl:pl-[95px] xl:pr-[80px] ">
+            <div className="xl:w-[494px] w-full xl:absolute">
               <VideoSlider />
             </div>
           </div>
-          <div className="w-1/2 py-[49px] pr-[117px] flex">
+          <div className="xl:w-1/2 w-full xl:py-[49px] xl:pr-[117px] flex">
             <div>
               <p
                 dir="rtl"
