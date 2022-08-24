@@ -15,7 +15,7 @@ export default function SliderContent({ activeIndex, sliderImage }) {
             src={slide.cover}
             alt="slide"
             layout="fill"
-            className="w-full h-full absolute object-cover rounded-[20px]"
+            className="w-full h-full absolute object-cover xl:rounded-[20px] rounded-[10px]"
           />
         </div>
       ))}

@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 export default function VideoSlider() {
   const settingsThumbs = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -50,15 +49,15 @@ export default function VideoSlider() {
             </div>
           </div>
         </div>
-        <div className="xl:-mt-[70px] thumbnail" id="videoSlider">
+        <div className="xl:-mt-[70px] mt-[30px] thumbnail" id="videoSlider">
           <Slider {...settingsThumbs}>
             {slidesData.map((slide, index) => (
               <div
                 key={index}
-                className="rounded-[4px] xl:w-10 w-5 xl:h-[100px] h-[87px] overflow-hidden transition-all duration-300 cursor-pointer"
+                className="rounded-[4px] xl:w-10 w-8 xl:h-[100px] h-[87px] overflow-hidden transition-all duration-300 cursor-pointer"
                 onClick={() => choiseVideo(slide.src)}
               >
-                <div className="xl:w-[150px] w-[130px] xl:h-[100px] h-[87px] relative">
+                <div className="w-[150px] xl:h-[100px] h-[87px] relative">
                   <Image src={slide.img} layout="fill" alt="videoSlider" />
                 </div>
               </div>

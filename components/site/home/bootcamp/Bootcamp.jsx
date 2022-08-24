@@ -1,25 +1,55 @@
 import VideoSlider from "./VideoSlider";
-export default function Bootcamp  ()  {
+export default function Bootcamp() {
   return (
     <>
-      <div className="xl:pt-[115px] px-[30px] xl:mt-[100px] mt-[52px]">
+      <div className="xl:pt-[115px] xl:px-[30px] xl:mt-[100px] mt-[52px] font-iranYekan">
         <div className="bg-[#FFF2EA] xl:pt-0 pt-[30px] flex xl:flex-row flex-col-reverse rounded-[20px]">
-          <div className="xl:w-1/2 w-full xl:pl-[95px] xl:pr-[80px] ">
-            <div className="xl:w-[494px] w-full xl:absolute">
+          <div className="xl:w-1/2 w-full xl:pl-[95px] xl:pr-[80px] xl:mb-0 -mb-[25px]">
+            <div className="xl:w-[494px] w-full xl:absolute xl:mt-0 mt-[30px]">
               <VideoSlider />
             </div>
           </div>
           <div className="xl:w-1/2 w-full xl:py-[49px] xl:pr-[117px] flex">
             <div>
+              <div className="flex justify-center ">
+                <p className="text-[#00213e] xl:text-[20px] text-[16px] leading-[34px] font-extrabold xl:text-right text-center">
+                  بوت کمپ چیه؟
+                </p>
+                <div className="xl:hidden ml-[10px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50.382"
+                    height="48.792"
+                    viewBox="0 0 50.382 48.792"
+                  >
+                    <g
+                      id="Arrow"
+                      transform="translate(249.232 748.124) rotate(-150)"
+                    >
+                      <path
+                        id="Path_16"
+                        data-name="Path 16"
+                        d="M40.977,0c-18.284,8.2-3.7,18.9-10.229,22.32s-12.942-3.974-15.906-8.645c-1.355-2.024-.35-4.7,2.406-6.348,3.407-2.035,7.8-.368,10.38,2.7,5.742,6.823-4.407,21.945-31.147,3.255"
+                        transform="matrix(0.978, 0.208, -0.208, 0.978, 539.982, 499.584)"
+                        fill="none"
+                        stroke="#667f94"
+                        stroke-linecap="round"
+                        stroke-width="1"
+                      />
+                      <path
+                        id="Path_17"
+                        data-name="Path 17"
+                        d="M1.715.1,6.264,4.648a.335.335,0,0,1-.172.567L.4,6.357a.336.336,0,0,1-.4-.4L1.148.27A.336.336,0,0,1,1.715.1Z"
+                        transform="translate(537.305 508.733) rotate(95)"
+                        fill="#667f94"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
               <p
                 dir="rtl"
-                className="text-[#00213e] text-[20px] leading-[34px] font-extrabold font-iranYekan"
-              >
-                بوت کمپ چیه؟
-              </p>
-              <p
-                dir="rtl"
-                className="text-[#00213E] text-[16px] leading-[36px] font-bold mt-5"
+                className="text-[#00213E] xl:text-[16px] text-xs xl:leading-[36px] leading-[26px] font-bold mt-5 xl:px-0 px-[37px] xl:text-right text-center"
               >
                 همیشه برای اینکه بخوایم وارد محیط جدیدی بشیم و بهش اعتماد کنیم
                 بهترین راه اینه که بشینیم پای حرف کسایی که خودشون توی اون محیط
@@ -28,7 +58,7 @@ export default function Bootcamp  ()  {
                 داری از نقشه ی راه مکین مطلع بشی این فیلم رو از دست نده!
               </p>
             </div>
-            <div>
+            <div className="hidden xl:block">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="68.44"
@@ -64,5 +94,4 @@ export default function Bootcamp  ()  {
       </div>
     </>
   );
-};
-
+}

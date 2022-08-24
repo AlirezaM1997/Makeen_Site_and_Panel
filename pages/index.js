@@ -2,7 +2,7 @@ import Head from "next/head";
 import Slider from "../components/site/home/imageSlider/Slider";
 import Statistics from "../components/site/home/Statistics";
 import Bootcamp from "../components/site/home/bootcamp/Bootcamp";
-import Features from "../components/site/home/Features";
+import Features from "../components/site/home/features/Features";
 import Courses from "../components/site/home/courses/Courses";
 import EstelamVaHamrahsho from "../components/site/home/EstelamVaHamrahSho";
 import AskedQuestion from "../components/site/home/AskedQuestion";

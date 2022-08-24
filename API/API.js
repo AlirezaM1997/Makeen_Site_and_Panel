@@ -9,7 +9,7 @@ const getSliderImages = async () => {
   return data;
 };
 const deleteSliderImage = (id) => {
-  client.post(`/firstpage/delete_slider/${id}`);
+  client.delete(`/firstpage/delete_slider/${id}`);
 };
 const getBootcampSlider = async () => {
   const { data } = await client.get("/firstpage/show-bootcamp");

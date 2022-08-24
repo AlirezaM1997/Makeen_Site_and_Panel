@@ -1,5 +1,5 @@
 #videoSlider .slick-prev,
-#videoSlider .slick-next, 
+#videoSlider .slick-next,
 #makeenihaSlider .slick-prev,
 #makeenihaSlider .slick-next {
   background: white !important;
@@ -11,13 +11,13 @@
   transition: all 0.3s;
 }
 #videoSlider .slick-prev:hover,
-#videoSlider .slick-next:hover ,
+#videoSlider .slick-next:hover,
 #makeenihaSlider .slick-prev:hover,
 #makeenihaSlider .slick-next:hover {
   background: #00294d !important;
 }
 #videoSlider .slick-prev:before,
-#videoSlider .slick-next:before ,
+#videoSlider .slick-next:before,
 #makeenihaSlider .slick-prev:before,
 #makeenihaSlider .slick-next:before {
   font-family: "Font Awesome 5 Free" !important;
@@ -27,16 +27,16 @@
   font-size: 1.1rem !important;
 }
 #videoSlider .slick-prev:hover:before,
-#videoSlider .slick-next:hover:before ,
+#videoSlider .slick-next:hover:before,
 #makeenihaSlider .slick-prev:hover:before,
 #makeenihaSlider .slick-next:hover:before {
   color: white !important;
 }
-#videoSlider .slick-next:before ,
+#videoSlider .slick-next:before,
 #makeenihaSlider .slick-next:before {
   content: "\f061" !important;
 }
-#videoSlider .slick-prev:before ,
+#videoSlider .slick-prev:before,
 #makeenihaSlider .slick-prev:before {
   content: "\f060" !important;
 }
@@ -76,18 +76,25 @@
   top: 37% !important;
 }
 #magazines .slick-slide {
-  padding-right : 10px;
-  padding-left : 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 #magazines .slick-track {
   margin-bottom: 50px !important;
 }
-#magazines .slick-dots li{
+#magazines .slick-dots li {
   margin: 0px !important;
 }
 #magazines .slick-dots li button:before {
   font-size: 12px !important;
 }
-#magazines .slick-next ,  #magazines .slick-prev{
-  display:none !important;
+#magazines .slick-next,
+#magazines .slick-prev {
+  display: none !important;
+}
+@media (max-width: 1280px) {
+  #videoSlider .slick-prev,
+  #videoSlider .slick-next {
+    display: none !important;
+  }
 }

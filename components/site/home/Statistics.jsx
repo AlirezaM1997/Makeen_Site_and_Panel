@@ -12,7 +12,7 @@ export default function Statistics({counter}) {
               <span className="text-[#4D5051] text-[30px]">
                 {counter.filter((i) => i.obj === "N").map((i) => i.value)}
               </span>
-              <span className="xl:text-[16px] text-[12px] text-[#454849] leading-[34px]">
+              <span className="xl:text-[16px] text-[12px] text-[#454849] xl:leading-[34px]">
                 دوره پرطرفدار و به روز
               </span>
             </div>
@@ -32,7 +32,7 @@ export default function Statistics({counter}) {
               <span className="text-[#3086A6] text-[30px]">
                 {counter.filter((i) => i.obj === "T").map((i) => i.value)}
               </span>
-              <span className="xl:text-[16px] text-[12px] text-[#454849] leading-[34px]">
+              <span className="xl:text-[16px] text-[12px] text-[#454849] xl:leading-[34px]">
                 استاد برجسته و ماهر
               </span>
             </div>
@@ -52,7 +52,7 @@ export default function Statistics({counter}) {
               <span className="text-[#CC6123] text-[30px]">
                 {counter.filter((i) => i.obj === "S").map((i) => i.value)}
               </span>
-              <span className="xl:text-[16px] text-[12px] text-[#454849] leading-[34px] text-right">
+              <span className="xl:text-[16px] text-[12px] text-[#454849] xl:leading-[34px] xl:text-right text-center">
                 ساعت دوره آموزشی حضوری
               </span>
             </div>
@@ -72,7 +72,7 @@ export default function Statistics({counter}) {
               <span className="text-[#335471] text-[30px]">
                 {counter.filter((i) => i.obj === "F").map((i) => i.value)}
               </span>
-              <span className="xl:text-[16px] text-[12px] text-[#454849] leading-[34px] text-right">
+              <span className="xl:text-[16px] text-[12px] text-[#454849] xl:leading-[34px] xl:text-right text-center">
                 فارغ التحصیل مشغول به کار
               </span>
             </div>
