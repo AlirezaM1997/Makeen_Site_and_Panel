@@ -5,13 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export default function Features({ features }) {
   const setting = {
-    // infinite: true,
+    infinite: true,
     arrows: false,
     speed: 1000,
-    slidesToShow: 1.22,
+    slidesToShow: 1,
     slidesToScroll: 1,
     draggable: true,
-
     autoplaySpeed: 6000,
     rtl:true,
   };
@@ -25,7 +24,8 @@ export default function Features({ features }) {
             alt="feature-design"
           />
         </div>
-        <div className="absolute right-0 w-[375px] h-[475px] bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-20 blur-[50px] -z-[1] "></div>
+        <div className="absolute right-0 w-[375px] h-[475px] bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-20 blur-[50px] -z-[1] hidden xl:block"></div>
+        <div className="absolute left-0 w-[205px] h-[205px] bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-20 blur-[50px] -z-[1] block xl:hidden"></div>
         <div className="absolute -left-[115px] top-0 h-[256px] w-[256px] hidden xl:block">
           <Image
             src="/assets/images/feature-l.png"
@@ -33,8 +33,9 @@ export default function Features({ features }) {
             alt="feature-design"
           />
         </div>
-        <div className="absolute left-0 w-[339px] h-[339px] bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] -z-[1] "></div>
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[339px] h-[339px] bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] -z-[1] "></div>
+        <div className="absolute left-0 w-[339px] h-[339px] bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] -z-[1] hidden xl:block"></div>
+        <div className="absolute right-0 bottom-0 w-[221px] h-[221px] bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] -z-[1] block xl:hidden"></div>
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[339px] h-[339px] bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] -z-[1] hidden xl:block"></div>
         <header>
           <h1 className="xl:text-[20px] text-[16px] leading-[35px] font-iranYekan text-[#00213E] font-extrabold text-center xl:mb-5 mb-[10px]c">
             ویژگی های مکین

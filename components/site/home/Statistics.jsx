@@ -12,7 +12,7 @@ export default function Statistics({counter}) {
               <span className="text-[#4D5051] text-[30px]">
                 {counter.filter((i) => i.obj === "N").map((i) => i.value)}
               </span>
-              <span className="xl:text-[16px] text-[12px] text-[#454849] xl:leading-[34px]">
+              <span className="xl:text-[16px] text-[12px] text-[#454849] xl:leading-[34px] text-center">
                 دوره پرطرفدار و به روز
               </span>
             </div>
@@ -32,7 +32,7 @@ export default function Statistics({counter}) {
               <span className="text-[#3086A6] text-[30px]">
                 {counter.filter((i) => i.obj === "T").map((i) => i.value)}
               </span>
-              <span className="xl:text-[16px] text-[12px] text-[#454849] xl:leading-[34px]">
+              <span className="xl:text-[16px] text-[12px] text-[#454849] xl:leading-[34px] text-center">
                 استاد برجسته و ماهر
               </span>
             </div>

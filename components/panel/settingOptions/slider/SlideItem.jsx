@@ -16,6 +16,7 @@ export default function SlideItem({ item }) {
       }
     );
   };
+
   // const deleteImage = useMutation((id) => {
   //   deleteSliderImage(id);
   // });
@@ -36,7 +37,6 @@ export default function SlideItem({ item }) {
         <div className="w-[65%] flex justify-between items-center pr-5">
           <div>
             <div>{parsIsoDate(item.date_time)}</div>
-            {/* <div>{"name"}</div> */}
           </div>
           <div>
             <div

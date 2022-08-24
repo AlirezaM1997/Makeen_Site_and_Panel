@@ -8,8 +8,9 @@ const getSliderImages = async () => {
   const { data } = await client.get("/firstpage/all_sliders");
   return data;
 };
-const deleteSliderImage = (id) => {
-  client.delete(`/firstpage/delete_slider/${id}`);
+const deleteSliderImage = async (id) => {
+  const { data } = await client.delete(`/firstpage/delete_slider/${id}`);
+  return data;
 };
 const getBootcampSlider = async () => {
   const { data } = await client.get("/firstpage/show-bootcamp");

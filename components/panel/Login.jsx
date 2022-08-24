@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { setCookies } from "cookies-next";
 import Image from "next/image";
-import { getLogin } from "../../API/API";
 import Loading from "../Loading";
 export default function Login() {
   const navToPanel = useRouter();
@@ -32,7 +30,6 @@ export default function Login() {
     if (currentAdmin.username !== "" && currentAdmin.password !== "") {
       const getToken = () => {
         setIsLoaded(true);
-        // const data = await getLogin(currentAdmin.username, currentAdmin.password);
         fetch(`${process.env.domain}/accounts/login/`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -50,9 +47,6 @@ export default function Login() {
             }
             return data.json();
           })
-          // .then(({ token }) => {
-          //   setCookies("token", token.access);
-          // });
       };
       getToken();
     }
@@ -60,8 +54,8 @@ export default function Login() {
   if (isLoaded) return <Loading/>
   return (
     <>
-      <section className="px-[406px] mt-[50px] font-iranYekan relative mb-16">
-        <div className="w-[554px] h-[647px] absolute -z-[1] -mt-[30px]">
+      <section className="absolute w-[400px] left-1/2 -translate-x-1/2 mt-[50px] font-iranYekan  mb-16">
+        <div className="w-[554px] h-[647px] absolute left-1/2 -translate-x-1/2 -z-[1] -mt-[30px]">
           <Image
             src={"/assets/images/panel/loginBg.png"}
             layout="fill"
@@ -81,7 +75,7 @@ export default function Login() {
             alt="loginBg"
           />
         </div>
-        <div className="px-[100px]" dir="rtl">
+        <div className="" dir="rtl">
           <div className="flex flex-col mb-[30px]">
             <label className="text-[14px] text-[#00213E] leading-[25px] font-bold mb-2">
               نام کاربری

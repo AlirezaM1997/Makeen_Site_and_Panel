@@ -1,13 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-
 const initialState = {
     modalMode: null,
 };
-
 function showHideModal(state, action) {
   state.value = action.payload;
 }
-
 export const showHideModalSlice = createSlice({
   name: "modalMode",
   initialState,
@@ -16,5 +13,4 @@ export const showHideModalSlice = createSlice({
   },
 });
 export const { showHideModal: showHideModalAction } = showHideModalSlice.actions;
-
 export default showHideModalSlice.reducer;

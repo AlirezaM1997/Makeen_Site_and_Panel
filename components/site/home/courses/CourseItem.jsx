@@ -3,10 +3,10 @@ import Image from "next/image";
 export const CourseItem = ({ item }) => {
   return (
     <>
-      <div className="group rounded-b-[10px] rounded-t-[10px] p-[20px] pt-[7px] w-[220px] relative shadow-[0px_0px_10px_#00000014] bg-[#FFFFFF] transition-all border-[0.5px] border-[#CACBCB] duration-300 font-iranYekan cursor-grab hover:-mt-[10px]">
+      <div className="group rounded-b-[10px] rounded-t-[10px] p-[20px] pt-[7px] w-[220px] relative shadow-[0px_0px_10px_#00000014] bg-[#FFFFFF] transition-all border-[0.5px] border-[#CACBCB] duration-300 font-iranYekan xl:cursor-grab xl:hover:-mt-[10px]">
         <div className="flex flex-col justify-center items-center ">
           <div className="px-6 w-full">
-            <div className="relative min-w-[100px] w-full h-[115px] top-0 group-hover:-top-[20px] transition-top duration-300 ease-out">
+            <div className="relative min-w-[100px] w-full h-[115px] top-0 xl:group-hover:-top-[20px] transition-top duration-300 ease-out">
               <Image src={item.courses_cover} layout="fill" alt="course" />
             </div>
           </div>
@@ -27,7 +27,7 @@ export const CourseItem = ({ item }) => {
               ? "در حال ثبت نام"
               : "تکمیل ظرفیت"}
           </span>
-          <div className="flex justify-center h-0 group-hover:h-4 opacity-0 group-hover:opacity-100 group-hover:mt-4 transition-height duration-300 ease-out hover:text-[#00213E] cursor-pointer">
+          <div className="flex justify-center h-0 xl:group-hover:h-4 opacity-0 xl:group-hover:opacity-100 xl:group-hover:mt-4 transition-height duration-300 ease-out hover:text-[#00213E] cursor-pointer">
             <Link href={`/courses/${item.id}`}>
               <a className="relative">
                 <div dir="rtl" className="flex justify-center items-center">
