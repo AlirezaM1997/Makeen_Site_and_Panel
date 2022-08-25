@@ -5,14 +5,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export default function Features({ features }) {
   const setting = {
-    infinite: true,
     arrows: false,
-    speed: 1000,
-    slidesToShow: 1,
+    slidesToShow: 0.95,
     slidesToScroll: 1,
-    draggable: true,
-    autoplaySpeed: 6000,
-    rtl:true,
+    vertical: false,
+    centerMode:true
   };
   return (
     <>
@@ -52,7 +49,7 @@ export default function Features({ features }) {
             <FeatureItem item={item} index={index} key={index} />
           ))}
         </section>
-        <section className="xl:hidden mt-[52px]">
+        <section className="xl:hidden mt-[52px] w-full">
           <Slider {...setting}>
             {features.map((item, index) => (
               <FeatureItem item={item} index={index} key={index} />

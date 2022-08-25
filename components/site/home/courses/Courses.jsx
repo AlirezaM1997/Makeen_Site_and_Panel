@@ -14,18 +14,15 @@ export default function Courses({ courses }) {
     infinite: false,
   };
   const mobileSetting = {
-    arrows: false,
-    speed: 300,
-    slidesToShow: 6,
-    slidesToScroll: 2,
-    touchThreshold: 6,
-    infinite: false,
-    draggable: true,
+    slidesToShow: 1.25,
+    slidesToScroll: 1,
+    vertical: false,
+    centerMode:true
   };
   return (
     <>
       <div className="w-full xl:h-[599px]  my-[90px] relative overflow-hidden font-iranYekan">
-        <div className="w-[596px] h-[596px] absolute -left-[387px] -top-[100px] mix-blend-lighten">
+        <div className="w-[596px] h-[596px] absolute -left-[387px] -top-[100px] mix-blend-lighten hidden">
           <Image
             src="/assets/images/course-left.png"
             className="left-0 top-0"
@@ -45,7 +42,10 @@ export default function Courses({ courses }) {
               در حال حاضر مکین این دوره ها رو برگزار می کنه
             </h3>
           </div>
-          <div id="mobileCourseSlider" className="block xl:hidden my-[50px]">
+          <div
+            id="mobileCoursefSlider"
+            className="block xl:hidden my-[50px] w-full"
+          >
             <Slider {...mobileSetting}>
               {courses.map((item, index) => (
                 <CourseItem item={item} key={index} />

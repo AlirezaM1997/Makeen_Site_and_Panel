@@ -46,7 +46,7 @@
 #videoSlider .slick-next {
   right: -50px !important;
 }
-.slick-track {
+#videoSlider .slick-track , #courseSlider .slick-track{
   width: max-content !important;
 }
 #videoSlider .slick-dots {
@@ -70,16 +70,6 @@
 }
 #courseSlider .slick-list {
   height: 400px !important;
-}
-#mobileCourseSlider .slick-slide {
-  width: 220px !important;
-  margin-right: 30px;
-}
-#mobileCourseSlider .slick-track {
-
-}
-#mobileCourseSlider .slick-list {
-
 }
 #makeenihaSlider .slick-prev,
 #makeenihaSlider .slick-next {
