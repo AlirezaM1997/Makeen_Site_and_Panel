@@ -2,42 +2,42 @@ import Image from "next/image";
 const WhyBootcamp = () => {
   return (
     <>
-      <section className="flex px-[120px] pt-[80px] pb-[130px] relative">
-        <div className="w-[130px] h-[339px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] top-0 right-0 rounded-full"></div>
-        <div className="w-[120px] h-[205px] absolute bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-20 blur-[50px] -bottom-[50px] right-0 rounded-full"></div>
-        <div className="w-[282px] h-[282px] absolute bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-20 blur-[50px] bottom-0 -left-[64px]"></div>
-        <div className="w-[45%] relative">
-          <div className="h-[400px] w-[350px] absolute right-0">
+      <section className="flex xl:flex-row flex-col xl:px-[120px] xl:pt-[80px] xl:pb-[130px] relative font-iranYekan">
+        <div className="xl:w-[130px] xl:h-[130px] w-[130px] h-[339px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] top-0 right-0 rounded-full"></div>
+        <div className="w-[120px] h-[205px] absolute bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-20 blur-[50px] -bottom-[50px] right-0 rounded-full hidden xl:block"></div>
+        <div className="xl:w-[282px] xl:h-[282px] w-[120px] h-[120px] absolute bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-20 blur-[50px] xl:bottom-0 xl:-left-[64px] left-0"></div>
+        <div className="xl:w-[45%] w-full h-[230px] xl:h-[unset] relative">
+          <div className="xl:h-[400px] xl:w-[350px] h-[200px] w-[175px] absolute xl:right-0 right-[61px]">
             <Image
               src="/assets/images/whyBootcamp.png"
-              className="rounded-[20px]"
+              className="xl:rounded-[20px] rounded-[10px]"
               layout="fill"
               alt="whyBootcamp"
             />
           </div>
-          <div className="w-[260px] h-[296px] absolute -bottom-[85px]">
+          <div className="xl:w-[260px] xl:h-[296px] h-[130px] w-[148px] absolute xl:-bottom-[85px] left-[71px] xl:left-0 bottom-0">
             <Image
               src="/assets/images/whyBootcamp.png"
-              className="rounded-[20px]"
+              className="xl:rounded-[20px] rounded-[10px]"
               layout="fill"
               alt="whyBootcamp"
             />
           </div>
-          <div className="w-[220px] h-[220px] absolute top-9 left-9 -z-[1]">
+          <div className="w-[220px] h-[220px] absolute top-9 left-9 -z-[1] hidden xl:block">
             <Image
               src="/assets/images/methFeature2.png"
               layout="fill"
               alt="whyBootcamp"
             />
           </div>
-          <div className="w-[261px] h-[261px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] top-8 left-8 -z-[1]"></div>
-          <div className="w-[261px] h-[261px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] -bottom-[130px] -right-[130px] -z-[1]"></div>
+          <div className="w-[261px] h-[261px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] top-8 left-8 -z-[1] hidden xl:block"></div>
+          <div className="w-[261px] h-[261px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px] -bottom-[130px] -right-[130px] -z-[1] hidden xl:block"></div>
         </div>
-        <div dir="rtl" className="flex flex-col relative w-[55%] py-4 pl-8">
-          <h1 className="text-[20px] text-[#00213E] font-iranYekan leading-[35px] font-black">
+        <div dir="rtl" className="flex flex-col relative xl:w-[55%] w-full xl:py-4 xl:pl-8 pl-12 xl:pr-0 pr-12 mt-[40px] xl:mt-0">
+          <h1 className="xl:text-[20px] text-[16px] text-[#00213E] leading-[35px] font-black text-center xl:text-right">
             چرا بوت کمپ مکین؟
           </h1>
-          <h6 className="text-[16px] text-[#4D6982] font-iranYekan leading-[36px] font-bold mt-[21px] mb-[35px]">
+          <h6 className="xl:text-[16px] text-[12px] text-[#4D6982] xl:leading-[36px] leading-[26px] font-bold mt-[21px] mb-[35px]">
             بوت کمپ مکین حدود 10 ساله که در حال پرورش نیروهای متخصص و آماده به
             کار برای بازار کاره و از نیازهای بازار کار به خوبی با خبره و میدونی
             که چه مهارت هایی برای استخدام شدن لازمه. ما دوره های مختلفی رو
@@ -47,10 +47,10 @@ const WhyBootcamp = () => {
             بذاری.
           </h6>
           <div className="flex justify-center items-center">
-            <div className="text-[#4D6982] text-[16px] leading-[36px] font-iranYekan font-bold">
+            <div className="text-[#4D6982] text-[16px] leading-[36px] font-bold hidden xl:block">
               برای شروع رو این دکمه کلیک کن
             </div>
-            <div className="w-[120px] h-[40px] relative mx-[20px]">
+            <div className="w-[120px] h-[40px] relative mx-[20px] hidden xl:block">
               <Image
                 src="/assets/images/whyBootcamp-arrow.png"
                 layout="fill"
@@ -60,7 +60,7 @@ const WhyBootcamp = () => {
             <div className="z-[1]">
               <button
                 dir="ltr"
-                className="text-[#ECF9FD] text-[16px] leading-[28px] font-bold px-[26px] py-[14px] bg-[#00294D] rounded-[10px] hover:-translate-y-[6px] transition-all duration-300 hover:ease-out"
+                className="text-[#ECF9FD] xl:text-[16px] text-[12px] leading-[28px] font-bold xl:px-[26px] xl:py-[14px] px-[25px] py-[12.5px] bg-[#00294D] rounded-[10px] xl:hover:-translate-y-[6px] transition-all duration-300 hover:ease-out"
               >
                 !همین حالا مکینی شو
               </button>
@@ -71,5 +71,4 @@ const WhyBootcamp = () => {
     </>
   );
 };
-
 export default WhyBootcamp;

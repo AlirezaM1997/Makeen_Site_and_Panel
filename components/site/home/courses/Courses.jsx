@@ -14,10 +14,11 @@ export default function Courses({ courses }) {
     infinite: false,
   };
   const mobileSetting = {
+    arrows: false,
     slidesToShow: 1.25,
     slidesToScroll: 1,
     vertical: false,
-    centerMode:true
+    centerMode: true,
   };
   return (
     <>
@@ -43,7 +44,7 @@ export default function Courses({ courses }) {
             </h3>
           </div>
           <div
-            id="mobileCoursefSlider"
+            id="mobileCourseSlider"
             className="block xl:hidden my-[50px] w-full"
           >
             <Slider {...mobileSetting}>
@@ -52,23 +53,32 @@ export default function Courses({ courses }) {
               ))}
             </Slider>
           </div>
-          <div className="flex xl:flex-row flex-col justify-center items-center">
-            <div className="text-[#ECF9FD] text-[14px] leading-[25px] opacity-70 mb-5 xl:mb-0">
-              اطلاعات بیشتر رو از اینجا ببین
-            </div>
-            <div className="w-[130px] h-[40px] relative mx-[20px] hidden xl:block">
+          <div className="flex translate-x-[45px]">
+            <div className="w-[60px] h-[70px] relative mx-[20px] block -translate-x-[12px] translate-y-[8px]  xl:hidden">
               <Image
-                src="/assets/images/arrow_course.png"
+                src="/assets/images/circleArrow.png"
                 layout="fill"
-                alt="arrow_course"
+                alt="circleArrow"
               />
             </div>
-            <div className="z-[1] xl:hover:-translate-y-[6px] transition-all duration-300 ease-out">
-              <Link href={"/courses"}>
-                <a className="text-[#00213E] xl:text-[16px] text-[12px] xl:leading-[28px] leading-[21px] font-bold px-[21px] xl:py-[14px] py-3 bg-[#7DD3F2] rounded-[10px] ">
-                  دوره های آکادمی مکین
-                </a>
-              </Link>
+            <div className="flex xl:flex-row flex-col justify-center items-center">
+              <div className="text-[#ECF9FD] text-[14px] leading-[25px] opacity-70 mb-5 xl:mb-0">
+                اطلاعات بیشتر رو از اینجا ببین
+              </div>
+              <div className="w-[130px] h-[40px] relative mx-[20px] hidden xl:block">
+                <Image
+                  src="/assets/images/arrow_course.png"
+                  layout="fill"
+                  alt="arrow_course"
+                />
+              </div>
+              <div className="z-[1] xl:hover:-translate-y-[6px] transition-all duration-300 ease-out">
+                <Link href={"/courses"}>
+                  <a className="text-[#00213E] xl:text-[16px] text-[12px] xl:leading-[28px] leading-[21px] font-bold px-[21px] xl:py-[14px] py-3 bg-[#7DD3F2] rounded-[10px] ">
+                    دوره های آکادمی مکین
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

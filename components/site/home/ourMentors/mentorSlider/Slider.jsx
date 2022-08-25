@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import SliderContent from "./SliderContent";
 import Dots from "./Dots";
 import sliderImage from "./sliderImage";
-
 const len = sliderImage.length - 1;
-const MentorSlider = () => {
+export default function MentorSlider  ()  {
   const [activeIndex, setActiveIndex] = useState(0);
   const [timer, setTimer] = useState(0);
   const i = 0;
@@ -20,13 +19,11 @@ const MentorSlider = () => {
       }
       setTimer(i);
     }, 50);
-
     return () => {
       clearInterval(interval);
       clearInterval(slideInterval);
     };
   }, [activeIndex]);
-
   return (
     <>
       <div className="w-full mt-[71px]  flex flex-col justify-center items-center  rounded-[20px]">
@@ -47,4 +44,3 @@ const MentorSlider = () => {
     </>
   );
 };
-export default MentorSlider;

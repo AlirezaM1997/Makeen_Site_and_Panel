@@ -36,7 +36,7 @@ export default function SliderContent({
     }
   }, [activeIndex]);
   return (
-    <section className="w-full grid grid-cols-9 grid-rows-1 justify-items-center items-center">
+    <section className="w-full grid grid-cols-9 grid-rows-1 justify-items-center items-center font-iranYekan">
       <div className="w-[40px] relative h-[40px] inline-block">
         <Image
           src={sliderImage[0].urls}
@@ -61,7 +61,7 @@ export default function SliderContent({
           className="rounded-full"
         />
       </div>
-      <div className=" relative w-[35px] h-[35px]  inline-block">
+      <div className="relative w-[35px] h-[35px] hidden xl:inline-block">
         <PrevArrow prevSlide={prevSlide} />
       </div>
       <div className="w-[140px] relative h-[140px] inline-block">
@@ -72,18 +72,18 @@ export default function SliderContent({
           className="rounded-full"
         />
         <div className="mt-[10rem] pt-[10px]">
-          <h1 className="text-[24px] text-[#00213E] font-iranYekan leading-[41px] font-bold text-center">
+          <h1 className="text-[24px] text-[#00213E] leading-[41px] font-bold text-center">
           {sliderImage[3].name}
           </h1>
-          <h3 className="text-[20px] text-[#00213E] font-iranYekan leading-[35px] font-medium text-center mt-[20px] mb-[11px]">
+          <h3 className="text-[20px] text-[#00213E] leading-[35px] font-medium text-center mt-[20px] mb-[11px]">
             UI/UX دوره ی
           </h3>
-          <h5 className="text-[16px] text-[#00213E] font-iranYekan leading-[28px] font-medium text-center">
+          <h5 className="text-[16px] text-[#00213E] leading-[28px] font-medium text-center">
             مدیر آکادمی مکین
           </h5>
         </div>
       </div>
-      <div className=" relative w-[35px] h-[35px]  inline-block">
+      <div className="relative w-[35px] h-[35px] hidden xl:inline-block">
         <NextArrow nextSlide={nextSlide} />
       </div>
       <div className="w-[80px] relative h-[80px] inline-block">

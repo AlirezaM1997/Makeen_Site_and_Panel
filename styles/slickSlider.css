@@ -71,6 +71,15 @@
 #courseSlider .slick-list {
   height: 400px !important;
 }
+#mobileCourseSlider .slick-track {
+  top: 13px !important;
+}
+#mobileCourseSlider .slick-list {
+  height: 100% !important;
+}
+#mobileCourseSlider .slick-initialized {
+  height: 315px !important;
+}
 #makeenihaSlider .slick-prev,
 #makeenihaSlider .slick-next {
   top: 37% !important;

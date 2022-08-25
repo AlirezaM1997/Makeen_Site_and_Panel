@@ -9,7 +9,7 @@ import AskedQuestion from "../components/site/home/AskedQuestion";
 import Magazines from "../components/site/home/Magazines";
 import Methdology from "../components/site/home/Methodology";
 import WhyBootcamp from "../components/site/home/WhyBootcamp";
-import OurMentors from "../components/site/home/OurMentors";
+import OurMentors from "../components/site/home/ourMentors/OurMentors";
 import Makeeniha from "../components/site/home/Makeeniha";
 import InstallmentPayment from "../components/site/home/InstallmentPayment";
 import RegisterationModal from "../components/site/home/RegisterationModal";
