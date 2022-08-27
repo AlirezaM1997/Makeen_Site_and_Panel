@@ -9,7 +9,7 @@ export default function Setting() {
             className="grid grid-cols-5 gap-x-8 gap-y-9 font-iranYekan"
             dir="rtl"
           >
-            <Link href={"/admin/setting/slider"} >
+            <Link href={"/admin/setting/slider"}>
               <a className="flex items-center justify-start border-[1px] border-[#37BBEC] rounded-[10px] w-full h-6 py-6 pr-4 cursor-pointer">
                 <div className="relative w-[16px] h-[16px] ml-2">
                   <Image
@@ -71,18 +71,20 @@ export default function Setting() {
                 چرا بوت کمپ مکین
               </span>
             </div>
-            <div className="flex items-center justify-start border-[1px] border-[#37BBEC] rounded-[10px] w-full h-6 py-6 pr-4 cursor-pointer">
-              <div className="relative w-[16px] h-[16px] ml-2">
-                <Image
-                  src={"/assets/images/panel/folder.png"}
-                  layout="fill"
-                  alt="folder"
-                />
-              </div>
-              <span className="text-[13px] text-[#292D32] leading-[22px] font-bold">
-                منتور ها
-              </span>
-            </div>
+            <Link href={"/admin/setting/mentors"}>
+              <a className="flex items-center justify-start border-[1px] border-[#37BBEC] rounded-[10px] w-full h-6 py-6 pr-4 cursor-pointer">
+                <div className="relative w-[16px] h-[16px] ml-2">
+                  <Image
+                    src={"/assets/images/panel/folder.png"}
+                    layout="fill"
+                    alt="folder"
+                  />
+                </div>
+                <span className="text-[13px] text-[#292D32] leading-[22px] font-bold">
+                  منتور ها
+                </span>
+              </a>
+            </Link>
             <div className="flex items-center justify-start border-[1px] border-[#37BBEC] rounded-[10px] w-full h-6 py-6 pr-4 cursor-pointer">
               <div className="relative w-[16px] h-[16px] ml-2">
                 <Image

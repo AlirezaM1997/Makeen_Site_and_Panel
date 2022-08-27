@@ -23,7 +23,7 @@ export default function SliderContent({
     );
     for (let index = 0; index < sliderImage.length; index++) {
       let element = sliderImage.splice(index, 1)[0];
-      sliderImage.splice(index - 6, 0, element);
+      sliderImage.splice(index - sliderImage.length, 0, element);
     }
   };
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function SliderContent({
     if (!flag) {
       for (let index = 0; index < sliderImage.length; index++) {
         let element = sliderImage.splice(index, 1)[0];
-        sliderImage.splice(index - 6, 0, element);
+        sliderImage.splice(index - sliderImage.length, 0, element);
       }
     }
   }, [activeIndex]);
