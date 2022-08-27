@@ -1,9 +1,6 @@
 import Link from "next/link";
-import { useGetSliderImages } from "../../../../hooks/panelHooks";
-import Loading from "../../../Loading";
-export default function Mentors() {
-//   const { data, isLoading } = useGetSliderImages();
-//   if (isLoading) return <Loading />;
+import MentorTable from "./MentorTable";
+export default function Mentors({ mentors }) {
   return (
     <>
       <div className="mr-[108px] mt-4 ">
@@ -14,7 +11,7 @@ export default function Mentors() {
                 <div className="flex items-center justify-center w-fit text-[#37BBEC] border-[1px] border-[#12B428] rounded-[10px] px-4 py-[10px] cursor-pointer">
                   <span>+</span>
                   <span className="text-[12px] leading-[21px] font-medium font-iranYekan ml-2">
-                    افزودن 
+                    افزودن
                   </span>
                 </div>
               </Link>
@@ -22,8 +19,10 @@ export default function Mentors() {
             <div></div>
             <hr className="mt-2 bg-[#103F7B] h-[1.5px]" />
           </header>
-          <section className="grid grid-cols-3 gap-[30px] mt-8" dir="rtl">
-            {}
+          <section className="mt-8 flex items-end" dir="rtl">
+            <div className="w-2/3">
+              <MentorTable mentors={mentors} />
+            </div>
           </section>
         </div>
       </div>
