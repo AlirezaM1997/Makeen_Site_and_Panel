@@ -8,14 +8,14 @@ import EstelamVaHamrahsho from "../components/site/home/EstelamVaHamrahSho";
 import AskedQuestion from "../components/site/home/AskedQuestion";
 import Magazines from "../components/site/home/Magazines";
 import Methdology from "../components/site/home/Methodology";
-import WhyBootcamp from "../components/site/home/WhyBootcamp";
+import WhyMakeen from "../components/site/home/WhyMakeen";
 import OurMentors from "../components/site/home/ourMentors/OurMentors";
 import Makeeniha from "../components/site/home/Makeeniha";
 import InstallmentPayment from "../components/site/home/InstallmentPayment";
 import RegisterationModal from "../components/site/home/RegisterationModal";
 import Loading from "../components/Loading";
 import { dehydrate, QueryClient ,useQueries} from '@tanstack/react-query';
-import { getBootcampSlider, getCounter, getFeatures, getInstallmentPayment, getSliderImages,getCourses } from "../API/API";
+import { getBootcampSlider, getCounter, getFeatures, getInstallmentPayment, getSliderImages,getCourses, getMentors, getWhyMakeen } from "../API/API";
 export default function home() {
   const results = useQueries({
     queries: [
@@ -24,6 +24,8 @@ export default function home() {
       { queryKey: ['bootcampSlider', 3], queryFn: getBootcampSlider, staleTime: Infinity},
       { queryKey: ['features', 4], queryFn: getFeatures, staleTime: Infinity},
       { queryKey: ['courses', 5], queryFn: getCourses, staleTime: Infinity},
+      { queryKey: ['whyBootcamp', 6], queryFn: getWhyMakeen, staleTime: Infinity},
+      { queryKey: ['mentors', 7], queryFn: getMentors, staleTime: Infinity},
       { queryKey: ['installmentPayment', 8], queryFn: getInstallmentPayment, staleTime: Infinity},
     ]
   })
@@ -39,9 +41,9 @@ export default function home() {
       <Bootcamp bootcampSlider={results[2].data}/>
       <Features features={results[3].data}/>
       <Courses courses={results[4].data}/>
-      <WhyBootcamp />
-      <OurMentors />
-      <InstallmentPayment />
+      <WhyMakeen whyMakeen={results[5].data}/>
+      <OurMentors mentors={results[6].data}/>
+      <InstallmentPayment installmentPayment={results[7].data}/>
       <Makeeniha />
       <Methdology />
       <AskedQuestion />
@@ -57,6 +59,8 @@ export async function getStaticProps() {
   await queryClient.prefetchQuery(['bootcampSlider'], getBootcampSlider)
   await queryClient.prefetchQuery(['features'], getFeatures)
   await queryClient.prefetchQuery(['courses'], getCourses)
+  await queryClient.prefetchQuery(['whyBootcamp'], getWhyMakeen)
+  await queryClient.prefetchQuery(['mentors'], getMentors)
   await queryClient.prefetchQuery(['installmentPayment'], getInstallmentPayment)
   return {
     props: {

@@ -29,7 +29,11 @@ const getInstallmentPayment = async () => {
   return data;
 };
 const getMentors = async () => {
-  const { data } = await client.get("courses/all_mentors");
+  const { data } = await client.get("/courses/all_mentors");
+  return data;
+};
+const getWhyMakeen = async () => {
+  const { data } = await client.get("/firstpage/show-why-makeen");
   return data;
 };
 export {
@@ -39,5 +43,7 @@ export {
   getBootcampSlider,
   getFeatures,
   getCourses,
-  getInstallmentPayment,getMentors
+  getInstallmentPayment,
+  getMentors,
+  getWhyMakeen,
 };

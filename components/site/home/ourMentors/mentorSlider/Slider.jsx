@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import SliderContent from "./SliderContent";
 import Dots from "./Dots";
-import sliderImage from "./sliderImage";
-const len = sliderImage.length - 1;
-export default function MentorSlider  ()  {
+export default function MentorSlider({mentors}) {
+  console.log(mentors);
+  const len = mentors.length - 1;
   const [activeIndex, setActiveIndex] = useState(0);
   const [timer, setTimer] = useState(0);
   const i = 0;
@@ -31,16 +31,16 @@ export default function MentorSlider  ()  {
           <SliderContent
             activeIndex={activeIndex}
             setActiveIndex={setActiveIndex}
-            sliderImage={sliderImage}
+            mentors={mentors}
           />
         </div>
         <Dots
           timer={timer}
           activeIndex={activeIndex}
-          sliderImage={sliderImage}
+          mentors={mentors}
           onclick={(activeIndex) => setActiveIndex(activeIndex)}
         />
       </div>
     </>
   );
-};
+}

@@ -1,8 +1,8 @@
-export default function Dots({ activeIndex, onclick, sliderImage, timer }) {
+export default function Dots({ activeIndex, onclick, mentors, timer }) {
   return (
     <>
       <div className="all-dots mt-[40px] flex justify-center">
-        {sliderImage.map((slide, index) => (
+        {mentors.map((slide, index) => (
           <span
             key={index}
             className={`${
