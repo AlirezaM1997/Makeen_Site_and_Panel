@@ -1,6 +1,5 @@
 import Image from "next/image";
 export default function Payment({ payment }) {
-  console.log(payment);
   return (
     <>
       <div className="flex h-[512px] pl-[0px] mt-[40px] relative">

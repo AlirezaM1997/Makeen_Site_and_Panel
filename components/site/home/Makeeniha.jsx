@@ -2,8 +2,9 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-export default function Makeeniha() {
-  const makeeniha = [1, 2, 3, 4, 5, 6];
+export default function Makeeniha({makeeniha}) {
+  // console.log(makeeniha);
+  const pmakeeniha = [1, 2, 3, 4, 5, 6];
   const setting = {
     infinite: true,
     speed: 500,
@@ -41,7 +42,7 @@ export default function Makeeniha() {
           id="makeenihaSlider"
         >
           <Slider {...setting}>
-            {makeeniha.map((item, index) => (
+            {pmakeeniha.map((item, index) => (
               <div
                 className="flex flex-col"
                 key={index}

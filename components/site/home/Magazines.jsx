@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BlogCard from "../BlogCard";
-export default function Magazines() {
+export default function Magazines({blogs}) {
   const magazines = [1, 2, 3, 4, 5, 6];
   const setting = {
     dots: true,

@@ -36,6 +36,22 @@ const getWhyMakeen = async () => {
   const { data } = await client.get("/firstpage/show-why-makeen");
   return data;
 };
+const getMakeeniha = async () => {
+  const { data } = await client.get("/bootcamp/get-makeeniha");
+  return data;
+};
+const getMethodology = async () => {
+  const { data } = await client.get("/firstpage/show-methodology");
+  return data;
+};
+const getQuestions = async () => {
+  const { data } = await client.get("/bootcamp/all_questions/");
+  return data;
+};
+const getBlogs = async () => {
+  const { data } = await client.get("/blog/show_blogs");
+  return data;
+};
 export {
   getCounter,
   getSliderImages,
@@ -46,4 +62,8 @@ export {
   getPayment,
   getMentors,
   getWhyMakeen,
+  getMakeeniha,
+  getMethodology,
+  getQuestions,
+  getBlogs,
 };

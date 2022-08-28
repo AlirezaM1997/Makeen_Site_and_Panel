@@ -1,5 +1,6 @@
 import Image from "next/image";
-export default function Methdology() {
+export default function Methdology({methodology}) {
+  console.log(methodology);
   return (
     <>
       <div className="relative mt-[200px] flex justify-between h-[464px] mb-[150px] font-iranYekan pr-[120px] pl-[86px]">

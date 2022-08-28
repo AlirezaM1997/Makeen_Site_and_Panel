@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
-export default function AskedQuestion() {
-  const Q = [1, 2, 3, 4, 5, 6];
+export default function AskedQuestion({ questions }) {
+  const qLength = questions?.length;
   const [showAndHideAnswer, setShowAndHideAnswer] = useState(null);
+  const [count, setCount] = useState(6);
   const showAndHideToggle = (index) => {
     if (showAndHideAnswer !== null) {
       setShowAndHideAnswer(null);
@@ -11,9 +11,15 @@ export default function AskedQuestion() {
       setShowAndHideAnswer(index);
     }
   };
+  const loadMore = () => {
+    setCount(count + 2);
+  };
+  const loadLess = () => {
+    setCount(6);
+  };
   return (
     <>
-      <div className="relative h-[629px] w-full bg-[#001d36] pt-[50px] mb-[142px] font-iranYekan overflow-hidden">
+      <div className="relative h-auto w-full bg-[#001d36] py-[50px] mb-[142px] font-iranYekan">
         <div className="absolute -left-[290px] top-0 h-[390px] w-[390px] mix-blend-lighten">
           <Image
             layout="fill"
@@ -21,10 +27,10 @@ export default function AskedQuestion() {
             alt="orangeCircle"
           />
         </div>
-        <div className="absolute -rotate-[160deg] -right-[190px] -bottom-[94px] h-[390px] w-[390px] mix-blend-lighten">
+        <div className="absolute right-0 bottom-[4px] h-[230px] w-[188px] mix-blend-lighten">
           <Image
             layout="fill"
-            src={"/assets/images/course-left.png"}
+            src={"/assets/images/course-left-cut.png"}
             alt="orangeCircle"
           />
         </div>
@@ -35,7 +41,7 @@ export default function AskedQuestion() {
           className="grid grid-cols-2 gap-[30px] w-full px-[30px] relative"
           dir="rtl"
         >
-          {Q.map((item, index) => (
+          {questions.slice(0, count).map((item, index) => (
             <div className="relative" key={index}>
               <li
                 className={`${
@@ -73,33 +79,32 @@ export default function AskedQuestion() {
                       />
                     </div>
                   )}
-                  <div>
-                    من هیچی بلد نیستم! منم میتونم توی دوره های مکین شرکت کنم؟
-                  </div>
+                  <div>{item.question}</div>
                 </div>
                 <div className="mt-[30px]">
                   <hr className="mb-[20px]" />
-                  برای شرکت توی دوره های مکین تقریبا به هیچ دانش اولیه ای احتیاج
-                  ندارید. ما شما رو .از نقطه صفر به مرحله استخدام میرسونیم. فقط
-                  کافیه علاقه داشته باشید برای شرکت توی دوره های مکین تقریبا به
-                  هیچ دانش اولیه ای احتیاج ندارید. ما شما رو .از نقطه صفر به
-                  مرحله استخدام میرسونیم. فقط کافیه علاقه داشته باشید
-                  برای شرکت توی دوره های مکین تقریبا به هیچ دانش اولیه ای احتیاج
-                  ندارید. ما شما رو .از نقطه صفر به مرحله استخدام میرسونیم. فقط
-                  کافیه علاقه داشته باشید برای شرکت توی دوره های مکین تقریبا به
-                  هیچ دانش اولیه ای احتیاج ندارید. ما شما رو .از نقطه صفر به
-                  مرحله استخدام میرسونیم. فقط کافیه علاقه داشته باشید
+                  {item.answer}
                 </div>
               </li>
             </div>
           ))}
         </ul>
         <div className="mt-[50px] text-center">
-          <Link href={"#"}>
-            <a className="text-[#c1c4c5] hover:text-[#fdfdfd]">
+          {qLength != count ? (
+            <button
+              className="text-[#c1c4c5] hover:text-[#fdfdfd]"
+              onClick={() => loadMore()}
+            >
               مشاهده ی سوالات بیشتر
-            </a>
-          </Link>
+            </button>
+          ) : (
+            <button
+              className="text-[#c1c4c5] hover:text-[#fdfdfd]"
+              onClick={() => loadLess()}
+            >
+              مشاهده ی سوالات کمتر
+            </button>
+          )}
         </div>
       </div>
     </>
