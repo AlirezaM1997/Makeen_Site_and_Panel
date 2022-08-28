@@ -24,7 +24,7 @@ const getCourses = async () => {
   const { data } = await client.get("/courses/all_courses");
   return data;
 };
-const getInstallmentPayment = async () => {
+const getPayment = async () => {
   const { data } = await client.get("/firstpage/show-payment");
   return data;
 };
@@ -43,7 +43,7 @@ export {
   getBootcampSlider,
   getFeatures,
   getCourses,
-  getInstallmentPayment,
+  getPayment,
   getMentors,
   getWhyMakeen,
 };

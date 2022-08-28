@@ -49,7 +49,7 @@ export default function WhyMakeen() {
             خودتو بگیری و با ثبت نام تو یکی از دوره های ما قدم تو راه متخصص شدن
             بذاری.
           </h6>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-center items-center">
             <div className="text-[#4D6982] text-[16px] leading-[36px] font-bold hidden xl:block xl:whitespace-nowrap">
               برای شروع رو این دکمه کلیک کن
             </div>

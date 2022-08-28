@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { PrevArrow } from "./Arrows";
 import { NextArrow } from "./Arrows";
-export default function SliderContent({
+export default function Slides({
   activeIndex,
   setActiveIndex,
   mentors,

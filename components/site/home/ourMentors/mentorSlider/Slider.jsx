@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import SliderContent from "./SliderContent";
+import Slides from "./Slides";
 import Dots from "./Dots";
+import MobileSlides from "./MobileSlides";
 export default function MentorSlider({mentors}) {
-  console.log(mentors);
   const len = mentors.length - 1;
   const [activeIndex, setActiveIndex] = useState(0);
   const [timer, setTimer] = useState(0);
@@ -26,9 +26,16 @@ export default function MentorSlider({mentors}) {
   }, [activeIndex]);
   return (
     <>
-      <div className="w-full mt-[71px]  flex flex-col justify-center items-center  rounded-[20px]">
-        <div className="bg-[#ECF9FD] rounded-[20px] pt-[40px] pb-[194px]">
-          <SliderContent
+      <div className="w-full xl:mt-[71px] mt-[30px] flex flex-col justify-center items-center  rounded-[20px]">
+        <div className="bg-[#ECF9FD] rounded-[20px] pt-[40px] pb-[194px] hidden xl:block">
+          <Slides
+            activeIndex={activeIndex}
+            setActiveIndex={setActiveIndex}
+            mentors={mentors}
+          />
+        </div>
+        <div className="bg-[#ECF9FD] pt-[40px] pb-[194px] block xl:hidden">
+          <MobileSlides
             activeIndex={activeIndex}
             setActiveIndex={setActiveIndex}
             mentors={mentors}

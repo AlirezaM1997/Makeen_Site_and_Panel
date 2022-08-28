@@ -1,5 +1,6 @@
 import Image from "next/image";
-export default function InstallmentPayment() {
+export default function Payment({ payment }) {
+  console.log(payment);
   return (
     <>
       <div className="flex h-[512px] pl-[0px] mt-[40px] relative">
@@ -17,15 +18,13 @@ export default function InstallmentPayment() {
               dir="rtl"
               className="text-[#00213e] text-[20px] leading-[35px] font-black font-iranYekan"
             >
-              پرداخت قسطی
+              {payment.title}
             </p>
             <p
               dir="rtl"
               className="text-[#00213E] text-[16px] leading-[36px] font-bold mt-5"
             >
-              ما توی آکادمی مکین برای اینکه هیچ کس به خاطر مشکل مالی از شرکت توی
-              دوره ها جا نمونه ، این امکان رو برای دانشجوهامون فراهم کردیم که
-              بتونن همه ی هزینه های دوره رو به صورت قسطی توی 20 ماه پرداخت کنن
+              {payment.description}
             </p>
           </div>
           <div className="pt-4 pl-4">
