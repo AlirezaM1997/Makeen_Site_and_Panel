@@ -7,7 +7,7 @@ export default function Payment({ payment }) {
         <div className="w-[130px] h-[339px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-10 blur-[50px] bottom-0 right-0 rounded-full"></div>
         <div className="relative w-[638px] h-full">
           <Image
-            src="/assets/images/installment-payment.png"
+            src={payment[0].image}
             layout="fill"
             alt="installment-payment"
           />
@@ -18,13 +18,13 @@ export default function Payment({ payment }) {
               dir="rtl"
               className="text-[#00213e] text-[20px] leading-[35px] font-black font-iranYekan"
             >
-              {payment.title}
+              {payment[0].title}
             </p>
             <p
               dir="rtl"
               className="text-[#00213E] text-[16px] leading-[36px] font-bold mt-5"
             >
-              {payment.description}
+              {payment[0].description}
             </p>
           </div>
           <div className="pt-4 pl-4">

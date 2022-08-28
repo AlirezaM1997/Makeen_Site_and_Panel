@@ -1,16 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
-export default function MobileSlides({ activeIndex, setActiveIndex, mentors }) {
-  const [flag, setFlag] = useState(false);
+export default function MobileSlides({ _activeIndex, setActiveIndex, mentors }) {
   useEffect(() => {
-    setFlag(false);
-    if (!flag) {
-      for (let index = 0; index < mentors.length; index++) {
-        let element = mentors.splice(index, 1)[0];
-        mentors.splice(index - mentors.length, 0, element);
-      }
+    for (let index = 0; index < mentors.length; index++) {
+      let element = mentors.splice(index, 1)[0];
+      mentors.splice(index - mentors.length, 0, element);
     }
-  }, [activeIndex]);
+  }, [_activeIndex]);
   return (
     <section className="w-full grid grid-cols-3 grid-rows-1 justify-items-center items-center font-iranYekan">
       <div className="w-[80px] relative h-[80px] inline-block justify-self-start">

@@ -5,11 +5,13 @@ import MobileSlides from "./MobileSlides";
 export default function MentorSlider({mentors}) {
   const len = mentors.length - 1;
   const [activeIndex, setActiveIndex] = useState(0);
+  const [_activeIndex, _setActiveIndex] = useState(0);
   const [timer, setTimer] = useState(0);
   const i = 0;
   useEffect(() => {
     const slideInterval = setInterval(() => {
       setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
+      _setActiveIndex(_activeIndex === len ? 0 : _activeIndex + 1);
     }, 5000);
     const interval = setInterval(() => {
       if (i === 100) {
@@ -23,7 +25,7 @@ export default function MentorSlider({mentors}) {
       clearInterval(interval);
       clearInterval(slideInterval);
     };
-  }, [activeIndex]);
+  }, [activeIndex,_activeIndex]);
   return (
     <>
       <div className="w-full xl:mt-[71px] mt-[30px] flex flex-col justify-center items-center  rounded-[20px]">
@@ -36,8 +38,8 @@ export default function MentorSlider({mentors}) {
         </div>
         <div className="bg-[#ECF9FD] pt-[40px] pb-[194px] block xl:hidden">
           <MobileSlides
-            activeIndex={activeIndex}
-            setActiveIndex={setActiveIndex}
+            activeIndex={_activeIndex}
+            setActiveIndex={_setActiveIndex}
             mentors={mentors}
           />
         </div>

@@ -33,8 +33,8 @@ export default function Bootcamp() {
                         transform="matrix(0.978, 0.208, -0.208, 0.978, 539.982, 499.584)"
                         fill="none"
                         stroke="#667f94"
-                        stroke-linecap="round"
-                        stroke-width="1"
+                        strokeLinecap="round"
+                        strokeWidth="1"
                       />
                       <path
                         id="Path_17"
