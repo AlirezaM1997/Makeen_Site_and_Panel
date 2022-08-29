@@ -9,11 +9,11 @@ export default function AddSlide() {
       if (!file) return;
       setIsLoaded(true);
       const formData = new FormData();
-      console.log(formData);
       formData.append("slide", file);
+      console.log(formData);
       fetch(`${process.env.domain}/firstpage/add_sliders`, {
         method: "POST",
-        body: {cover :formData , select : true},
+        body: { cover: formData, select: true },
       })
         .then((response) => {
           console.log(response);

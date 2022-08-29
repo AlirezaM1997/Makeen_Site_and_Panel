@@ -10,7 +10,7 @@ import Magazines from "../components/site/home/Magazines";
 import Methdology from "../components/site/home/Methodology";
 import WhyMakeen from "../components/site/home/WhyMakeen";
 import OurMentors from "../components/site/home/ourMentors/OurMentors";
-import Makeeniha from "../components/site/home/Makeeniha";
+import Makeeniha from "../components/site/home/makeeniha/Makeeniha";
 import Payment from "../components/site/home/Payment";
 import RegisterationModal from "../components/site/home/RegisterationModal";
 import Loading from "../components/Loading";

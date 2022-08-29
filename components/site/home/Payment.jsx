@@ -2,31 +2,31 @@ import Image from "next/image";
 export default function Payment({ payment }) {
   return (
     <>
-      <div className="flex h-[512px] pl-[0px] mt-[40px] relative">
-        <div className="w-[130px] h-[339px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-10 blur-[50px] bottom-0 right-0 rounded-full"></div>
-        <div className="relative w-[638px] h-full">
+      <div className="flex xl:flex-row flex-col xl:h-[512px] pl-[0px] xl:mt-[40px] mt-[80px] relative">
+        <div className="w-[130px] h-[339px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-10 blur-[50px] bottom-0 right-0 rounded-full hidden xl:block"></div>
+        <div className="relative xl:w-[638px] w-full xl:h-full h-[320px]">
           <Image
             src={payment[0].image}
             layout="fill"
             alt="installment-payment"
           />
         </div>
-        <div className="w-1/2 pt-[157px] pb-[157px] py-[0px] pr-[120px] flex">
-          <div>
+        <div className="xl:w-1/2 xl:pt-[157px] xl:pb-[157px] xl:py-[0px] xl:pr-[120px] flex mt-[15px] xl:mt-0">
+          <div className="text-center xl:text-right font-iranYekan px-[52px] xl:px-0">
             <p
               dir="rtl"
-              className="text-[#00213e] text-[20px] leading-[35px] font-black font-iranYekan"
+              className="text-[#00213e] xl:text-[20px] text-[20px] leading-[35px] font-black"
             >
               {payment[0].title}
             </p>
             <p
               dir="rtl"
-              className="text-[#00213E] text-[16px] leading-[36px] font-bold mt-5"
+              className="text-[#00213E] xl:text-[16px] text-[12px] xl:leading-[36px] leading-[26px] font-bold mt-5"
             >
               {payment[0].description}
             </p>
           </div>
-          <div className="pt-4 pl-4">
+          <div className="pt-4 pl-4 hidden xl:block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="57.477"

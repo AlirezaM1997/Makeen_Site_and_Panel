@@ -4,17 +4,18 @@ import { deleteSliderImage } from "../../../../API/API";
 import { parsIsoDate } from "../../../../features/usefullFunctions";
 export default function SlideItem({ item }) {
   const deleteImage = (id) => {
-    fetch(`${process.env.domain}/firstpage/delete_slider/${id}`).then(
-      (data) => {
-        console.log(data);
-        // if (data.status === 200) {
-        //   navToPanel.push("/admin/dashboard");
-        // } else {
-        //   setHintInfoWrong(true);
-        //   setIsLoaded(false);
-        // }
-      }
-    );
+    fetch(`${process.env.domain}/firstpage/delete_slider/${id}`, {
+      credentials: "include",
+
+    }).then((data) => {
+      console.log(data);
+      // if (data.status === 200) {
+      //   navToPanel.push("/admin/dashboard");
+      // } else {
+      //   setHintInfoWrong(true);
+      //   setIsLoaded(false);
+      // }
+    });
   };
 
   // const deleteImage = useMutation((id) => {
