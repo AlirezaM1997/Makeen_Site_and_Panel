@@ -3,7 +3,7 @@ export function SliderContent({ index }) {
   return (
     <>
       <div className="flex flex-col" key={index}>
-        <div className="xl:w-[420px] w-[400px]  xl:h-[300px] h-[274px] relative xl:p-[55px]">
+        <div className="xl:w-[420px] w-[400px]  xl:h-[300px] h-[274px] relative xl:p-[55px] p-[63px]">
           <div className="hidden xl:block">
             <Image
               className="shadow-[10px_10px_300px_#0000000D] "
@@ -20,9 +20,10 @@ export function SliderContent({ index }) {
               alt="makeeniha"
             />
           </div>
-          <div className="relative w-[290px] h-[140px] text-[#00213E] xl:text-[16px] text-[14px] xl:leading-[28px] leading-[26px] font-medium xl:text-right text-center overflow-hidden">
+          <div className="relative xl:w-[290px] w-[250px] xl:h-[140px] h-[77px] text-[#00213E] xl:text-[16px] text-[14px] xl:leading-[28px] leading-[26px] font-medium xl:text-right text-center overflow-hidden">
             <div className="absolute">
               مکین جاییه که یاد میگیری رو پای خودت وایستی و این طوری میتونی از
+              پس هر مشکلی که سر راهت قرار میگیری بر بیای
               پس هر مشکلی که سر راهت قرار میگیری بر بیای
             </div>
           </div>

@@ -22,9 +22,9 @@ export default function Makeeniha({ makeeniha }) {
   };
   return (
     <>
-      <div className="h-[454px] relative font-iranYekan mt-[150px] overflow-hidden">
-        <div className="w-[339px] h-[339px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-10 blur-[50px] top-[90px] right-[255px] rounded-full"></div>
-        <div className="w-[205px] h-[205px] absolute bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] opacity-10 blur-[50px] top-[154px] left-0"></div>
+      <div className="xl:h-[454px] relative font-iranYekan mt-[150px] overflow-hidden">
+        <div className="xl:w-[339px] xl:h-[339px] w-[205px] h-[205px] absolute bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-10 blur-[50px] xl:top-[90px] top-[25%] xl:right-[255px] right-0 rounded-full"></div>
+        <div className="w-[205px] h-[205px] absolute bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] xl:opacity-10 opacity-[15%] blur-[50px] xl:top-[154px] top-[25%] left-0"></div>
         <div className="absolute top-[45px] -left-[50px] w-[86px] h-[86px] hidden xl:block">
           <Image
             layout="fill"
@@ -40,22 +40,30 @@ export default function Makeeniha({ makeeniha }) {
           />
         </div>
         <div className=" text-[#00213E] text-center leading-[50px] ">
-          <h1 className="xl:text-[20px] text-[16px] font-extrabold ">مکین از زبان مکینی ها</h1>
+          <h1 className="xl:text-[20px] text-[16px] font-extrabold ">
+            مکین از زبان مکینی ها
+          </h1>
           <h4 className="xl:text-[16px] text-[12px]">
             نظر فارغ التحصیلان مکین که حالا متخصص شدن درباره ی مکین
           </h4>
         </div>
-        <div className="px-[50px] py-[20px] h-[300px] hidden xl:block" id="makeenihaSlider">
+        <div
+          className="px-[50px] py-[20px] h-[300px] hidden xl:block"
+          id="makeenihaSlider"
+        >
           <Slider {...setting}>
             {pmakeeniha.map((item, index) => (
-              <SliderContent index={index}/>
+              <SliderContent index={index} />
             ))}
           </Slider>
         </div>
-        <div className="xl:py-[20px] block xl:hidden" id="makeenihaMobileSlider">
+        <div
+          className="xl:py-[20px] block xl:hidden"
+          id="makeenihaMobileSlider"
+        >
           <Slider {...mobileSetting}>
             {pmakeeniha.map((item, index) => (
-              <SliderContent index={index}/>
+              <SliderContent index={index} />
             ))}
           </Slider>
         </div>
