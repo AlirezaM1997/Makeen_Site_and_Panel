@@ -1,5 +1,5 @@
 import Image from "next/image";
-export default function Statistics({counter}) {
+export default function Counter({counter}) {
   return (
     <>
       <div className="pt-[90px] pb-[56px] px-[50px] relative">

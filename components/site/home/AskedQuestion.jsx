@@ -1,9 +1,10 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export default function AskedQuestion({ questions }) {
   const qLength = questions?.length;
   const [showAndHideAnswer, setShowAndHideAnswer] = useState(null);
   const [count, setCount] = useState(6);
+  const [h, setH] = useState();
   const showAndHideToggle = (index) => {
     if (showAndHideAnswer !== null) {
       setShowAndHideAnswer(null);
@@ -17,9 +18,16 @@ export default function AskedQuestion({ questions }) {
   const loadLess = () => {
     setCount(6);
   };
+  useEffect(() => {
+    if (window.innerWidth < 1280) {
+      setCount(3);
+    }
+  }, []);
   return (
     <>
-      <div className="relative h-auto w-full bg-[#001d36] py-[50px] mb-[142px] font-iranYekan">
+      <div
+        className={`relative h-auto w-full bg-[#001d36] py-[50px] xl:mb-[142px] mb-[82px] font-iranYekan`}
+      >
         <div className="absolute -left-[290px] top-0 h-[390px] w-[390px] mix-blend-lighten">
           <Image
             layout="fill"
@@ -34,11 +42,11 @@ export default function AskedQuestion({ questions }) {
             alt="orangeCircle"
           />
         </div>
-        <h1 className="text-[#ECF9FD] flex justify-center mb-[57px] text-[20px] font-extrabold">
+        <h1 className="text-[#ECF9FD] flex justify-center mb-[57px] xl:text-[20px] text-[16px] font-extrabold">
           سوالات متداول شما
         </h1>
         <ul
-          className="grid grid-cols-2 gap-[30px] w-full px-[30px] relative"
+          className="grid xl:grid-cols-2 grid-cols-1 gap-[30px] w-full px-[30px] relative"
           dir="rtl"
         >
           {questions.slice(0, count).map((item, index) => (
@@ -46,14 +54,14 @@ export default function AskedQuestion({ questions }) {
               <li
                 className={`${
                   showAndHideAnswer === index
-                    ? "z-10 h-auto absolute"
-                    : "relative"
-                } h-[100px] flex flex-col items-center  cursor-pointer bg-[#FFFFFF] border-[1px] rounded-[20px] border-[#CACBCB] py-[30px] px-[20px] overflow-hidden transition-height duration-300 ease-out`}
+                    ? "z-10 h-auto xl:absolute"
+                    : "relative xl:h-[100px] h-[140px]"
+                }  flex flex-col items-center cursor-pointer bg-[#FFFFFF] border-[1px] xl:rounded-[20px] rounded-[10px] border-[#CACBCB] xl:py-[30px] py-[20px] px-[20px] overflow-hidden transition-height duration-300 ease-out`}
                 onClick={() => showAndHideToggle(index)}
                 key={index}
               >
-                <div className="w-full flex justify-start items-center">
-                  <div className="bg-[#FFD7C0] ml-[6px] rounded-[8px] w-[40px] h-[40px] flex justify-center items-center">
+                <div className="w-full flex xl:flex-row flex-col justify-start items-center mb-[20px]">
+                  <div className="bg-[#FFD7C0] xl:ml-[6px] rounded-[8px] w-[40px] h-[40px] flex justify-center items-center">
                     <div className="w-[20px] h-[20px] relative">
                       <Image
                         src="/assets/images/commentRed.png"
@@ -63,7 +71,7 @@ export default function AskedQuestion({ questions }) {
                     </div>
                   </div>
                   {showAndHideAnswer === index ? (
-                    <div className="absolute duration-300 left-[15px] w-[12px] h-[6px] rotate-180">
+                    <div className="absolute duration-300 left-1/2 bottom-[20px] xl:bottom-[unset] xl:translate-x-[unset] -translate-x-1/2  xl:left-[15px] w-[12px] h-[6px] rotate-180">
                       <Image
                         layout="fill"
                         src={"/assets/images/arrow-down.png"}
@@ -71,7 +79,7 @@ export default function AskedQuestion({ questions }) {
                       />
                     </div>
                   ) : (
-                    <div className="absolute duration-300 left-[15px] w-[12px] h-[6px]">
+                    <div className="absolute duration-300 left-1/2 bottom-[20px] xl:bottom-[unset] xl:translate-x-[unset] -translate-x-1/2 xl:left-[15px] w-[12px] h-[6px]">
                       <Image
                         layout="fill"
                         src={"/assets/images/arrow-down.png"}
@@ -79,9 +87,17 @@ export default function AskedQuestion({ questions }) {
                       />
                     </div>
                   )}
-                  <div>{item.question}</div>
+                  <div className={`${
+                    showAndHideAnswer === index ? "text-[11px]" : "text-[12px]"
+                  } xl:text-[16px]  text-[#00294D] xl:leading-[28px] leading-[21px] xl:mt-0 mt-[10px] xl:text-right text-center transition-all duration-300 ease-out`}>
+                    {item.question}
+                  </div>
                 </div>
-                <div className="mt-[30px]">
+                <div
+                  className={`${
+                    showAndHideAnswer === index ? "pb-5" : "mt-[30px] "
+                  } xl:text-[14px] text-[12px] text-[#4D6982] xl:leading-[30px] leading-[21px] `}
+                >
                   <hr className="mb-[20px]" />
                   {item.answer}
                 </div>
@@ -99,7 +115,7 @@ export default function AskedQuestion({ questions }) {
             </button>
           ) : (
             <button
-              className="text-[#c1c4c5] hover:text-[#fdfdfd]"
+              className="text-[#c1c4c5] text-[14px] hover:text-[#fdfdfd]"
               onClick={() => loadLess()}
             >
               مشاهده ی سوالات کمتر

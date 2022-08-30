@@ -3,7 +3,7 @@ export default function Methdology({methodology}) {
   console.log(methodology);
   return (
     <>
-      <div className="relative xl:mt-[200px] mt-[90px] flex xl:flex-row flex-col-reverse justify-between xl:h-[464px] mb-[150px] font-iranYekan xl:pr-[120px] xl:pl-[86px]">
+      <div className="relative xl:mt-[200px] mt-[90px] flex xl:flex-row flex-col-reverse justify-between xl:h-[464px] xl:mb-[150px] mb-[100px] font-iranYekan xl:pr-[120px] xl:pl-[86px]">
         <div className="xl:w-[123px] xl:h-[123px] w-[261px] h-[261px] absolute top-[5px] xl:left-0 left-1/4 bg-gradient-[90deg] from-[#37BBEC] to-[#B5E6F8] opacity-20 blur-[50px]"></div>
         <div className="h-[283px] w-[126px] absolute top-[23px] left-0  bg-gradient-[90deg] from-[#FF792C] to-[#FDD5BE] blur-[50px] opacity-20 hidden xl:block"></div>
         <div className="xl:w-[62%] xl:pr-[168px] pr-[57px] xl:pl-0 pl-[57px] relative xl:my-auto" dir="rtl">

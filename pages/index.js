@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Slider from "../components/site/home/imageSlider/Slider";
-import Statistics from "../components/site/home/Statistics";
+import Counter from "../components/site/home/Counter";
 import Bootcamp from "../components/site/home/bootcamp/Bootcamp";
 import Features from "../components/site/home/features/Features";
 import Courses from "../components/site/home/courses/Courses";
-import EstelamVaHamrahsho from "../components/site/home/EstelamVaHamrahSho";
+import Estelam from "../components/site/home/Estelam";
 import AskedQuestion from "../components/site/home/AskedQuestion";
 import Magazines from "../components/site/home/Magazines";
 import Methdology from "../components/site/home/Methodology";
@@ -78,7 +78,7 @@ export default function home() {
       </Head>
       <RegisterationModal />
       <Slider sliderImage={results[0].data} />
-      <Statistics counter={results[1].data} />
+      <Counter counter={results[1].data} />
       <Bootcamp bootcampSlider={results[2].data} />
       <Features features={results[3].data} />
       <Courses courses={results[4].data} />
@@ -89,7 +89,7 @@ export default function home() {
       <Methdology methodology={results[9].data} />
       <AskedQuestion questions={results[10].data} />
       <Magazines blogs={results[11].data}/>
-      <EstelamVaHamrahsho />
+      <Estelam />
     </>
   );
 }
