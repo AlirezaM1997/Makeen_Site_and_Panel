@@ -4,7 +4,7 @@ export default function blogs() {
   return (
     <>
       <Head>
-        <title>وبلاگ</title>
+        <title>بلاگ</title>
       </Head>
       <Blogs />
     </>

@@ -15,7 +15,7 @@ export const CourseCard = ({ index, item }) => {
   };
   return (
     <>
-      <div className="relative w-full">
+      <div className="relative w-full xl:h-[395px]">
         <li
           className={`${
             showAndHideCourse === index

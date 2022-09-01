@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import BlogCard from "../site/BlogCard";
+import BlogCard from "../BlogCard";
 export default function Blogs() {
   const allBlogs = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (

@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BlogCard from "../BlogCard";
+import Link from "next/link";
 export default function Magazines({ blogs }) {
   const magazines = [1, 2, 3, 4, 5, 6];
   const setting = {
@@ -26,35 +27,33 @@ export default function Magazines({ blogs }) {
         className="mb-[130px] relative xl:px-[50px] overflow-hidden"
         id="magazines"
       >
-        <div className="flex items-center">
-          <div
-            dir="rtl"
-            className=" items-center cursor-pointer relative w-fit ml-[30px] justify-start hidden xl:flex"
-            onClick={() => console.log("lol")}
-          >
-            <span className="text-[#8094A6] peer font-iranYekan text-[16px] pl-2 xl:hover:text-[#00213E] transition-colors duration-300">
-              مشاهده ی همه
-            </span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="5.041"
-              height="8.554"
-              viewBox="0 0 5.041 8.554"
-              className="peer-hover:-translate-x-[10px] transition-all duration-300 ease-out"
-            >
-              <path
-                id="Path_58"
-                dataname="Path 58"
-                d="M4.229,7.567,1,4.351l3.23-3.217"
-                transform="translate(-0.249 -0.073)"
-                fill="none"
-                stroke="#8094a6"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-              />
-            </svg>
-          </div>
+        <div  className="flex items-center justify-between">
+          <Link href={"/blogs"}>
+            <a dir="rtl" className=" items-center cursor-pointer relative w-fit ml-[30px] justify-start hidden xl:flex">
+              <span className="text-[#8094A6] peer font-iranYekan text-[16px] pl-2 xl:hover:text-[#00213E] transition-colors duration-300">
+                مشاهده ی همه
+              </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="5.041"
+                height="8.554"
+                viewBox="0 0 5.041 8.554"
+                className="peer-hover:-translate-x-[10px] transition-all duration-300 ease-out"
+              >
+                <path
+                  id="Path_58"
+                  dataname="Path 58"
+                  d="M4.229,7.567,1,4.351l3.23-3.217"
+                  transform="translate(-0.249 -0.073)"
+                  fill="none"
+                  stroke="#8094a6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
+                />
+              </svg>
+            </a>
+          </Link>
 
           <h1 className="font-iranYekan text-[#00213E] xl:text-[20px] text-[16px] text-center font-extrabold	xl:absolute xl:right-[80px] xl:top-0 ">
             جدیدترین مقالات و مطالب از مکین
@@ -91,7 +90,6 @@ export default function Magazines({ blogs }) {
             ))}
           </Slider>
         </div>
-
       </div>
     </>
   );
