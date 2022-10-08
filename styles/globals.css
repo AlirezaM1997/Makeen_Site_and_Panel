@@ -15,7 +15,6 @@ a {
   src: url("../public/assets/fonts/iran-yekan/Qs_Iranyekan.ttf");
   font-display: swap;
 }
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

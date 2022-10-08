@@ -5,7 +5,7 @@ export default function BootCamp () {
   return (
     <>
       <section className="mb-[80px]">
-        <div className="relative mx-[30px] h-[250px] mt-[71px] ">
+        <div className="relative xl:mx-[30px] mx-[10px] h-[250px] mt-[71px] ">
           <Image
             layout="fill"
             priority
@@ -13,10 +13,12 @@ export default function BootCamp () {
             alt="bootcamp"
           />
         </div>
-        <Navigator />
-        <Highlights />
+        <div className="hidden xl:block">
+          <Navigator />
+          <Highlights />
+        </div>
         <div
-          className="font-iranYekan pl-[120px] pr-[320px] mt-[-345px]"
+          className="font-iranYekan xl:pl-[120px] xl:pr-[320px] xl:mt-[-345px] px-6"
           dir="rtl"
         >
           <div className="">

@@ -3,6 +3,7 @@ import SliderContent from "./SliderContent";
 import Dots from "./Dots";
 import Arrows from "./Arrows";
 export default function Slider({ sliderImage }) {
+  console.log(sliderImage);
   const len = sliderImage.length - 1;
   const [activeIndex, setActiveIndex] = useState(0);
   const [timer, setTimer] = useState(0);

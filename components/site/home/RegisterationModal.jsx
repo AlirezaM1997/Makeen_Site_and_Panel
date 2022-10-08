@@ -43,7 +43,6 @@ export default function RegisterationModal() {
   const modalMode = useSelector((state) => state.modalMode.value);
   const dispatch = useDispatch();
 
-
   Yup.addMethod(Yup.string, "stripEmptyString", function () {
     return this.transform((value) => (value === "" ? undefined : value));
   });

@@ -71,6 +71,7 @@ export default function home() {
     ],
   });
   if (results.some((r) => r.isLoading)) return <Loading />;
+  console.log(results);
   return (
     <>
       <Head>
